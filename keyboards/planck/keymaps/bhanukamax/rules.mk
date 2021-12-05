@@ -2,3 +2,4 @@ SRC += muse.c
 AUDIO_ENABLE = no
 BACKLIGHT_ENABLE = yes
 VIA_ENABLE = yes
+COMBO_ENABLE = yes

@@ -76,12 +76,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_FN] = LAYOUT_planck_grid(
     KC_F1,   KC_F2,   KC_F3,   KC_F4,            KC_F5,           KC_NO,  KC_NO,  KC_F6,   KC_F7,      KC_F8,      KC_F9,   KC_F10,
     KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU,          KC_G,            KC_NO,  KC_NO,  KC_H,    SGUI(KC_3), SGUI(KC_4), KC_F11,  KC_F12,
-    KC_NO,   KC_X,    KC_BRMD, KC_BRMU,          RESET,            KC_NO,  KC_NO,  KC_N,    KC_M,       KC_COMM,    KC_DOT,  KC_SLSH,
+    KC_Q,   KC_X,    KC_BRMD, KC_BRMU,          RESET,            KC_NO,  KC_NO,  KC_N,    KC_M,       KC_COMM,    KC_DOT,  KC_SLSH,
     KC_ESC,  TEST,    KC_NO,   LT(_NAV, KC_TAB), RSFT_T(KC_SPC),  KC_NO,  KC_NO,  KC_LCTL, _______,    KC_LEFT,    KC_DOWN, MO(_FN)
 )
 
 };
 
+const uint16_t PROGMEM test_combo1[] = {KC_N, KC_M, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+    COMBO(test_combo1, KC_BSPC),
+};
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
   switch(keycode) {
