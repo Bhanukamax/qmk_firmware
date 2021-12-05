@@ -77,19 +77,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_F1,   KC_F2,   KC_F3,   KC_F4,            KC_F5,           KC_NO,  KC_NO,  KC_F6,   KC_F7,      KC_F8,      KC_F9,   KC_F10,
     KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU,          KC_G,            KC_NO,  KC_NO,  KC_H,    SGUI(KC_3), SGUI(KC_4), KC_F11,  KC_F12,
     KC_Q,   KC_X,    KC_BRMD, KC_BRMU,          RESET,            KC_NO,  KC_NO,  KC_N,    KC_M,       KC_COMM,    KC_DOT,  KC_SLSH,
-    KC_ESC,  TEST,    KC_NO,   LT(_NAV, KC_TAB), RSFT_T(KC_SPC),  KC_NO,  KC_NO,  KC_LCTL, _______,    KC_LEFT,    KC_DOWN, MO(_FN)
+    KC_NO,  KC_NO,    KC_NO,   LT(_NAV, KC_TAB), RSFT_T(KC_SPC),  KC_NO,  KC_NO,  KC_LCTL, _______,    KC_LEFT,    KC_DOWN, MO(_FN)
 )
 
 };
 
-const uint16_t PROGMEM test_combo1[] = {KC_M, KC_COMM, COMBO_END}; // right hand -> Num
-const uint16_t PROGMEM test_combo2[] = {KC_DQUO, KC_LT, COMBO_END}; // Num layer right hand -> Num
+const uint16_t PROGMEM test_combo1[] = {KC_M, KC_COMM, COMBO_END}; // right hand m and comma
+const uint16_t PROGMEM test_combo2[] = {KC_Z, KC_X, COMBO_END}; // Left hand Z + X -> FN
 const uint16_t PROGMEM test_combo3[] = {KC_UNDS, KC_PLUS, COMBO_END}; // NUM layer left hand -> Base
 const uint16_t PROGMEM test_combo4[] = {KC_C, KC_V, COMBO_END}; // left hand -> Base
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(test_combo1, OSL(_FN)),
-    COMBO(test_combo2, OSL(_FN)),
+    COMBO(test_combo2, MO(_FN)),
     COMBO(test_combo3, TO(_QWERTY)),
     COMBO(test_combo4, KC_ESC),
 };
