@@ -82,10 +82,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-const uint16_t PROGMEM test_combo1[] = {KC_N, KC_M, COMBO_END};
+const uint16_t PROGMEM test_combo1[] = {KC_M, KC_COMM, COMBO_END}; // right hand -> Num
+const uint16_t PROGMEM test_combo2[] = {KC_DQUO, KC_LT, COMBO_END}; // Num layer right hand -> Num
+const uint16_t PROGMEM test_combo3[] = {KC_UNDS, KC_PLUS, COMBO_END}; // NUM layer left hand -> Base
+const uint16_t PROGMEM test_combo4[] = {KC_C, KC_V, COMBO_END}; // left hand -> Base
 
 combo_t key_combos[COMBO_COUNT] = {
-    COMBO(test_combo1, KC_BSPC),
+    COMBO(test_combo1, OSL(_FN)),
+    COMBO(test_combo2, OSL(_FN)),
+    COMBO(test_combo3, TO(_QWERTY)),
+    COMBO(test_combo4, KC_ESC),
 };
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
