@@ -19,7 +19,7 @@
 
 
 enum planck_layers {
-  _QWERTY,
+  _BASE,
   _NUM,
   _FN,
   _NAV,
@@ -37,7 +37,7 @@ enum planck_keycodes {
 
 #define NUMBER LT(_NUM, KC_BSPC)
 #define NAV_TAB LT(_NAV, KC_TAB)
-#define BMAX_ENT_NAV LT(_NAV, KC_ENT)
+//#define BMAX_ENT_NAV LT(_NAV, KC_ENT)
 #define VIM MO(_NAV)
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -52,11 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | Brite| Ctrl | Alt  | GUI  |Lower |    Space    |Raise | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
-[_QWERTY] = LAYOUT_planck_grid(
+[_BASE] = LAYOUT_planck_grid(
     KC_Q,         KC_W,          KC_E,         KC_R,           KC_T,            XXXXXXX, XXXXXXX,  KC_Y,   KC_U,          KC_I,         KC_O,         KC_P,
     RCTL_T(KC_A), RSFT_T(KC_S),  RALT_T(KC_D), RGUI_T(KC_F),   KC_G,            XXXXXXX, XXXXXXX,  KC_H,   RGUI_T(KC_J),  RALT_T(KC_K), RSFT_T(KC_L), RCTL_T(KC_SCLN),
     KC_Z,         KC_X,          KC_C,         KC_V,           KC_B,            KC_NO,   KC_NO,    KC_N,   KC_M,          KC_COMM,      KC_DOT,       KC_SLSH,
-    KC_ESC,       XXXXXXX,       XXXXXXX,      NAV_TAB,        RSFT_T(KC_SPC),  XXXXXXX, XXXXXXX,  NUMBER, BMAX_ENT_NAV,  XXXXXXX,      XXXXXXX,      MO(_FN)
+    KC_ESC,       XXXXXXX,       XXXXXXX,      NAV_TAB,        RSFT_T(KC_SPC),  XXXXXXX, XXXXXXX,  NUMBER, XXXXXXX,  XXXXXXX,      XXXXXXX,      MO(_FN)
 ),
 
 [_NUM] = LAYOUT_planck_grid(
@@ -74,10 +74,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_FN] = LAYOUT_planck_grid(
-    KC_F1,   KC_F2,   KC_F3,   KC_F4,            KC_F5,           KC_NO,  KC_NO,  KC_F6,   KC_F7,      KC_F8,      KC_F9,   KC_F10,
-    KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU,          KC_G,            KC_NO,  KC_NO,  KC_H,    SGUI(KC_3), SGUI(KC_4), KC_F11,  KC_F12,
-    KC_MPRV,   KC_MNXT,    KC_BRMD, KC_BRMU,          RESET,            KC_NO,  KC_NO,  KC_N,    KC_M,       KC_COMM,    KC_DOT,  KC_SLSH,
-    KC_NO,  KC_NO,    KC_NO,   LT(_NAV, KC_TAB), RSFT_T(KC_SPC),  KC_NO,  KC_NO,  KC_LCTL, _______,    KC_LEFT,    KC_DOWN, MO(_FN)
+    KC_F1,     KC_F2,   KC_F3,   KC_F4,            KC_F5,           KC_NO,  KC_NO,  KC_F6,   KC_F7,      KC_F8,      KC_F9,   KC_F10,
+    KC_MPLY,   KC_MUTE, KC_VOLD, KC_VOLU,          KC_G,            KC_NO,  KC_NO,  KC_H,    SGUI(KC_3), SGUI(KC_4), KC_F11,  KC_F12,
+    KC_MPRV,   KC_MNXT, KC_BRMD, KC_BRMU,          RESET,           KC_NO,  KC_NO,  KC_N,    KC_M,       KC_COMM,    KC_DOT,  KC_SLSH,
+    KC_NO,     KC_NO,   KC_NO,   LT(_NAV, KC_TAB), RSFT_T(KC_SPC),  KC_NO,  KC_NO,  KC_LCTL, _______,    KC_LEFT,    KC_DOWN, MO(_FN)
 )
 
 };
@@ -86,12 +86,14 @@ const uint16_t PROGMEM test_combo1[] = {KC_M, KC_COMM, COMBO_END}; // right hand
 const uint16_t PROGMEM test_combo2[] = {KC_Z, KC_X, COMBO_END}; // Left hand Z + X -> FN
 const uint16_t PROGMEM test_combo3[] = {KC_U, KC_I, COMBO_END}; // NUM layer left hand -> Base
 const uint16_t PROGMEM test_combo4[] = {KC_C, KC_V, COMBO_END}; // left hand -> Base
+const uint16_t PROGMEM test_combo5[] = {KC_E, KC_R, KC_U, KC_I, COMBO_END}; // left hand -> Base
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(test_combo1, OSL(_FN)),
     COMBO(test_combo2, MO(_FN)),
     COMBO(test_combo3, KC_ENT),
     COMBO(test_combo4, KC_ESC),
+    COMBO(test_combo5, RESET),
 };
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
@@ -104,10 +106,6 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
       return false;
   }
 }
-
-
-
-
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
