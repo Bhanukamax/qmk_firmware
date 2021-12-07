@@ -61,14 +61,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_NUM] = LAYOUT_planck_grid(
     KC_1,             KC_2,             KC_3,             KC_4,              KC_5,     _______,  _______,  KC_6,     KC_7,            KC_8,             KC_9,             KC_0,
-    RCTL_T(KC_GRV),   RSFT_T(KC_LBRC),  RALT_T(KC_LPRN),  RGUI_T(KC_LCBR),   XXXXXXX,  _______,  _______,  XXXXXXX,  RGUI_T(KC_RCBR), RALT_T(KC_RPRN),  RSFT_T(KC_RBRC),  KC_BSPC,
+    RCTL_T(KC_GRV),   RSFT_T(KC_LBRC),  RALT_T(KC_LPRN),  RGUI_T(KC_LCBR),   XXXXXXX,  _______,  _______,  KC_ENT,  RGUI_T(KC_RCBR), RALT_T(KC_RPRN),  RSFT_T(KC_RBRC),  KC_BSPC,
     RSFT_T(KC_MINS),  KC_EQL,           KC_UNDS,          KC_PLUS,           XXXXXXX,  _______,  _______,  KC_QUOT,  KC_DQUO,         KC_LT,            KC_GT,            RSFT_T(KC_BSLS),
     _______,          _______,          _______,          _______,           _______,  _______,  _______,  _______,  _______,         _______,          _______,          _______
 ),
 
 [_NAV] = LAYOUT_planck_grid(
     LALT(KC_F1), LALT(KC_F1), KC_BTN1,    KC_BTN2,    LALT(KC_F12), KC_NO,  KC_NO,  KC_HOME, KC_PGUP,    KC_PGDN,  KC_END,  KC_BSPC,
-    KC_LCTL,     KC_LSFT,     KC_LALT,    KC_LGUI,    KC_NO,        KC_NO,  KC_NO,  KC_LEFT, KC_DOWN,    KC_UP,    KC_RGHT, KC_NO,
+    KC_LCTL,     KC_LSFT,     KC_LALT,    KC_LGUI,    KC_ESC,        KC_NO,  KC_NO,  KC_LEFT, KC_DOWN,    KC_UP,    KC_RGHT, KC_NO,
     LGUI(KC_Z),  LGUI(KC_X),  LGUI(KC_C), LGUI(KC_V), LGUI(KC_B),   KC_NO,  KC_NO,  RGUI(KC_GRV), RCTL(KC_M), KC_NO,    KC_NO,   RGB_TOG,
     KC_ESC,      KC_NO,       KC_NO,      _______,    MO(_FN),      KC_NO,  KC_NO,  _______,  _______,    KC_LEFT,  KC_DOWN, MO(_FN)
 ),
@@ -84,7 +84,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 const uint16_t PROGMEM test_combo1[] = {KC_M, KC_COMM, COMBO_END}; // right hand m and comma
 const uint16_t PROGMEM test_combo2[] = {KC_Z, KC_X, COMBO_END}; // Left hand Z + X -> FN
-const uint16_t PROGMEM test_combo3[] = {LGUI_T(KC_J), LALT_T(KC_K), COMBO_END}; // Enter
+const uint16_t PROGMEM test_combo3[] = {KC_U, KC_I, COMBO_END}; // Enter
+//const uint16_t PROGMEM test_combo3[] = {LGUI_T(KC_J), LALT_T(KC_K), COMBO_END}; // Enter
 const uint16_t PROGMEM test_combo4[] = {RALT_T(KC_D), RGUI_T(KC_F), COMBO_END}; // right hand -> Esc
 const uint16_t PROGMEM test_combo5[] = {KC_E, KC_R, KC_U, KC_I, COMBO_END}; // left hand -> Base
 
