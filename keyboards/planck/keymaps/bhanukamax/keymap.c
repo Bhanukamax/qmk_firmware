@@ -84,16 +84,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 const uint16_t PROGMEM test_combo1[] = {KC_M, KC_COMM, COMBO_END}; // right hand m and comma
 const uint16_t PROGMEM test_combo2[] = {KC_Z, KC_X, COMBO_END}; // Left hand Z + X -> FN
-const uint16_t PROGMEM test_combo3[] = {KC_U, KC_I, COMBO_END}; // Enter
-//const uint16_t PROGMEM test_combo3[] = {LGUI_T(KC_J), LALT_T(KC_K), COMBO_END}; // Enter
-const uint16_t PROGMEM test_combo4[] = {RALT_T(KC_D), RGUI_T(KC_F), COMBO_END}; // right hand -> Esc
+//const uint16_t PROGMEM test_combo3[] = {KC_U, KC_I, COMBO_END}; // Enter
+////const uint16_t PROGMEM test_combo3[] = {LGUI_T(KC_J), LALT_T(KC_K), COMBO_END}; // Enter
+//const uint16_t PROGMEM test_combo4[] = {RALT_T(KC_D), RGUI_T(KC_F), COMBO_END}; // right hand -> Esc
 const uint16_t PROGMEM test_combo5[] = {KC_E, KC_R, KC_U, KC_I, COMBO_END}; // left hand -> Base
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(test_combo1, OSL(_FN)),
     COMBO(test_combo2, MO(_FN)),
-    COMBO(test_combo3, KC_ENT),
-    COMBO(test_combo4, KC_ESC),
+//    COMBO(test_combo3, KC_ENT),
+//    COMBO(test_combo4, KC_ESC),
     COMBO(test_combo5, RESET),
 };
 
