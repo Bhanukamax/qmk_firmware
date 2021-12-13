@@ -20,6 +20,8 @@
 
 enum planck_layers {
   _BASE,
+   _SWAP_BASE,
+  _SWAP,
   _NUM,
   _FN,
   _NAV,
@@ -39,6 +41,10 @@ enum planck_keycodes {
 #define NAV_TAB LT(_NAV, KC_TAB)
 //#define BMAX_ENT_NAV LT(_NAV, KC_ENT)
 #define VIM MO(_NAV)
+
+
+
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Qwerty
@@ -56,7 +62,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     RCTL_T(KC_Q), KC_W,          KC_E,         KC_R,           KC_T,            XXXXXXX, XXXXXXX,  KC_Y,   KC_U,          KC_I,         KC_O,         KC_P,
     RCTL_T(KC_A), RSFT_T(KC_S),  RALT_T(KC_D), RGUI_T(KC_F),   KC_G,            XXXXXXX, XXXXXXX,  KC_H,   LGUI_T(KC_J),  LALT_T(KC_K), RSFT_T(KC_L), RCTL_T(KC_SCLN),
     KC_Z,         KC_X,          KC_C,         KC_V,           KC_B,            KC_NO,   KC_NO,    KC_N,   KC_M,          KC_COMM,      KC_DOT,       KC_SLSH,
-    XXXXXXX,      XXXXXXX,       XXXXXXX,      NAV_TAB,        RSFT_T(KC_SPC),  XXXXXXX, XXXXXXX,  NUMBER, KC_RSFT,  XXXXXXX,      XXXXXXX,      XXXXXXX
+    XXXXXXX,      XXXXXXX,       XXXXXXX,      NAV_TAB,        RSFT_T(KC_SPC),  XXXXXXX, XXXXXXX,  NUMBER, KC_ENT,  XXXXXXX,      XXXXXXX,      XXXXXXX
+),
+
+[_SWAP_BASE] = LAYOUT_planck_grid(
+    RCTL_T(KC_Q), KC_W,          KC_E,         KC_R,           KC_T,            XXXXXXX, XXXXXXX,  KC_Y,   KC_U,          KC_I,         KC_O,         KC_P,
+    RCTL_T(KC_A), RSFT_T(KC_S),  RALT_T(KC_D), RGUI_T(KC_F),   KC_G,            XXXXXXX, XXXXXXX,  KC_H,   LGUI_T(KC_J),  LALT_T(KC_K), RSFT_T(KC_L), RCTL_T(KC_SCLN),
+    KC_Z,         KC_X,          KC_C,         KC_V,           KC_B,            KC_NO,   KC_NO,    KC_N,   KC_M,          KC_COMM,      KC_DOT,       KC_SLSH,
+    XXXXXXX,      XXXXXXX,       XXXXXXX,    RSFT_T(  KC_BSPC),  LT(_SWAP, KC_SPC),          XXXXXXX, XXXXXXX,  NUMBER, KC_ENT,  XXXXXXX,      XXXXXXX,      XXXXXXX
+),
+
+[_SWAP] = LAYOUT_planck_grid(
+    RCTL_T(KC_P), KC_O,          KC_I,         KC_U,           KC_Y,            XXXXXXX, XXXXXXX,  KC_Y,   KC_U,          KC_I,         KC_O,         KC_P,
+    RCTL_T(KC_SCLN), RSFT_T(KC_L),  RALT_T(KC_K), RGUI_T(KC_J),   KC_H,            XXXXXXX, XXXXXXX,  KC_H,   LGUI_T(KC_J),  LALT_T(KC_K), RSFT_T(KC_L), RCTL_T(KC_SCLN),
+    KC_QUOT,         KC_DOT,          KC_COMM,         KC_M,           KC_N,            KC_NO,   KC_NO,    KC_N,   KC_M,          KC_COMM,      KC_DOT,       KC_SLSH,
+    XXXXXXX,      XXXXXXX,       _______,      _______,        _______,  _______, _______,  NUMBER, KC_ENT,  XXXXXXX,      XXXXXXX,      XXXXXXX
 ),
 
 [_NUM] = LAYOUT_planck_grid(
@@ -82,9 +102,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
+
 const uint16_t PROGMEM test_combo1[] = {KC_M, KC_COMM, COMBO_END}; // right hand m and comma
 const uint16_t PROGMEM test_combo2[] = {KC_Z, KC_X, COMBO_END}; // Left hand Z + X -> FN
-//const uint16_t PROGMEM test_combo3[] = {KC_U, KC_I, COMBO_END}; // Enter
+const uint16_t PROGMEM test_combo3[] = {NAV_TAB, RSFT_T(KC_SPC), COMBO_END}; // Enter
+const uint16_t PROGMEM test_combo4[] = {RSFT_T(  KC_BSPC),  LT(_SWAP, KC_SPC), COMBO_END}; // Enter
+
+
 ////const uint16_t PROGMEM test_combo3[] = {LGUI_T(KC_J), LALT_T(KC_K), COMBO_END}; // Enter
 //const uint16_t PROGMEM test_combo4[] = {RALT_T(KC_D), RGUI_T(KC_F), COMBO_END}; // right hand -> Esc
 const uint16_t PROGMEM test_combo5[] = {KC_E, KC_R, KC_U, KC_I, COMBO_END}; // left hand -> Base
@@ -92,10 +116,13 @@ const uint16_t PROGMEM test_combo5[] = {KC_E, KC_R, KC_U, KC_I, COMBO_END}; // l
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(test_combo1, OSL(_FN)),
     COMBO(test_combo2, MO(_FN)),
-//    COMBO(test_combo3, KC_ENT),
-//    COMBO(test_combo4, KC_ESC),
+    COMBO(test_combo3, TO(_SWAP_BASE)),
+   COMBO(test_combo4, TO(_BASE)),
     COMBO(test_combo5, RESET),
 };
+
+
+
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
   switch(keycode) {

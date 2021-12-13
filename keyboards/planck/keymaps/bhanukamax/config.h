@@ -51,4 +51,5 @@
 //#define TAPPING_TERM_PER_KEY
 #define TAPPING_FORCE_HOLD_PER_KEY
 
-#define COMBO_COUNT 3
+#define COMBO_COUNT 5
+
