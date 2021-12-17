@@ -20,6 +20,7 @@
 
 enum planck_layers {
   _BASE,
+  _RAISE,
    _SWAP_BASE,
   _SWAP,
   _NUM,
@@ -62,7 +63,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     RCTL_T(KC_Q), KC_W,          KC_E,         KC_R,           KC_T,            XXXXXXX, XXXXXXX,  KC_Y,   KC_U,          KC_I,         KC_O,         KC_P,
     RCTL_T(KC_A), RSFT_T(KC_S),  RALT_T(KC_D), RGUI_T(KC_F),   KC_G,            XXXXXXX, XXXXXXX,  KC_H,   LGUI_T(KC_J),  LALT_T(KC_K), RSFT_T(KC_L), RCTL_T(KC_SCLN),
     KC_Z,         KC_X,          KC_C,         KC_V,           KC_B,            KC_NO,   KC_NO,    KC_N,   KC_M,          KC_COMM,      KC_DOT,       KC_SLSH,
-    XXXXXXX,      XXXXXXX,       XXXXXXX,      NAV_TAB,        RSFT_T(KC_SPC),  XXXXXXX, XXXXXXX,  NUMBER, KC_ENT,  XXXXXXX,      XXXXXXX,      XXXXXXX
+    XXXXXXX,      XXXXXXX,       XXXXXXX,      MO(_NAV),       RSFT_T(KC_SPC),  XXXXXXX, XXXXXXX,  MO(_RAISE), KC_ENT,  XXXXXXX,      XXXXXXX,      XXXXXXX
+),
+
+
+
+[_RAISE] = LAYOUT_planck_grid(
+    KC_LBRC,  KC_RBRC,  KC_LPRN,  KC_RPRN,    KC_TAB,   _______,  _______,  KC_6,    KC_7,    KC_8,     KC_9,    KC_LGUI,
+    KC_LT,    KC_GT,    KC_LCBR,  KC_RCBR,    KC_QUOT,  _______,  _______,  KC_DQUO, KC_4,    KC_5,     KC_6,    KC_BSPC,
+    KC_MINS,  KC_EQL,   KC_UNDS,  KC_PLUS,    KC_GRV,   _______,  _______,  KC_0, KC_1,    KC_2,     KC_3,    KC_BSLS,
+    _______,  _______,  _______,  TO(_BASE),  _______,  _______,  _______,  _______, _______, _______,  _______,  _______
 ),
 
 [_SWAP_BASE] = LAYOUT_planck_grid(
@@ -112,6 +122,8 @@ const uint16_t PROGMEM test_combo4[] = {NUMBER, KC_ENT, COMBO_END}; // Enter
 ////const uint16_t PROGMEM test_combo3[] = {LGUI_T(KC_J), LALT_T(KC_K), COMBO_END}; // Enter
 //const uint16_t PROGMEM test_combo4[] = {RALT_T(KC_D), RGUI_T(KC_F), COMBO_END}; // right hand -> Esc
 const uint16_t PROGMEM test_combo5[] = {KC_E, KC_R, KC_U, KC_I, COMBO_END}; // left hand -> Base
+const uint16_t PROGMEM test_combo6[] = {KC_LGUI, KC_BSPC, COMBO_END}; // Enter
+const uint16_t PROGMEM test_combo7[] = {KC_TAB, KC_QUOT, COMBO_END}; // Enter
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(test_combo1, OSL(_FN)),
@@ -119,6 +131,8 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(test_combo3, TO(_SWAP_BASE)),
    COMBO(test_combo4, TO(_BASE)),
     COMBO(test_combo5, RESET),
+    COMBO(test_combo6, KC_LCTL),
+    COMBO(test_combo7, RCTL(KC_TAB)),
 };
 
 
