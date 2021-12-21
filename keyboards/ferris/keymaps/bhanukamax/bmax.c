@@ -1,11 +1,11 @@
 #include QMK_KEYBOARD_H
 #include "muse.h"
 
-const uint16_t PROGMEM test_combo1[] = {KC_D, KC_F, COMBO_END}; // right hand m and comma
-const uint16_t PROGMEM test_combo2[] = {KC_C, KC_V, COMBO_END}; // right hand m and comma
+const uint16_t PROGMEM combo_osl_fn[] = {KC_M, KC_COMM, COMBO_END}; // right hand m and comma
+const uint16_t PROGMEM combo_reset[] = {KC_E, KC_R, KC_U, KC_I, COMBO_END}; // left hand -> Base
 
 combo_t key_combos[COMBO_COUNT] = {
-    COMBO(test_combo1, KC_VOLU,
-    COMBO(test_combo2, KC_VOLD),
+    COMBO(combo_osl_fn, OSL(4)),
+    COMBO(combo_reset, RESET),
 };
 
