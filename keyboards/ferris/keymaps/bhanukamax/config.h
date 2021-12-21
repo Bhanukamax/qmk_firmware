@@ -13,12 +13,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-#pragma once
-// Set the mouse settings to a comfortable speed/accuracy trade-off,
-// assuming a screen refresh rate of 60 Htz or higher
-// The default is 50. This makes the mouse ~3 times faster and more accurate
+*/ #pragma once // Set the mouse settings to a comfortable speed/accuracy trade-off, // assuming a screen refresh rate of 60 Htz or higher // The default is 50. This makes the mouse ~3 times faster and more accurate
 #define MOUSEKEY_INTERVAL 16
 // The default is 20. Since we made the mouse about 3 times faster with the previous setting,
 // give it more time to accelerate to max speed to retain precise control over short distances.
@@ -45,3 +40,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #define RGBLIGHT_SAT_STEP 8
   #define RGBLIGHT_VAL_STEP 8
 #endif
+
+#define COMBO_COUNT 2
