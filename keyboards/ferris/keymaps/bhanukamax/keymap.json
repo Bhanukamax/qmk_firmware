@@ -24,10 +24,10 @@
             "KC_TRNS", "KC_TRNS", "MO(3)", "KC_TRNS"
         ],
         [
-            "RESET", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_U", "KC_NO", "KC_NO", "KC_NO",
-            "KC_NO", "KC_NO", "KC_D", "KC_NO", "KC_NO", "KC_NO", "OSM(MOD_LGUI)", "OSM(MOD_RALT)", "OSM(MOD_RSFT)", "OSM(MOD_RCTL)",
-            "LGUI(KC_Z)", "LGUI(KC_X)", "LGUI(KC_C)", "LGUI(KC_V)", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO",
-            "KC_TRNS", "KC_NO", "KC_TRNS", "KC_NO"
+            "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T", "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P",
+            "KC_A", "KC_S", "KC_D", "KC_F", "KC_G", "KC_H", "KC_J", "KC_K", "KC_L", "RGUI_T(KC_SCLN)",
+            "RALT_T(KC_Z)", "KC_X", "KC_C", "KC_V", "KC_B", "KC_N", "KC_M", "KC_COMM", "KC_DOT", "RCTL_T(KC_SLSH)",
+            "SH_T(KC_BSPC)", "RSFT_T(KC_SPC)", "RSFT_T(KC_SPC)", "SH_MON"
         ],
         [
             "KC_F1",     "KC_F2",   "KC_F3",   "KC_F4",            "KC_F5",           "KC_F6",   "KC_F7",      "KC_F8",      "KC_F9",   "KC_F10",
