@@ -19,7 +19,7 @@
         ],
         [
             "LALT(KC_F1)", "KC_RSFT", "KC_RSFT", "OSM(MOD_LSFT|MOD_LGUI)", "LALT(KC_F12)", "KC_HOME", "KC_PGDN", "KC_PGUP", "KC_END", "KC_TRNS",
-            "MOD_LCTL", "MOD_RSFT", "MOD_LALT", "MOD_LGUI", "KC_ESC", "KC_LEFT", "KC_DOWN", "KC_UP", "KC_RGHT", "KC_BSPC",
+            "KC_LCTL", "KC_RSFT", "KC_LALT", "KC_LGUI", "KC_ESC", "KC_LEFT", "KC_DOWN", "KC_UP", "KC_RGHT", "KC_BSPC",
             "LGUI(KC_Z)", "LGUI(KC_X)", "LGUI(KC_C)", "LGUI(KC_V)", "LGUI(KC_B)", "RGUI(KC_GRV)", "RCTL(KC_M)", "KC_TRNS", "KC_TRNS", "KC_TRNS",
             "KC_TRNS", "KC_TRNS", "MO(3)", "KC_TRNS"
         ],
