@@ -6,7 +6,7 @@
     "layout": "LAYOUT",
     "layers": [
         [
-            "KC_Q",         "KC_W", "KC_E", "RGUI_T(KC_R)", "KC_T",              "KC_Y",  "RGUI_T(KC_U)", "KC_I", "KC_O", "KC_P",
+            "KC_Q",         "KC_W", "KC_E", "KC_R", "KC_T",              "KC_Y",  "KC_U", "KC_I", "KC_O", "KC_P",
             "RCTL_T(KC_A)", "KC_S", "KC_D", "KC_F",         "KC_G",              "KC_H",  "KC_J", "KC_K", "KC_L", "RCTL_T(KC_SCLN)",
             "RALT_T(KC_Z)", "KC_X", "KC_C", "RGUI_T(KC_V)", "KC_B",              "KC_N",  "RGUI_T(KC_M)", "KC_COMM", "KC_DOT", "LALT_T(KC_SLSH)",
                                             "MO(2)",        "RSFT_T(KC_SPC)",    "MO(1)", "KC_ENT"
