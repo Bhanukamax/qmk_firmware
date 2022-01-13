@@ -11,7 +11,7 @@ const uint16_t PROGMEM combo_space[] = {RSFT_T(KC_SPC), MO(1), COMBO_END}; // le
 
 
 combo_t key_combos[COMBO_COUNT] = {
-    COMBO(combo_osl_fn, OSL(5)),
+    COMBO(combo_osl_fn, OSL(4)),
     COMBO(combo_reset, RESET),
     COMBO(combo_esc, KC_ESC),
     COMBO(combo_tab, KC_TAB),
