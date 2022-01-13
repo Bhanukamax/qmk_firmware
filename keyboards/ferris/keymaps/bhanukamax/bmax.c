@@ -15,8 +15,6 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo_reset, RESET),
     COMBO(combo_esc, KC_ESC),
     COMBO(combo_tab, KC_TAB),
-    COMBO(combo_to_swap_layer, TO(4)),
-    COMBO(combo_to_base_layer, TO(0)),
     COMBO(combo_space, KC_SPC),
 };
 
