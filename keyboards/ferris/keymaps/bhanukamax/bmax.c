@@ -10,12 +10,28 @@ const uint16_t PROGMEM combo_to_base_layer[] = {KC_J, KC_K, COMBO_END}; // left 
 const uint16_t PROGMEM combo_space[] = {RSFT_T(KC_SPC), MO(1), COMBO_END}; // left hand -> Base
 
 
+//const uint16_t PROGMEM combo_rshift_space[] = {RGUI_T(KC_V), KC_F, COMBO_END}; // left hand -> Base
+//const uint16_t PROGMEM combo_lshift_space[] = {RGUI_T(KC_M), KC_J, COMBO_END}; // left hand -> Base
+const uint16_t PROGMEM combo_rshift_space[] = {KC_R, KC_F, COMBO_END}; // left hand -> Base
+const uint16_t PROGMEM combo_lshift_space[] = {KC_U, KC_J, COMBO_END}; // left hand -> Base
+
+//const uint16_t PROGMEM combo_bsp[] = {RCTL_T(KC_SCLN), LALT_T(KC_SLSH), COMBO_END}; // left hand -> Base
+const uint16_t PROGMEM combo_bsp[] = {KC_Y, KC_H, COMBO_END}; // left hand -> Base
+
+
+
+
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo_osl_fn, OSL(4)),
     COMBO(combo_reset, RESET),
     COMBO(combo_esc, KC_ESC),
     COMBO(combo_tab, KC_TAB),
     COMBO(combo_space, KC_SPC),
+
+    COMBO(combo_rshift_space, RSFT_T(KC_SPC)),
+    COMBO(combo_lshift_space, RSFT_T(KC_SPC)),
+
+    COMBO(combo_bsp, KC_BSPC),
 };
 
 
