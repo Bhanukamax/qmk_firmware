@@ -41,5 +41,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #define RGBLIGHT_VAL_STEP 8
 #endif
 
-#define COMBO_COUNT 15
+#define COMBO_COUNT 20
 #define COMBO_ONLY_FROM_LAYER 0
