@@ -25,7 +25,7 @@
  */
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[0] = LAYOUT( // QWERTY
+	[0] = LAYOUT(// QWERTY
             KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P,
             RCTL_T(KC_A), KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, RCTL_T(KC_SCLN),
             RALT_T(KC_Z), KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, LALT_T(KC_SLSH),
@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             LALT(KC_F1), KC_RSFT, KC_RSFT, OSM(MOD_LSFT|MOD_LGUI), LALT(KC_F12), KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS,
             KC_LCTL, KC_RSFT, KC_LALT, KC_LGUI, KC_ESC, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC,
             LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LGUI(KC_B), RGUI(KC_GRV), RCTL(KC_M), KC_TRNS, KC_TRNS, KC_TRNS,
-            KC_TRNS, RESET, MO(3), KC_TRNS),
+            KC_TRNS, KC_TRNS, MO(3), KC_TRNS),
 	[4] = LAYOUT( // Function layer
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
             KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU, KC_G, KC_H, SGUI(KC_3), SGUI(KC_4), KC_F11, KC_F12,
