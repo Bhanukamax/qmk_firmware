@@ -29,12 +29,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P,
             RCTL_T(KC_A), KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, RCTL_T(KC_SCLN),
             RALT_T(KC_Z), KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, LALT_T(KC_SLSH),
-            MO(3), RSFT_T(KC_SPC), MO(2), KC_ENT),
+            MO(3), SHIFT_SPACE, MO(2), KC_ENT),
 	[1] = LAYOUT( //  colmak
             KC_Q, KC_W, KC_F, KC_P, KC_G, KC_J, KC_L, KC_U, KC_Y, KC_SCLN,
             RCTL_T(KC_A), KC_R, KC_S, KC_T, KC_D, KC_H, KC_N, KC_E, KC_I, RCTL_T(KC_O),
             RALT_T(KC_Z), KC_X, KC_C, RGUI_T(KC_V), KC_B, KC_K, RGUI_T(KC_M), KC_COMM, KC_DOT, LALT_T(KC_SLSH),
-            MO(3), RSFT_T(KC_SPC), MO(2), KC_ENT),
+            MO(3), SHIFT_SPACE, MO(2), KC_ENT),
 	[2] = LAYOUT( //  Number/symbol layer
             KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB, KC_RCTL, KC_7, KC_8, KC_9, KC_RGUI,
             RCTL_T(KC_GT), KC_RBRC, KC_RPRN, KC_RCBR, KC_QUOT, KC_DQUO, KC_4, KC_5, KC_6, KC_BSPC,
