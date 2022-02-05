@@ -40,7 +40,7 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo_rshift_space, RSFT_T(KC_SPC)),
     COMBO(combo_lshift_space, RSFT_T(KC_SPC)),
 
-    COMBO(combo_bsp, KC_BSPC),
+    COMBO(combo_bsp, ALT_BSPC),
     COMBO(combo_bsp2, KC_BSPC),
 
 
@@ -66,4 +66,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             break;
     }
     return true;
+}
+
+bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+  switch(keycode) {
+    case SHIFT_SPACE:
+      return true;
+    default:
+      return false;
+  }
 }
