@@ -50,7 +50,7 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo_rshift, KC_RSFT),
     COMBO(combo_lshift, KC_LSFT),
 
-    COMBO(combo_enter, KC_ENT),
+ //    COMBO(combo_enter, KC_ENT),
 
 };
 
