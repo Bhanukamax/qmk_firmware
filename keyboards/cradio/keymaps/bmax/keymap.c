@@ -18,6 +18,7 @@
  */
 
 #include QMK_KEYBOARD_H
+
 #include "muse.h"
 
 /* Base layer 0 layout uses home row mods. See the following guide for details:
@@ -49,6 +50,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
             KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU, KC_G, KC_H, SGUI(KC_3), SGUI(KC_4), KC_F11, KC_F12,
             KC_MPRV, KC_MNXT, KC_BRMD, KC_BRMU, XXXXXXX, KC_N, DF(0), DF(1), KC_DOT, C(G(KC_Q)),
-            _______, _______, KC_LCTL, _______)
+            _______, _______, KC_LCTL, _______),
+	[_MOUSE] = LAYOUT( // Function layer
+            XXXXXXX, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX,     KC_ACL0, KC_WH_D, KC_WH_U, KC_WH_U, XXXXXXX,
+            XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX,     KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_BTN1,
+            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     KC_ACL2, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+                                       XXXXXXX, XXXXXXX,     TO(0), KC_BTN1)
 };
 
