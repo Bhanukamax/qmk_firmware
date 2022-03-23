@@ -24,6 +24,8 @@ const uint16_t PROGMEM combo_bsp[] = {KC_Y, KC_H, COMBO_END}; // left hand -> Ba
 const uint16_t PROGMEM combo_bsp2[] = {KC_N, KC_H, COMBO_END}; // left hand -> Base
 
 
+const uint16_t PROGMEM combo_mouse_layer[] = {KC_J, KC_K, KC_L, COMBO_END}; // left hand -> Base
+
 
 
 const uint16_t PROGMEM combo_enter[] = {KC_O, KC_L, COMBO_END}; // left hand -> Base
@@ -44,6 +46,8 @@ combo_t key_combos[COMBO_COUNT] = {
 
     COMBO(combo_rgui, KC_RGUI),
     COMBO(combo_lgui, KC_RGUI),
+
+    COMBO(combo_mouse_layer, TO(_MOUSE)),
 
 
  //    COMBO(combo_enter, KC_ENT),
