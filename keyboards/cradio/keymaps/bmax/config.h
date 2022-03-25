@@ -25,7 +25,7 @@
 
 // Improved mouse key defaults
 // Delay between pressing a key and cursor movement
-#define MOUSEKEY_DELAY 5
+#define MOUSEKEY_DELAY 0
 // Time between cursor movements in milliseconds
 #define MOUSEKEY_INTERVAL 16
 // Step size for acceleration
@@ -47,8 +47,6 @@
 #define ALT_BSPC LALT(KC_BSPC)
 #define PERMISSIVE_HOLD
 
-
-
 enum bmax_layers {
     _QWERTY,
     _COLEMAK,
@@ -57,3 +55,5 @@ enum bmax_layers {
     _FN,
     _MOUSE
 };
+
+
