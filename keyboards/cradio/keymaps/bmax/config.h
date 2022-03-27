@@ -18,6 +18,7 @@
  */
 
 #pragma once
+#define MK_KINETIC_SPEED
 
 // Defaults for usable home row mods
 #define TAPPING_TERM 230
@@ -27,7 +28,7 @@
 // Delay between pressing a key and cursor movement
 #define MOUSEKEY_DELAY 0
 // Time between cursor movements in milliseconds
-#define MOUSEKEY_INTERVAL 16
+#define MOUSEKEY_INTERVAL 10
 // Step size for acceleration
 #define MOUSEKEY_MOVE_DELTA 8
 #define MOUSEKEY_MAX_SPEED 12
@@ -36,7 +37,6 @@
 #define MOUSEKEY_WHEEL_INTERVAL 30
 #define MOUSEKEY_WHEEL_MAX_SPEED 10
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 95
-#define MK_KINETIC_SPEED
 
 #define COMBO_COUNT 12
 #define COMBO_ONLY_FROM_LAYER 0
