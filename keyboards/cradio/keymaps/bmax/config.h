@@ -47,6 +47,7 @@
 #define ALT_BSPC LALT(KC_BSPC)
 #define PERMISSIVE_HOLD
 
+#if !defined(__ASSEMBLER__)
 enum bmax_layers {
     _QWERTY,
     _COLEMAK,
@@ -56,4 +57,5 @@ enum bmax_layers {
     _MOUSE
 };
 
+#endif
 
