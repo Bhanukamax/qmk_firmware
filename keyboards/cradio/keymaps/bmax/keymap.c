@@ -56,6 +56,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             XXXXXXX, RCTL(KC_W), KC_MS_U, XXXXXXX, RCTL(KC_T),              KC_ACL0, KC_WH_D, KC_MS_U, KC_WH_U, KC_ACL2,
             RCTL(KC_A), RSFT(KC_TAB), KC_LALT, KC_TAB, RSFT(KC_TAB),              KC_ACL1, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0,
             XXXXXXX, RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_ESC,     KC_BTN3, KC_BTN2, XXXXXXX, XXXXXXX, KC_ACL1,
-                                       XXXXXXX, XXXXXXX,              TO(0), KC_BTN1)
+                                       KC_ACL1, KC_ACL2,              TO(0), KC_BTN1)
 };
 
