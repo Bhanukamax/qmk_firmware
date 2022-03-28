@@ -1,8 +1,11 @@
 #pragma once
 #include QMK_KEYBOARD_H
 
-enum my_keycodes {
-    ALT_TAB = SAFE_RANGE,
-    ALT_SHIFT_TAB,
-    RELEASE_ALT_TAB
+enum bmax_layers {
+    _QWERTY,
+    _COLEMAK,
+    _NUMBER,
+    _NAV,
+    _FN,
+    _MOUSE
 };

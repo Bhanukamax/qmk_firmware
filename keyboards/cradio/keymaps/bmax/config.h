@@ -48,18 +48,4 @@
 #define ALT_BSPC LALT(KC_BSPC)
 #define PERMISSIVE_HOLD
 
-#if !defined(__ASSEMBLER__)
-enum bmax_layers {
-    _QWERTY,
-    _COLEMAK,
-    _NUMBER,
-    _NAV,
-    _FN,
-    _MOUSE
-};
-
-#endif
-
-
-
 #define LAYER_STATE_8BIT
