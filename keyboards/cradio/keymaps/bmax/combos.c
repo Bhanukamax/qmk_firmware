@@ -95,9 +95,25 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 unregister_code(KC_TAB);
             }
             break;
+        case RELEASE_ALT_TAB:
+            if (record->event.pressed) {
+                is_alt_tab_active = false;
+                unregister_code(KC_LALT);
+            }
+            break;
     }
     return true;
 }
+
+void matrix_scan_user(void) { // The very important timer.
+  if (is_alt_tab_active) {
+    if (timer_elapsed(alt_tab_timer) > 1000) {
+      /*unregister_code(KC_LALT);*/
+      is_alt_tab_active = false;
+    }
+  }
+}
+
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
   switch(keycode) {
@@ -109,13 +125,4 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
 }
 
 
-
-void matrix_scan_user(void) { // The very important timer.
-  if (is_alt_tab_active) {
-    if (timer_elapsed(alt_tab_timer) > 1000) {
-      unregister_code(KC_LALT);
-      is_alt_tab_active = false;
-    }
-  }
-}
 
