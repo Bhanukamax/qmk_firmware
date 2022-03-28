@@ -4,4 +4,5 @@
 enum my_keycodes {
     ALT_TAB = SAFE_RANGE,
     ALT_SHIFT_TAB,
+    RELEASE_ALT_TAB
 };

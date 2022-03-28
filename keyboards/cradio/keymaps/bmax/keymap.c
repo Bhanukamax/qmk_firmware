@@ -53,9 +53,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_MPRV, KC_MNXT, KC_BRMD, KC_BRMU, XXXXXXX, KC_N, DF(0), DF(1), KC_DOT, C(G(KC_Q)),
             _______, _______, KC_LCTL, _______),
 	[_MOUSE] = LAYOUT( // Function layer
-            XXXXXXX, XXXXXXX, KC_MS_U, XXXXXXX, ALT_TAB,              KC_ACL0, KC_WH_D, KC_MS_U, KC_WH_U, KC_ACL2,
-            XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, ALT_SHIFT_TAB,              KC_ACL1, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0,
-            XXXXXXX, XXXXXXX, RCTL(KC_C), RCTL(KC_V), XXXXXXX,     KC_BTN3, KC_BTN2, XXXXXXX, XXXXXXX, KC_ACL1,
+            XXXXXXX, RCTL(KC_W), KC_MS_U, XXXXXXX, RCTL(KC_T),              KC_ACL0, KC_WH_D, KC_MS_U, KC_WH_U, KC_ACL2,
+            RCTL(KC_A), RSFT(KC_TAB), KC_LALT, KC_TAB, RSFT(KC_TAB),              KC_ACL1, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0,
+            XXXXXXX, RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_ESC,     KC_BTN3, KC_BTN2, XXXXXXX, XXXXXXX, KC_ACL1,
                                        XXXXXXX, XXXXXXX,              TO(0), KC_BTN1)
 };
 
