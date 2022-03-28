@@ -18,6 +18,7 @@
  */
 
 #pragma once
+
 #define MK_KINETIC_SPEED
 
 // Defaults for usable home row mods
@@ -59,3 +60,6 @@ enum bmax_layers {
 
 #endif
 
+
+
+#define LAYER_STATE_8BIT
