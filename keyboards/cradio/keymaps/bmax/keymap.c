@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             RALT_T(KC_Z), KC_X, KC_C, RGUI_T(KC_V), KC_B, KC_K, RGUI_T(KC_M), KC_COMM, KC_DOT, LALT_T(KC_SLSH),
             MO(3), SHIFT_SPACE, MO(2), KC_ENT),
 	[2] = LAYOUT( //  Number/symbol layer
-            KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB, KC_RCTL, KC_7, KC_8, KC_9, KC_RGUI,
+            KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB, KC_ESC, KC_7, KC_8, KC_9, KC_RGUI,
             KC_GT, KC_RBRC, KC_RPRN, KC_RCBR, KC_QUOT, KC_DQUO, KC_4, KC_5, KC_6, KC_BSPC,
             KC_MINS, KC_EQL, KC_UNDS, KC_PLUS, KC_GRV, KC_0, KC_1, KC_2, KC_3, KC_BSLS,
             KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
