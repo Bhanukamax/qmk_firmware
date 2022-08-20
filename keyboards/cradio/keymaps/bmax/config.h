@@ -22,7 +22,7 @@
 #define MK_KINETIC_SPEED
 
 // Defaults for usable home row mods
-#define TAPPING_TERM 230
+#define TAPPING_TERM 250
 #define IGNORE_MOD_TAP_INTERRUPT
 
 // Improved mouse key defaults
@@ -49,6 +49,6 @@
 
 #define SHIFT_SPACE RSFT_T(KC_SPC)
 #define ALT_BSPC LALT(KC_BSPC)
-#define PERMISSIVE_HOLD
+//#define PERMISSIVE_HOLD
 
 #define LAYER_STATE_8BIT
