@@ -38,14 +38,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             RALT_T(KC_Z), KC_X, KC_C, RGUI_T(KC_V), KC_B, KC_K, RGUI_T(KC_M), KC_COMM, KC_DOT, LALT_T(KC_SLSH),
             MO(3), SHIFT_SPACE, MO(2), KC_ENT),
 	[2] = LAYOUT( //  Number/symbol layer
-            KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB, KC_ESC, KC_7, KC_8, KC_9, KC_RGUI,
+            KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB, KC_ESC, KC_7, KC_8, KC_9, KC_RCTL,
             KC_GT, KC_RBRC, KC_RPRN, KC_RCBR, KC_SLASH, KC_QUES, KC_4, KC_5, KC_6, KC_BSPC,
             KC_MINS, KC_EQL, KC_UNDS, KC_PLUS, KC_GRV, KC_0, KC_1, KC_2, KC_3, KC_BSLS,
-            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+            KC_LCTL, KC_TRNS, KC_TRNS, KC_TRNS),
 	[3] = LAYOUT( // Nav layer
-            LALT(KC_F1), KC_RSFT, KC_RSFT, OSM(MOD_LSFT|MOD_LGUI), LALT(KC_F12), KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS,
-            KC_LCTL, KC_RSFT, KC_LALT, KC_LGUI, KC_ESC, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC,
-            LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LGUI(KC_B), RGUI(KC_GRV), RCTL(KC_M), KC_TRNS, KC_TRNS, KC_DEL,
+
+                // row 1
+            LALT(KC_F1), KC_RSFT, KC_RSFT, OSM(MOD_LSFT|MOD_LGUI), LALT(KC_F12),
+            KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS,
+
+            // row 2
+            KC_LCTL, KC_RSFT, KC_LALT, KC_LGUI, KC_ESC,
+            KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC,
+
+            // row 3
+            LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LGUI(KC_B),
+            RGUI(KC_GRV), RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
+
+
             KC_TRNS, KC_TRNS, MO(3), KC_TRNS),
 	[4] = LAYOUT( // Function layer
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
