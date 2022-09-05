@@ -70,13 +70,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             // 4
             KC_TRNS, KC_TRNS, MO(3), KC_TRNS),
 	[4] = LAYOUT( // Function layer
-            KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
-            KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU, KC_G, KC_H, SGUI(KC_3), SGUI(KC_4), KC_F11, KC_F12,
-            KC_MPRV, KC_MNXT, KC_BRMD, KC_BRMU, XXXXXXX, KC_N, DF(0), DF(1), KC_DOT, C(G(KC_Q)),
+                // 1
+            KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
+            KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
+
+            // 2
+            KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU, KC_G,
+            KC_H, SGUI(KC_3), SGUI(KC_4), KC_F11, KC_F12,
+
+            // 3
+            KC_MPRV, KC_MNXT, KC_BRMD, KC_BRMU, XXXXXXX,
+            KC_N, DF(0), DF(1), KC_DOT, C(G(KC_Q)),
             _______, _______, KC_LCTL, _______),
 	[_MOUSE] = LAYOUT( // Function layer
-            XXXXXXX, RCTL(KC_W), KC_MS_U, XXXXXXX, RCTL(KC_T),              KC_ACL0, KC_WH_D, KC_MS_U, KC_WH_U, KC_ACL2,
-            RCTL(KC_A), RSFT(KC_TAB), KC_LALT, KC_TAB, RSFT(KC_TAB),              KC_ACL1, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0,
-            XXXXXXX, RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_ESC,     KC_BTN3, KC_BTN2, XXXXXXX, XXXXXXX, KC_ACL1,
-                                       KC_ACL1, KC_ACL2,              TO(0), KC_BTN1)
+                     // 1
+            XXXXXXX, RCTL(KC_W), KC_MS_U, XXXXXXX, RCTL(KC_T),
+            KC_ACL0, KC_WH_D, KC_MS_U, KC_WH_U, KC_ACL2,
+            // 2
+            RCTL(KC_A), RSFT(KC_TAB), KC_LALT, KC_TAB, RSFT(KC_TAB),
+            KC_ACL1, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0,
+
+            // 3
+            XXXXXXX, RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_ESC,
+            KC_BTN3, KC_BTN2, XXXXXXX, XXXXXXX, KC_ACL1,
+
+            // 4
+            KC_ACL1, KC_ACL2,
+            TO(0), KC_BTN1)
 };
