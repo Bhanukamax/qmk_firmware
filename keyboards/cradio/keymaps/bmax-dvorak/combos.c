@@ -58,7 +58,7 @@ combo_t key_combos[COMBO_COUNT] = {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case RCTL_T(KC_GT):
+        case LSFT_T(KC_GT):
             if (record->tap.count && record->event.pressed) {
                 tap_code16(KC_GT); // Send KC_GT on tap
                 return false;        // Return false to ignore further processing of key
