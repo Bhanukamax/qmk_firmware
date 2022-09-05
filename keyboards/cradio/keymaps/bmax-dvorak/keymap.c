@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB, KC_ESC, KC_7, KC_8, KC_9, KC_RCTL,
             KC_GT, KC_RBRC, KC_RPRN, KC_RCBR, KC_SLASH, KC_QUES, KC_4, KC_5, KC_6, KC_BSPC,
             KC_MINS, KC_EQL, KC_UNDS, KC_PLUS, KC_GRV, KC_0, KC_1, KC_2, KC_3, KC_BSLS,
-            KC_LCTL, KC_TRNS, KC_TRNS, KC_TRNS),
+            KC_LCTL, RSFT_T(KC_SPC), KC_TRNS, KC_TRNS),
 	[3] = LAYOUT( // Nav layer
 
                 // row 1
