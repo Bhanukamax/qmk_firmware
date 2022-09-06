@@ -19,6 +19,8 @@
 
 #define GUI_Z RGUI_T(KC_Z)
 
+#define OSM_SHFT_GUI OSM(MOD_LSFT|MOD_LGUI)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT(// Dvorak
                // 1
@@ -59,8 +61,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_LCTL, RSFT_T(KC_SPC), KC_TRNS, KC_TRNS),
 	[3] = LAYOUT( // Nav layer
 
-                // row 1
-            LALT(KC_F1), KC_RSFT, KC_RSFT, OSM(MOD_LSFT|MOD_LGUI), LALT(KC_F12),
+            // row 1
+            LALT(KC_F1), OSM_SHFT_GUI, OSM_SHFT_GUI, OSM_SHFT_GUI, LALT(KC_F12),
             KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS,
 
             // row 2
