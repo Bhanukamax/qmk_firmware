@@ -7,6 +7,9 @@
  * https://precondition.github.io/home-row-mods
  */
 
+#define TOP_QUOT LCTL_T(KC_QUOT)
+#define TOP_L RCTL_T(KC_L)
+
 #define HM_A LSFT_T(KC_A)
 #define HM_O LCTL_T(KC_O)
 #define HM_E LALT_T(KC_E)
@@ -24,8 +27,8 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT(// Dvorak
                // 1
-               KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y,
-               KC_F, KC_G, KC_C, KC_R, KC_L,
+               TOP_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y,
+               KC_F, KC_G, KC_C, KC_R, TOP_L,
 
                // 2
                HM_A, HM_O, HM_E, HM_U, KC_I,
