@@ -42,11 +42,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                MO(3), LALT_T(KC_SPC),
                MO(2), LCTL_T(KC_ENT)),
 
-	[1] = LAYOUT( //  colmaksu
-            KC_Q, KC_W, KC_F, KC_P, KC_G, KC_J, KC_L, KC_U, KC_Y, KC_SCLN,
-            RCTL_T(KC_A), KC_R, KC_S, KC_T, KC_D, KC_H, KC_N, KC_E, KC_I, RCTL_T(KC_O),
-            RALT_T(KC_Z), KC_X, KC_C, RGUI_T(KC_V), KC_B, KC_K, RGUI_T(KC_M), KC_COMM, KC_DOT, LALT_T(KC_SLSH),
-            MO(3), SHIFT_SPACE, MO(2), KC_ENT),
+	[1] = LAYOUT( //  colmaksu GIMP
+            KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
+            KC_J, KC_L, KC_U, KC_Y, KC_SCLN,
+
+
+            KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_P,
+            KC_H, KC_N, KC_E, KC_I, RCTL_T(KC_O),
+
+            KC_D, RSFT(KC_B), RCTL(KC_Z), RCTL(KC_Y), KC_X,
+            KC_D, RSFT(KC_B), RCTL(KC_Y), RCTL(KC_Z), KC_X,
+
+            MO(3), KC_SPACE, MO(2), KC_ENT),
 	[2] = LAYOUT( //  Number/symbol layer
                 // 1
             KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB,
