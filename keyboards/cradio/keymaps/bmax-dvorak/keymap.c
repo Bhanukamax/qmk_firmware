@@ -31,6 +31,8 @@
 #define NAV 3
 #define FUN 4
 
+#define RAISE_NUM TT(2)
+
 #define TAP_COMM LT(NUMBER, KC_COMM)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -49,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                // 4
                MO(3), LALT_T(KC_SPC),
-               MO(2), LCTL_T(KC_ENT)),
+               RAISE_NUM, LCTL_T(KC_ENT)),
 
 	[GIMP] = LAYOUT( //  colmaksu GIMP
             KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
@@ -77,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_0, KC_1, KC_2, KC_3, KC_BSLS,
 
             // 4
-            KC_LCTL, RSFT_T(KC_SPC), KC_TRNS, KC_TRNS),
+            KC_LCTL, TO(0), KC_TRNS, KC_TRNS),
 	[NAV] = LAYOUT( // Nav layer
 
             // row 1

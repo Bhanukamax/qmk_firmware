@@ -2,6 +2,7 @@
 
 #define MK_KINETIC_SPEED
 
+
 // Defaults for usable home row mods
 #define TAPPING_TERM 250
 #define IGNORE_MOD_TAP_INTERRUPT
@@ -35,3 +36,5 @@
 //#define PERMISSIVE_HOLD
 
 #define LAYER_STATE_8BIT
+
+#define TAPPING_TOGGLE 2
