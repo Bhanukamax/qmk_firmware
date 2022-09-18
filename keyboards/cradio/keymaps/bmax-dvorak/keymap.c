@@ -20,14 +20,23 @@
 #define HM_T RALT_T(KC_T)
 #define HM_H RGUI_T(KC_H)
 
+
 #define GUI_Z RGUI_T(KC_Z)
 
 #define OSM_SHFT_GUI OSM(MOD_LSFT|MOD_LGUI)
 
+#define DVORAK 0
+#define GIMP 1
+#define NUMBER 2
+#define NAV 3
+#define FUN 4
+
+#define TAP_COMM LT(NUMBER, KC_COMM)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[0] = LAYOUT(// Dvorak
+	[DVORAK] = LAYOUT(// Dvorak
                // 1
-               TOP_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y,
+               TOP_QUOT, TAP_COMM, KC_DOT, KC_P, KC_Y,
                KC_F, KC_G, KC_C, KC_R, TOP_L,
 
                // 2
@@ -42,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                MO(3), LALT_T(KC_SPC),
                MO(2), LCTL_T(KC_ENT)),
 
-	[1] = LAYOUT( //  colmaksu GIMP
+	[GIMP] = LAYOUT( //  colmaksu GIMP
             KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
             KC_J, KC_L, KC_U, KC_Y, KC_SCLN,
 
@@ -54,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_D, RSFT(KC_B), RCTL(KC_Y), RCTL(KC_Z), KC_X,
 
             MO(3), KC_SPACE, MO(2), KC_ENT),
-	[2] = LAYOUT( //  Number/symbol layer
+	[NUMBER] = LAYOUT( //  Number/symbol layer
                 // 1
             KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB,
             KC_ESC, KC_7, KC_8, KC_9, KC_RCTL,
@@ -69,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // 4
             KC_LCTL, RSFT_T(KC_SPC), KC_TRNS, KC_TRNS),
-	[3] = LAYOUT( // Nav layer
+	[NAV] = LAYOUT( // Nav layer
 
             // row 1
             LALT(KC_F1), OSM_SHFT_GUI, OSM_SHFT_GUI, OSM_SHFT_GUI, LALT(KC_F12),
@@ -85,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // 4
             KC_TRNS, KC_TRNS, MO(3), KC_TRNS),
-	[4] = LAYOUT( // Function layer
+	[FUN] = LAYOUT( // Function layer
                 // 1
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
             KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
