@@ -34,6 +34,7 @@
 #define RAISE_NUM TT(2)
 
 #define TAP_COMM LT(NUMBER, KC_COMM)
+#define NUM_DOT RCTL_T(KC_DOT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[DVORAK] = LAYOUT(// Dvorak
@@ -68,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[NUMBER] = LAYOUT( //  Number/symbol layer
                 // 1
             KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB,
-            KC_ESC, KC_7, KC_8, KC_9, KC_RCTL,
+            KC_ESC, KC_7, KC_8, KC_9, NUM_DOT,
 
             // 2
             LSFT_T(KC_GT), LCTL_T(KC_RBRC), KC_RPRN, KC_RCBR, KC_SLASH,
