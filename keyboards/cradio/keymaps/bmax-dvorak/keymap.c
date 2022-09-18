@@ -31,7 +31,7 @@
 #define NAV 3
 #define FUN 4
 
-#define RAISE_NUM TT(2)
+#define RAISE_NUM MO(2)
 
 #define TAP_COMM LT(NUMBER, KC_COMM)
 #define NUM_DOT RCTL_T(KC_DOT)
@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC,
 
             // row 3
-            LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LGUI(KC_B),
+            LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), KC_BSPC, LGUI(KC_B),
             RGUI(KC_GRV), RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
 
             // 4
