@@ -64,6 +64,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;        // Return false to ignore further processing of key
             }
             break;
+       case LGUI_T(KC_RCBR):
+          if (record->tap.count && record->event.pressed) {
+                tap_code16(KC_RCBR); // Send KC_GT on tap
+                return false;        // Return false to ignore further processing of key
+            }
+      break;
     }
     return true;
 }

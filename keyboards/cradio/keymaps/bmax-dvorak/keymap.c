@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_ESC, KC_7, KC_8, KC_9, NUM_DOT,
 
             // 2
-            LSFT_T(KC_GT), LCTL_T(KC_RBRC), KC_RPRN, KC_RCBR, KC_SLASH,
+            LSFT_T(KC_GT), LCTL_T(KC_RBRC), KC_RPRN, LGUI_T(KC_RCBR), KC_SLASH,
             KC_QUES, KC_4, KC_5, KC_6, KC_BSPC,
 
             // 3
