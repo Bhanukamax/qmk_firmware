@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                // 4
                MO(3), LALT_T(KC_SPC),
-               RAISE_NUM, LCTL_T(KC_ENT)),
+               KC_ESC, LCTL_T(KC_ENT)),
 
 	[GIMP] = LAYOUT( //  colmaksu GIMP
             KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
