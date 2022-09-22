@@ -12,7 +12,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[DVORAK] = LAYOUT(// Dvorak
                // 1
                TOP_QUOT, NUM_COMM, TOP_DOT, KC_P, KC_Y,
-               KC_F, TOP_G, TOP_C, KC_R, TOP_L,
+               KC_F, TOP_G, TOP_C, NUM_R, TOP_L,
 
                // 2
                HM_A, HM_O, HM_E, HM_U, NUM_I,

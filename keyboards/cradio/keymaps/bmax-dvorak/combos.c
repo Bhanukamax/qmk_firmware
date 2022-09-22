@@ -14,7 +14,7 @@ const uint16_t PROGMEM combo_5[] = {KC_Y, NUM_I, COMBO_END};
 const uint16_t PROGMEM combo_6[] = {KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM combo_7[] = {TOP_G, HM_H, COMBO_END};
 const uint16_t PROGMEM combo_8[] = {TOP_C, HM_T, COMBO_END};
-const uint16_t PROGMEM combo_9[] = {KC_R, HM_N, COMBO_END};
+const uint16_t PROGMEM combo_9[] = {NUM_R, HM_N, COMBO_END};
 const uint16_t PROGMEM combo_0[] = {TOP_L, HM_S, COMBO_END};
 
 
