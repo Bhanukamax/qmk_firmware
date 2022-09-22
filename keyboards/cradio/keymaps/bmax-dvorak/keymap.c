@@ -19,8 +19,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                KC_D, HM_H, HM_T, HM_N, HM_S,
 
                // 3
-               KC_SCLN, KC_Q, KC_J, KC_K, KC_X,
-               KC_B, KC_M, KC_W, KC_V, GUI_Z,
+               KC_SCLN, KC_Q, KC_J, NUM_K, KC_X,
+               KC_B, NUM_M, KC_W, KC_V, GUI_Z,
 
                // 4
                MO(3), LALT_T(KC_SPC),
