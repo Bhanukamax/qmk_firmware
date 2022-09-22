@@ -39,3 +39,9 @@ enum bmax_layers {
 #define TOP_DOT LT(NUMBER, KC_DOT)
 #define TOP_C LT(NUMBER, KC_C)
 #define NUM_DOT RCTL_T(KC_DOT)
+
+#define TOP_G LT(NUMBER, KC_G)
+#define TOP_P LT(NUMBER, KC_P)
+#define NUM_COMM LT(NUMBER, KC_COMM)
+
+#define NUM_I LT(NUMBER, KC_I)
