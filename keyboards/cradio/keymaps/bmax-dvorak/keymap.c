@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // 2
             LSFT_T(KC_GT), LCTL_T(KC_RBRC), KC_RPRN, LGUI_T(KC_RCBR), KC_SLASH,
-            KC_QUES, KC_4, KC_5, KC_6, KC_BSPC,
+            KC_QUES, KC_4, KC_5, KC_6, KC_ENT,
 
             // 3
             KC_MINS, KC_EQL, KC_UNDS, KC_PLUS, KC_GRV,
@@ -61,14 +61,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // row 2
             KC_RSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_ESC,
-            KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC,
+            KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_ENT,
 
             // row 3
             LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), KC_BSPC, LGUI(KC_B),
             KC_BSPC, RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
 
             // 4
-            KC_TRNS, KC_TRNS, MO(3), KC_ENT),
+            KC_TRNS, KC_TRNS, MO(3), KC_TRNS),
 	[FUN] = LAYOUT( // Function layer
                 // 1
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
