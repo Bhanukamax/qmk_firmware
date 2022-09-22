@@ -45,3 +45,4 @@ enum bmax_layers {
 #define NUM_COMM LT(NUMBER, KC_COMM)
 
 #define NUM_I LT(NUMBER, KC_I)
+#define NUM_R LT(NUMBER, KC_R)
