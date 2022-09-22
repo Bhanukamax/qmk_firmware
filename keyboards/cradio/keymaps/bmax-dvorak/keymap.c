@@ -11,11 +11,11 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[DVORAK] = LAYOUT(// Dvorak
                // 1
-               TOP_QUOT, KC_COMM, TOP_DOT, KC_P, KC_Y,
-               KC_F, KC_G, TOP_C, KC_R, TOP_L,
+               TOP_QUOT, NUM_COMM, TOP_DOT, KC_P, KC_Y,
+               KC_F, TOP_G, TOP_C, KC_R, TOP_L,
 
                // 2
-               HM_A, HM_O, HM_E, HM_U, KC_I,
+               HM_A, HM_O, HM_E, HM_U, NUM_I,
                KC_D, HM_H, HM_T, HM_N, HM_S,
 
                // 3
@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                // 4
                MO(3), LALT_T(KC_SPC),
-               KC_ESC, LCTL_T(KC_ENT)),
+               KC_ESC, KC_BSPC),
 
 	[GIMP] = LAYOUT( //  colmaksu GIMP
             KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
@@ -65,10 +65,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // row 3
             LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), KC_BSPC, LGUI(KC_B),
-            RGUI(KC_GRV), RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
+            KC_BSPC, RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
 
             // 4
-            KC_TRNS, KC_TRNS, MO(3), KC_TRNS),
+            KC_TRNS, KC_TRNS, MO(3), KC_ENT),
 	[FUN] = LAYOUT( // Function layer
                 // 1
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,

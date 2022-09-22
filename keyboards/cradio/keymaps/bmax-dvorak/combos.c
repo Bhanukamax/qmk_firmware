@@ -7,12 +7,12 @@ const uint16_t PROGMEM combo_osl_fn[] = {KC_M, KC_W, COMBO_END}; // right hand m
 const uint16_t PROGMEM combo_reset[] = {KC_E, KC_R, KC_U, KC_I, COMBO_END}; // left hand -> Base
 
 const uint16_t PROGMEM combo_1[] = {TOP_QUOT, HM_A, COMBO_END};
-const uint16_t PROGMEM combo_2[] = {KC_COMM, HM_O, COMBO_END};
+const uint16_t PROGMEM combo_2[] = {NUM_COMM, HM_O, COMBO_END};
 const uint16_t PROGMEM combo_3[] = {TOP_DOT, HM_E, COMBO_END};
 const uint16_t PROGMEM combo_4[] = {KC_P, HM_U, COMBO_END};
-const uint16_t PROGMEM combo_5[] = {KC_Y, KC_I, COMBO_END};
+const uint16_t PROGMEM combo_5[] = {KC_Y, NUM_I, COMBO_END};
 const uint16_t PROGMEM combo_6[] = {KC_F, KC_D, COMBO_END};
-const uint16_t PROGMEM combo_7[] = {KC_G, HM_H, COMBO_END};
+const uint16_t PROGMEM combo_7[] = {TOP_G, HM_H, COMBO_END};
 const uint16_t PROGMEM combo_8[] = {TOP_C, HM_T, COMBO_END};
 const uint16_t PROGMEM combo_9[] = {KC_R, HM_N, COMBO_END};
 const uint16_t PROGMEM combo_0[] = {TOP_L, HM_S, COMBO_END};
