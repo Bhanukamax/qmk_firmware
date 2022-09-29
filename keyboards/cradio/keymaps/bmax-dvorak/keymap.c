@@ -23,8 +23,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                KC_B, NUM_M, KC_W, KC_V, GUI_Z,
 
                // 4
-               MO(3), LALT_T(KC_SPC),
-               KC_ESC, KC_BSPC),
+               MO(3), KC_SPC,
+               LT(NUMBER, KC_BSPC), RALT_T(KC_ENT)),
 
 	[GIMP] = LAYOUT( //  colmaksu GIMP
             KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_D, RSFT(KC_B), RCTL(KC_Z), RCTL(KC_Y), KC_X,
             KC_D, RSFT(KC_B), RCTL(KC_Y), RCTL(KC_Z), KC_X,
 
-            MO(3), KC_SPACE, MO(2), KC_ENT),
+            MO(3), KC_SPACE, MO(2), RCTL(KC_ENT)),
 	[NUMBER] = LAYOUT( //  Number/symbol layer
                 // 1
             KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB,
@@ -45,14 +45,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // 2
             LSFT_T(KC_GT), LCTL_T(KC_RBRC), KC_RPRN, LGUI_T(KC_RCBR), KC_SLASH,
-            KC_QUES, KC_4, KC_5, KC_6, KC_ENT,
+            KC_QUES, KC_4, KC_5, KC_6, KC_BSPC,
 
             // 3
             KC_MINS, KC_EQL, KC_UNDS, KC_PLUS, KC_GRV,
             KC_0, KC_1, KC_2, KC_3, KC_BSLS,
 
             // 4
-            KC_LCTL, TO(0), KC_TRNS, KC_TRNS),
+            KC_LCTL, KC_ESC, KC_TRNS, KC_TRNS),
 	[NAV] = LAYOUT( // Nav layer
 
             // row 1
@@ -61,14 +61,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // row 2
             KC_RSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_ESC,
-            KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_ENT,
+            KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC,
 
             // row 3
             LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), KC_BSPC, LGUI(KC_B),
             KC_BSPC, RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
 
             // 4
-            KC_TRNS, KC_TRNS, MO(3), KC_TRNS),
+            KC_TRNS, KC_TRNS, KC_BSPC, KC_TRNS),
 	[FUN] = LAYOUT( // Function layer
                 // 1
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
