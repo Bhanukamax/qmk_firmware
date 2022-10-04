@@ -9,7 +9,7 @@
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[DVORAK] = LAYOUT(// Dvorak
+	[_DVORAK] = LAYOUT(// Dvorak
                // 1
                TOP_QUOT, NUM_COMM, TOP_DOT, KC_P, KC_Y,
                KC_F, TOP_G, TOP_C, NUM_R, TOP_L,
@@ -24,9 +24,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                // 4
                MO(3), KC_SPC,
-               LT(NUMBER, KC_BSPC), RALT_T(KC_ENT)),
+               LT(_NUMBER, KC_BSPC), RALT_T(KC_ENT)),
 
-	[GIMP] = LAYOUT( //  colmaksu GIMP
+	[_GIMP] = LAYOUT( //  colmaksu GIMP
             KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
             KC_J, KC_L, KC_U, KC_Y, KC_SCLN,
 
@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_D, RSFT(KC_B), RCTL(KC_Y), RCTL(KC_Z), KC_X,
 
             MO(3), KC_SPACE, MO(2), RCTL(KC_ENT)),
-	[NUMBER] = LAYOUT( //  Number/symbol layer
+	[_NUMBER] = LAYOUT( //  Number/symbol layer
                 // 1
             KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB,
             KC_ESC, KC_7, KC_8, KC_9, NUM_DOT,
@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // 4
             KC_LCTL, KC_ESC, KC_TRNS, KC_TRNS),
-	[NAV] = LAYOUT( // Nav layer
+	[_NAV] = LAYOUT( // Nav layer
 
             // row 1
             LALT(KC_F1), OSM_SHFT_GUI, OSM_SHFT_GUI, OSM_SHFT_GUI, LALT(KC_F12),
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             // 4
             KC_TRNS, KC_TRNS, KC_BSPC, KC_TRNS),
-	[FUN] = LAYOUT( // Function layer
+	[_FN] = LAYOUT( // Function layer
                 // 1
             KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
             KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
