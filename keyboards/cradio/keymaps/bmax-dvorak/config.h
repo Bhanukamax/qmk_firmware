@@ -6,6 +6,7 @@
 // Defaults for usable home row mods
 #define TAPPING_TERM 250
 #define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
 
 // Improved mouse key defaults
 // Delay between pressing a key and cursor movement
@@ -27,7 +28,7 @@
 #define COMBO_COUNT 13
 #define COMBO_ONLY_FROM_LAYER 0
 
-#define TAPPING_FORCE_HOLD
+
 
 #define SHIFT_SPACE RSFT_T(KC_SPC)
 
