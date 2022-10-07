@@ -5,6 +5,7 @@ enum bmax_layers {
     _DVORAK,
     _GIMP,
     _NUMBER,
+    _SYM,
     _NAV,
     _FN,
     _MOUSE
