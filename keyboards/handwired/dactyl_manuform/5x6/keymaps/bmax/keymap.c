@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB , KC_QUOT  , KC_COMM  , KC_DOT  , KC_P  , KC_Y  ,                         KC_F  , KC_G  , KC_C  , KC_R  , KC_L  ,KC_DEL,
         KC_LSFT, HM_A  , HM_O  , HM_E  , HM_U  , KC_I  ,                         KC_D  , HM_H  , HM_T  , HM_N  ,HM_S,KC_SLASH,
         KC_LCTL, KC_SCLN, KC_Q  , KC_J  , KC_K  ,KC_X  ,                         KC_B  , KC_M  ,KC_W,KC_V ,KC_Z,KC_BSLASH,
-        KC_LEFT, KC_RIGHT, KC_LBRC,KC_SPC, KC_UNDS, KC_UNDS,                     KC_UNDS, KC_UNDS, KC_BSPC, KC_ENT, KC_UP, KC_DOWN,
-        _______, _______, _______, _______
+        KC_LEFT, KC_RIGHT, KC_UNDS,KC_SPC, KC_MINS, KC_UNDS,                     KC_UNDS, KC_EQL, KC_BSPC, KC_ENT, KC_UP, KC_DOWN,
+        KC_MINS, KC_MINS,  KC_EQL, KC_EQL
     )
 };
