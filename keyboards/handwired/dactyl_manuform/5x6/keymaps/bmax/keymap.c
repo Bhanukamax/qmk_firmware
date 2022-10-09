@@ -7,21 +7,15 @@
 #define RAISE MO(_RAISE)
 #define LOWER MO(_LOWER)
 
-#define HM_A LSFT_T(KC_A)
-#define HM_O LCTL_T(KC_O)
-#define HM_E LALT_T(KC_E)
-#define HM_U LGUI_T(KC_U)
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT_5x6(
-        KC_ESC , KC_1  ,    KC_2  , KC_3  , KC_4  , KC_5  ,                         KC_6  , KC_7  , KC_8  , KC_9  , KC_0  ,KC_BSPC,
-        KC_TAB , KC_QUOT  , KC_COMM  , KC_DOT  , KC_P  , KC_Y  ,                         KC_Y  , KC_U  , KC_I  , KC_O  , KC_P  ,KC_MINS,
-        KC_LSFT, KC_A  ,    KC_O  ,    KC_E  , KC_U  , KC_I  ,                         KC_H  , KC_J  , KC_K  , KC_L  ,KC_SCLN,KC_QUOT,
-        KC_LCTL, KC_SCLN  , KC_Q  ,    KC_J  , KC_K  , KC_X  ,                         KC_N  , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH,KC_BSLASH,
-        KC_LALT,KC_SPC,                                                       KC_PLUS, KC_EQL,
-                                         KC_LGUI,KC_GRV,                        KC_ENT, LOWER,
-        KC_LCTL,KC_LGUI,                         KC_END,  KC_DEL,
+        KC_ESC , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  ,                         KC_6  , KC_7  , KC_8  , KC_9  , KC_0  ,KC_BSPC,
+        KC_TAB , KC_QUOT  , KC_COMM  , KC_DOT  , KC_P  , KC_Y  ,                         KC_F  , KC_G  , KC_C  , KC_R  , KC_L  ,KC_BSPC,
+        KC_LSFT, KC_A  , KC_O  , KC_E  , KC_U  , KC_I  ,                         KC_D  , KC_H  , KC_T  , KC_N  ,KC_S,KC_QUOT,
+        KC_LCTL, KC_SCLN  , KC_Q  , KC_J  , KC_K  ,KC_X  ,                         KC_N  , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH,KC_BSLASH,
+                         KC_LBRC,KC_SPC,                                                       KC_BSPC, KC_ENT,
+                                         RAISE,KC_SPC,                        KC_ENT, LOWER,
+                                         KC_TAB,KC_HOME,                         KC_END,  KC_DEL,
                                          KC_BSPC, KC_GRV,                        KC_LGUI, KC_LALT
     ),
 
