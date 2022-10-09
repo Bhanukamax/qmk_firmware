@@ -1,1 +1,6 @@
-#define TAPPING_TERM 250
+
+#pragma once
+
+#define USE_SERIAL
+
+#define MASTER_LEFT
