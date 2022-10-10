@@ -15,6 +15,9 @@ enum layers {
 #define HM_T RALT_T(KC_T)
 #define HM_H RGUI_T(KC_H)
 
+#define CTL_DEL LCTL_T(KC_DEL)
+#define NAV MO(_NAV)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT_5x6(
                            // number
@@ -30,11 +33,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_EQL, KC_SCLN, KC_Q  , KC_J  , KC_K  ,KC_X  ,
         KC_B  , KC_M  ,KC_W,KC_V ,KC_Z,KC_BSLASH,
         // thumb upper
-        KC_LEFT, KC_RIGHT, KC_ESC,KC_SPC, KC_LBRC, KC_UNDS,
+        KC_LEFT, KC_RIGHT, KC_ESC,KC_SPC, NAV, KC_UNDS,
         KC_UNDS, KC_DEL, KC_BSPC, KC_ENT, KC_DOWN, KC_UP,
         // thumb lower
-        MO(_NAV), KC_MINS,
-        KC_MINS, LCTL_T(KC_DEL)
+        KC_SPC, KC_MINS,
+        CTL_DEL, KC_BSPC
                            ),
       [_NAV] = LAYOUT_5x6(
                            // number
