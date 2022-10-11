@@ -19,11 +19,15 @@ enum layers {
 #define G_LBRC LGUI_T(KC_LBRC)
 #define G_RBRC LGUI_T(KC_RBRC)
 
+#define AL_MINS LALT_T(KC_MINS)
+#define AL_EQL RALT_T(KC_EQL)
+
 #define CTL_DEL LCTL_T(KC_DEL)
 #define NAV MO(_NAV)
 #define NUM_BSPC LT(_NUM, KC_BSPC)
 #define CTL_SPC LCTL_T(KC_SPC)
 #define SHFT_TAB LSFT_T(KC_TAB)
+#define NAV_ESC LT(_NAV, KC_ESC)
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -38,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                          KC_EQL,   KC_SCLN,  KC_Q,     KC_J,     KC_K,     KC_X,                         KC_B,     KC_M,     KC_W,     KC_V,     KC_Z,     KC_BSLASH,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                         KC_LEFT,  KC_RIGHT,  KC_ESC,  CTL_SPC,    NAV,     KC_UNDS,                     KC_UNDS,  KC_DEL,   NUM_BSPC,  KC_ENT,   KC_DOWN,  KC_UP,
+                         KC_LEFT,  KC_RIGHT,NAV_ESC,  CTL_SPC,    NAV,     KC_UNDS,                     KC_UNDS,  KC_DEL,   NUM_BSPC,  KC_ENT,   KC_DOWN,  KC_UP,
                          //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
                          /**/                                CTL_SPC,       KC_SPC,          CTL_DEL,      NUM_BSPC
                          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
@@ -66,9 +70,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                        KC_6,     KC_7,     KC_8,    KC_9,      KC_0,     KC_LBRC,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      _______,  SHFT_TAB,   _______,  KC_MINS,  G_LBRC,  KC_SLASH,                     S(KC_SLASH),  G_RBRC,  KC_PLUS,  _______,  _______,  _______,
+                      _______,  SHFT_TAB,   _______,  AL_MINS,  G_LBRC,  KC_SLASH,                     S(KC_SLASH),  G_RBRC,  AL_EQL,  _______,  _______,  _______,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      _______,  KC_GRV,  _______,  KC_UNDS,  KC_LCBR,  KC_BSLASH,                     S(KC_BSLASH),  KC_RCBR,  KC_EQL,  _______,  _______,  _______,
+                      _______,  KC_GRV,  _______,  KC_UNDS,  KC_LCBR,  KC_BSLASH,                     S(KC_BSLASH),  KC_RCBR,  KC_PLUS,  _______,  _______,  _______,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       _______,  _______,  _______,  _______,  _______,  _______,                     _______,  _______,  _______,  _______,  _______,  _______,
                       //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
