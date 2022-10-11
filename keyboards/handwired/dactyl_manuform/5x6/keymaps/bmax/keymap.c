@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                          KC_LEFT,  KC_RIGHT,NAV_ESC,  CTL_SPC,    NAV,     KC_UNDS,                     KC_UNDS,  KC_DEL,   NUM_BSPC,  KC_ENT,   KC_DOWN,  KC_UP,
                          //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
-                         /**/                                CTL_SPC,       KC_SPC,          CTL_DEL,      NUM_BSPC
+                         /**/                                   NAV_ESC,  CTL_SPC,                 NUM_BSPC,  KC_ENT,
                          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
                          ),
   [_NAV] = LAYOUT_5x6(
