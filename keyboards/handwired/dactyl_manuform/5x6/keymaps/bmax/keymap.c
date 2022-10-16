@@ -17,6 +17,18 @@ enum layers {
 #define HM_T RALT_T(KC_T)
 #define HM_H RGUI_T(KC_H)
 
+
+#define HM_L_P LSFT_T(KC_A)
+#define HM_L_R LCTL_T(KC_R)
+#define HM_L_M LALT_T(KC_S)
+#define HM_L_I LGUI_T(KC_T)
+
+#define HM_R_P LSFT_T(KC_O)
+#define HM_R_R LCTL_T(KC_I)
+#define HM_R_M LALT_T(KC_E)
+#define HM_R_I LGUI_T(KC_N)
+
+
 #define G_LBRC LGUI_T(KC_LBRC)
 #define G_RBRC LGUI_T(KC_RBRC)
 
@@ -33,7 +45,7 @@ enum layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_DVORAK] = LAYOUT_5x6(
-                         // number
+                                                  // number
                          //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
                          KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                        KC_6,     KC_7,     KC_8,    KC_9,      KC_0,     KC_LBRC,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -55,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                          KC_TAB,   KC_Q,     KC_W,     KC_F,     KC_P,     KC_G,                        KC_J,     KC_L,     KC_U,     KC_Y,     KC_SCLN,  KC_BSPC,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                         KC_MINS,   KC_A,    KC_R,    KC_S,      KC_T,     KC_D,                        KC_H,     KC_N,     KC_E,     KC_I,     KC_O,     KC_QUOT ,
+                         KC_MINS,  HM_L_P,   HM_L_R,   HM_L_M,   HM_L_I,     KC_D,                        KC_H,   HM_R_I,   HM_R_M,   HM_R_R,   HM_R_P,     KC_QUOT ,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                          KC_EQL,    KC_Z,    KC_X,    KC_C,      KC_V,     KC_B,                        KC_K,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH, KC_ENT ,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -87,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                        KC_6,     KC_7,     KC_8,    KC_9,      KC_0,     KC_LBRC,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      _______,  SHFT_TAB,   _______,  AL_MINS,  G_LBRC,  KC_SLASH,                     S(KC_SLASH),  G_RBRC,  AL_EQL,  _______,  _______,  _______,
+                      _______,  SHFT_TAB,  S(KC_COMM),  AL_MINS,  G_LBRC,  KC_SLASH,                     S(KC_SLASH),  G_RBRC,  AL_EQL,  S(KC_DOT),  _______,  _______,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       _______,  KC_GRV,  KC_LPRN,  KC_UNDS,  KC_LCBR,  KC_BSLASH,                     S(KC_BSLASH),  KC_RCBR,  KC_PLUS,  KC_RPRN,  _______,  _______,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
