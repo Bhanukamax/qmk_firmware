@@ -7,24 +7,36 @@
  * https://precondition.github.io/home-row-mods
  */
 
+#define G_LBRC LGUI_T(KC_LBRC)
+#define G_RBRC LGUI_T(KC_RBRC)
+
+#define AL_MINS LALT_T(KC_MINS)
+#define AL_EQL RALT_T(KC_EQL)
+
+
+#define CTL_DEL LCTL_T(KC_DEL)
+#define NAV MO(_NAV)
+#define NUM_BSPC LT(_NUM, KC_BSPC)
+#define CTL_SPC LCTL_T(KC_SPC)
+#define SHFT_TAB LSFT_T(KC_TAB)
+#define NAV_ESC LT(_NAV, KC_ESC)
+#define XX _______
+
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_DVORAK] = LAYOUT(// Dvorak
-                     // 1
-                     TOP_QUOT, NUM_COMM, TOP_DOT, KC_P, KC_Y,
-                     KC_F, TOP_G, TOP_C, NUM_R, TOP_L,
 
-                     // 2
-                     HM_A, HM_O, HM_E, HM_U, NUM_I,
-                     KC_D, HM_H, HM_T, HM_N, HM_S,
-
-                     // 3
-                     KC_SCLN, KC_Q, KC_J, NUM_K, KC_X,
-                     KC_B, NUM_M, KC_W, KC_V, GUI_Z,
-
-                     // 4
-                     MO(_NAV), KC_SPC,
-                     LT(_NUM, KC_BSPC), RALT_T(KC_ENT)),
+                     //┌─────────┬─────────┬─────────┬─────────┐                 ┌─────────┬─────────┬─────────┬─────────┐
+                     KC_QUOT, KC_COMM,  KC_DOT,    KC_P,     KC_Y,             KC_F,     KC_G,     KC_C,     KC_R,     KC_L,
+                     //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
+                     HM_A,     HM_O,     HM_E,     HM_U,    KC_I,              KC_D,     HM_H,     HM_T,     HM_N,     HM_S,
+                     //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
+                     KC_SCLN,  KC_Q,     KC_J,    NUM_K,     KC_X,             KC_B,     KC_M,     KC_W,     KC_V,     KC_Z,
+                     //└─────────┴─────────┴─────┬───┴─────┬───┼─────────┐     ┌─┴───────┬─┼─────────┴─────────┴─────────┘
+                     /**/                      MO(_NAV),     KC_SPC,       LT(_NUM, KC_BSPC), RALT_T(KC_ENT)
+                     //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
+                     ),
 
 	[_GIMP] = LAYOUT( //  colmaksu GIMP
                     KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
@@ -38,29 +50,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     KC_D, RSFT(KC_B), RCTL(KC_Y), RCTL(KC_Z), KC_X,
 
                     MO(3), KC_SPACE, MO(2), RCTL(KC_ENT)),
-	[_NUMBER] = LAYOUT( //  Number/symbol layer
-                      // 1
-                      KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB,
-                      KC_ESC, KC_7, KC_8, KC_9, NUM_DOT,
-
-                      // 2
-                      LSFT_T(KC_GT), LCTL_T(KC_RBRC), KC_RPRN, LGUI_T(KC_RCBR), KC_SLASH,
-                      KC_QUES, KC_4, KC_5, KC_6, KC_BSPC,
-
-                      // 3
-                      KC_MINS, KC_EQL, KC_UNDS, KC_PLUS, KC_GRV,
-                      KC_0, KC_1, KC_2, KC_3, KC_BSLS,
-
-                      // 4
-                      KC_LCTL, KC_ESC, KC_TRNS, KC_TRNS),
 
   [_NUM] = LAYOUT(
                   //┌─────────┬─────────┬─────────┬─────────┐                 ┌─────────┬─────────┬─────────┬─────────┐
                   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,             KC_6,     KC_7,     KC_8,    KC_9,      KC_0,
                   //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
-                  LSFT_T(KC_TAB),   _______,  KC_MINS,  KC_LBRC,  KC_SLASH,       S(KC_SLASH),  KC_RBRC,  KC_PLUS,  _______, _______,
+                  SHFT_TAB,  KC_GRV,   AL_MINS, G_LBRC,  KC_SLASH,          KC_BSLASH,  RGUI_T(KC_RBRC),  AL_EQL,   XX,       XX,
                   //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
-                  KC_GRV,  _______,  KC_UNDS,  KC_LCBR,  KC_BSLASH,      S(KC_BSLASH),  KC_RCBR,  KC_EQL,  _______, _______,
+                 S(KC_COMM),  KC_LPRN,  KC_UNDS, KC_LCBR, S(KC_SLASH),              S(KC_BSLASH),  KC_RCBR,  KC_PLUS,  KC_RPRN,  S(KC_DOT),
                   //└─────────┴─────────┴─────┬───┴─────┬───┼─────────┐     ┌─┴───────┬─┼─────────┴─────────┴─────────┘
                   /**/                        KC_ESC,      _______,       _______,      _______
                   //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
@@ -72,8 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                    KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS,
 
                    // row 2
-                   KC_RSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_ESC,
-                   KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC,
+                  KC_LSFT,  _______,  _______,  _______,  _______,                   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,    KC_BSPC,
 
                    // row 3
                    LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), KC_BSPC, LGUI(KC_B),
