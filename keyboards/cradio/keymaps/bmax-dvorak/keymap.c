@@ -66,10 +66,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                    // row 1
                    LALT(KC_F1), OSM_SHFT_GUI, OSM_SHFT_GUI, OSM_SHFT_GUI, LALT(KC_F12),
-                   KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS,
+                   KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_DEL,
 
                    // row 2
-                  KC_LSFT,  _______,  _______,  _______,  _______,                   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,    KC_BSPC,
+                  KC_LSFT,  _______,  _______,  _______,  KC_DEL,                   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,    KC_BSPC,
 
                    // row 3
                    LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), KC_BSPC, LGUI(KC_B),
