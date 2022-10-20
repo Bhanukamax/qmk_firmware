@@ -45,7 +45,7 @@ combo_t key_combos[COMBO_COUNT] = {
 };
 
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+Bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LSFT_T(KC_GT):
             if (record->tap.count && record->event.pressed) {
@@ -54,6 +54,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
             break;
        case LGUI_T(KC_RCBR):
+          if (record->tap.count && record->event.pressed) {
+                tap_code16(KC_RCBR); // Send KC_GT on tap
+                return false;        // Return false to ignore further processing of key
+            }
+      break;
+       case LALT_T(KC_LCBR):
+          if (record->tap.count && record->event.pressed) {
+                tap_code16(KC_LCBR); // Send KC_GT on tap
+                return false;        // Return false to ignore further processing of key
+            }
+      break;
+        case RALT_T(KC_RCBR):
           if (record->tap.count && record->event.pressed) {
                 tap_code16(KC_RCBR); // Send KC_GT on tap
                 return false;        // Return false to ignore further processing of key
