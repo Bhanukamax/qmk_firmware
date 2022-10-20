@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                    KC_BSPC, RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
 
                    // 4
-                   KC_TRNS, KC_TRNS, KC_BSPC, KC_TRNS),
+                   KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
 	[_FN] = LAYOUT( // Function layer
                   // 1
                   KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
