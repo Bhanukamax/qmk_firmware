@@ -101,9 +101,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                        KC_6,     KC_7,     KC_8,    KC_9,      KC_0,     KC_LBRC,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX, SHFT_TAB, LCTL_T(KC_LPRN), LALT_T(KC_LCBR), LGUI_T(KC_LBRC),  S(KC_COMM), S(KC_DOT), LGUI_T(KC_RBRC),RALT_T(KC_RCBR),   RCTL_T(KC_RPRN), RSFT_T(KC_GRV),  XX,
+                      XX, SHFT_TAB, LCTL_T(KC_LPRN), LALT_T(KC_LCBR), LGUI_T(KC_LBRC),  KC_SLASH, KC_BSLASH, LGUI_T(KC_RBRC),RALT_T(KC_RCBR),   RCTL_T(KC_RPRN), RSFT_T(KC_GRV),  XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,KC_SLASH,  S(KC_2),  KC_UNDS, KC_MINUS, S(KC_SLASH),              S(KC_BSLASH),  KC_EQL,  KC_PLUS,  S(KC_6),  KC_BSLASH,  XX,
+                      XX,S(KC_COMM),  S(KC_2),  KC_UNDS, KC_MINUS, S(KC_SLASH),              S(KC_BSLASH),  KC_EQL,  KC_PLUS,  S(KC_6),  S(KC_DOT),  XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       XX,  XX,  XX,  XX,  XX,  XX,                     XX,  XX,  XX,  XX,  XX,  XX,
                       //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
