@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       XX, SHFT_TAB, LCTL_T(KC_LPRN), LALT_T(KC_LCBR), LGUI_T(KC_LBRC),  KC_SLASH, KC_BSLASH, LGUI_T(KC_RBRC),RALT_T(KC_RCBR),   RCTL_T(KC_RPRN), RSFT_T(KC_GRV),  XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,S(KC_COMM),  S(KC_2),  KC_UNDS, KC_MINUS, S(KC_SLASH),              S(KC_BSLASH),  KC_EQL,  KC_PLUS,  S(KC_6),  S(KC_DOT),  XX,
+                      XX,KC_MINUS,  KC_EQL,  KC_UNDS, KC_PLUS, S(KC_SLASH),                      S(KC_BSLASH),  S(KC_5),  S(KC_COMM),  S(KC_DOT),  S(KC_2),  XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       XX,  XX,  XX,  XX,  XX,  XX,                     XX,  XX,  XX,  XX,  XX,  XX,
                       //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
