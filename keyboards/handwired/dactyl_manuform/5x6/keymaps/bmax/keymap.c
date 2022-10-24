@@ -1,10 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "codes.h"
 
-
 #define XX _______
-
-
 
 #define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
 

@@ -1,22 +1,3 @@
-/* Copyright 2018-2021
- * ENDO Katsuhiro <ka2hiro@curlybracket.co.jp>
- * David Philip Barr <@davidphilipbarr>
- * Pierre Chevalier <pierrechevalier83@gmail.com>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 #include QMK_KEYBOARD_H
 
 #include "muse.h"
@@ -26,35 +7,104 @@
  * https://precondition.github.io/home-row-mods
  */
 
+#define G_LBRC LGUI_T(KC_LBRC)
+#define G_RBRC LGUI_T(KC_RBRC)
+
+#define AL_MINS LALT_T(KC_MINS)
+#define AL_EQL RALT_T(KC_EQL)
+
+
+#define CTL_DEL LCTL_T(KC_DEL)
+#define NAV MO(_NAV)
+#define NUM_BSPC LT(_NUM, KC_BSPC)
+#define CTL_SPC LCTL_T(KC_SPC)
+#define SHFT_TAB LSFT_T(KC_TAB)
+#define NAV_ESC LT(_NAV, KC_ESC)
+#define XX _______
+
+//#define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
+
+//#define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[0] = LAYOUT(// QWERTY
-            GUI_T(KC_Q), KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P,
-            RCTL_T(KC_A), KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN,
-            GUI_T(KC_Z), LALT_T(KC_X), KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, LALT_T(KC_DOT), GUI_T(KC_SLSH),
-            MO(3), SHIFT_SPACE, MO(2), RCTL_T(KC_ENT)),
-	[1] = LAYOUT( //  colmaksu
-            KC_Q, KC_W, KC_F, KC_P, KC_G, KC_J, KC_L, KC_U, KC_Y, KC_SCLN,
-            RCTL_T(KC_A), KC_R, KC_S, KC_T, KC_D, KC_H, KC_N, KC_E, KC_I, RCTL_T(KC_O),
-            RALT_T(KC_Z), KC_X, KC_C, RGUI_T(KC_V), KC_B, KC_K, RGUI_T(KC_M), KC_COMM, KC_DOT, LALT_T(KC_SLSH),
-            MO(3), SHIFT_SPACE, MO(2), KC_ENT),
-	[2] = LAYOUT( //  Number/symbol layer
-            KC_LT, KC_LBRC, KC_LPRN, KC_LCBR, KC_TAB, KC_ESC, KC_7, KC_8, KC_9, KC_RGUI,
-            KC_GT, KC_RBRC, KC_RPRN, KC_RCBR, KC_QUOT, KC_DQUO, KC_4, KC_5, KC_6, KC_BSPC,
-            KC_MINS, KC_EQL, KC_UNDS, KC_PLUS, KC_GRV, KC_0, KC_1, KC_2, KC_3, KC_BSLS,
-            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
-	[3] = LAYOUT( // Nav layer
-            LALT(KC_F1), KC_RSFT, KC_RSFT, OSM(MOD_LSFT|MOD_LGUI), LALT(KC_F12), KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS,
-            KC_LCTL, KC_RSFT, KC_LALT, KC_LGUI, KC_ESC, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC,
-            LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), LGUI(KC_V), LGUI(KC_B), RGUI(KC_GRV), RCTL(KC_M), KC_TRNS, KC_TRNS, KC_DEL,
-            KC_TRNS, KC_TRNS, MO(3), KC_TRNS),
-	[4] = LAYOUT( // Function layer
-            KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
-            KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU, KC_G, KC_H, SGUI(KC_3), SGUI(KC_4), KC_F11, KC_F12,
-            KC_MPRV, KC_MNXT, KC_BRMD, KC_BRMU, XXXXXXX, KC_N, DF(0), DF(1), KC_DOT, C(G(KC_Q)),
-            _______, _______, KC_LCTL, _______),
+	[_DVORAK] = LAYOUT_bmax_wrapper(// Dvorak
+
+                     //┌─────────┬─────────┬─────────┬─────────┐                 ┌─────────┬─────────┬─────────┬─────────┐
+                     ____DVORAK_L1____,         ____DVORAK_L1____,
+                     //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
+                     HM_A,     HM_O,     HM_E,     HM_U,    KC_I,              KC_D,     HM_H,     HM_T,     HM_N,     HM_S,
+                     //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
+                     KC_SCLN,  KC_Q,     KC_J,    NUM_K,     KC_X,             KC_B,     KC_M,     KC_W,     KC_V,     KC_Z,
+                     //└─────────┴─────────┴─────┬───┴─────┬───┼─────────┐     ┌─┴───────┬─┼─────────┴─────────┴─────────┘
+                     /**/                      MO(_NAV),     KC_SPC,       LT(_NUM, KC_BSPC), RALT_T(KC_ENT)
+                     //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
+                     ),
+
+	[_GIMP] = LAYOUT( //  colmaksu GIMP
+                    KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
+                    KC_J, KC_L, KC_U, KC_Y, KC_SCLN,
+
+
+                    KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_P,
+                    KC_H, KC_N, KC_E, KC_I, RCTL_T(KC_O),
+
+                    KC_D, RSFT(KC_B), RCTL(KC_Z), RCTL(KC_Y), KC_X,
+                    KC_D, RSFT(KC_B), RCTL(KC_Y), RCTL(KC_Z), KC_X,
+
+                    MO(3), KC_SPACE, MO(2), RCTL(KC_ENT)),
+
+  [_NUM] = LAYOUT(
+                  //┌─────────┬─────────┬─────────┬─────────┐                 ┌─────────┬─────────┬─────────┬─────────┐
+                  KC_1,     KC_2,     KC_3,     KC_4,     KC_5,             KC_6,     KC_7,     KC_8,    KC_9,      KC_0,
+                  //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
+                  SHFT_TAB,  KC_GRV,   AL_MINS, G_LBRC,  KC_SLASH,          KC_BSLASH,  RGUI_T(KC_RBRC),  AL_EQL,   XX,       XX,
+                  //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
+                 S(KC_COMM),  KC_LPRN,  KC_UNDS, KC_LCBR, S(KC_SLASH),              S(KC_BSLASH),  KC_RCBR,  KC_PLUS,  KC_RPRN,  S(KC_DOT),
+
+                  /**/                        KC_ESC,      _______,       _______,      _______
+                  //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
+                  ),
+	[_NAV] = LAYOUT( // Nav layer
+
+                   // row 1
+                   LALT(KC_F1), OSM_SHFT_GUI, OSM_SHFT_GUI, OSM_SHFT_GUI, LALT(KC_F12),
+                   KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_DEL,
+
+                   // row 2
+                  KC_LSFT,  _______,  _______,  _______,  KC_DEL,                   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,    KC_BSPC,
+
+                   // row 3
+                   LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), KC_BSPC, LGUI(KC_B),
+                   KC_BSPC, RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
+
+                   // 4
+                   KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
+	[_FN] = LAYOUT( // Function layer
+                  // 1
+                  KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
+                  KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
+
+                  // 2
+                  KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU, KC_G,
+                  KC_H, SGUI(KC_3), SGUI(KC_4), KC_F11, KC_F12,
+
+                  // 3
+                  KC_MPRV, KC_MNXT, KC_BRMD, KC_BRMU, XXXXXXX,
+                  KC_N, DF(0), DF(1), KC_DOT, C(G(KC_Q)),
+                  _______, _______, KC_LCTL, _______),
 	[_MOUSE] = LAYOUT( // Function layer
-            XXXXXXX, RCTL(KC_W), KC_MS_U, XXXXXXX, RCTL(KC_T),              KC_ACL0, KC_WH_D, KC_MS_U, KC_WH_U, KC_ACL2,
-            RCTL(KC_A), RSFT(KC_TAB), KC_LALT, KC_TAB, RSFT(KC_TAB),              KC_ACL1, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0,
-            XXXXXXX, RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_ESC,     KC_BTN3, KC_BTN2, XXXXXXX, XXXXXXX, KC_ACL1,
-                                       KC_ACL1, KC_ACL2,              TO(0), KC_BTN1)
+                     // 1
+                     XXXXXXX, RCTL(KC_W), KC_MS_U, XXXXXXX, RCTL(KC_T),
+                     KC_ACL0, KC_WH_D, KC_MS_U, KC_WH_U, KC_ACL2,
+                     // 2
+                     RCTL(KC_A), RSFT(KC_TAB), KC_LALT, KC_TAB, RSFT(KC_TAB),
+                     KC_ACL1, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL0,
+
+                     // 3
+                     XXXXXXX, RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_ESC,
+                     KC_BTN3, KC_BTN2, XXXXXXX, XXXXXXX, KC_ACL1,
+
+                     // 4
+                     KC_ACL1, KC_ACL2,
+                     TO(0), KC_BTN1)
 };
