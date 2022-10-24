@@ -1,50 +1,10 @@
 #include QMK_KEYBOARD_H
-// #include "codes.h"
-
-enum layers {
-  _DVORAK,
-  _COLMAK,
-  _NAV,
-  _NUM
-};
-
-#define HM_A LSFT_T(KC_A)
-#define HM_O LCTL_T(KC_O)
-#define HM_E LALT_T(KC_E)
-#define HM_U LGUI_T(KC_U)
-
-#define HM_S RSFT_T(KC_S)
-#define HM_N RCTL_T(KC_N)
-#define HM_T RALT_T(KC_T)
-#define HM_H RGUI_T(KC_H)
+#include "codes.h"
 
 
-#define HM_L_P LSFT_T(KC_A)
-#define HM_L_R LCTL_T(KC_R)
-#define HM_L_M LALT_T(KC_S)
-#define HM_L_I LGUI_T(KC_T)
-
-#define HM_R_P LSFT_T(KC_O)
-#define HM_R_R LCTL_T(KC_I)
-#define HM_R_M LALT_T(KC_E)
-#define HM_R_I LGUI_T(KC_N)
-
-
-#define G_LBRC LGUI_T(KC_LBRC)
-#define G_RBRC LGUI_T(KC_RBRC)
-
-#define AL_MINS LALT_T(KC_MINS)
-#define AL_EQL RALT_T(KC_EQL)
-
-#define CTL_DEL LCTL_T(KC_DEL)
-#define NAV MO(_NAV)
-#define NUM_BSPC LT(_NUM, KC_BSPC)
-#define CTL_SPC LCTL_T(KC_SPC)
-#define SHFT_TAB LSFT_T(KC_TAB)
-#define NAV_ESC LT(_NAV, KC_ESC)
 #define XX _______
-#define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
-#define ____DVORAK_R1____  KC_F, KC_G, KC_C, KC_R, KC_L
+
+
 
 #define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
 
@@ -56,7 +16,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                        KC_6,     KC_7,     KC_8,    KC_9,      KC_0,     KC_LBRC,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                          //                         KC_TAB,  KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y, KC_F, KC_G, KC_C, KC_R, KC_L,     KC_RBRC,
-                         KC_TAB, ____DVORAK_L1____, ____DVORAK_L1____ , XX,
+                         KC_TAB, ____DVORAK_L1____, ____DVORAK_R1____ , XX,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                          KC_MINS,  HM_A,     HM_O,     HM_E,     HM_U,     KC_I,                        KC_D,     HM_H,     HM_T,     HM_N,     HM_S,     KC_SLASH,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
