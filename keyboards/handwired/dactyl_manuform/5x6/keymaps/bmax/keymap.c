@@ -83,9 +83,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
                       XX,KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,                       KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,  XX,  XX,  XX,  XX,  XX,                   KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,     XX,KC_F12,
+                      XX,  XX,       KC_PGUP,       KC_PGDN,    KC_ENT,  XX,                   KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,     XX,KC_F12,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,  KC_LSFT,  XX,  XX,  XX,  XX,                   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,    KC_BSPC,  TO(_DVORAK),
+                      XX,  KC_LSFT,  LCTL_T(C(KC_S)),  LALT_T(C(KC_D)),  XX,  XX,                   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,    KC_BSPC,  TO(_DVORAK),
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       XX,  C(KC_Z),  C(KC_X),  C(KC_C),  C(KC_V),  XX,                   XX, KC_RBRC,  KC_RCBR, KC_RPRN, S(KC_DOT), TO(_COLMAK),
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       XX, SHFT_TAB, LCTL_T(KC_LPRN), LALT_T(KC_LCBR), LGUI_T(KC_LBRC),  KC_SLASH, KC_BSLASH, LGUI_T(KC_RBRC),RALT_T(KC_RCBR),   RCTL_T(KC_RPRN), RSFT_T(KC_GRV),  XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,KC_MINUS,  KC_EQL,  KC_UNDS, KC_PLUS, S(KC_SLASH),                      S(KC_BSLASH),  S(KC_5),  S(KC_COMM),  S(KC_DOT),  S(KC_2),  XX,
+                      XX,KC_PLUS,  KC_EQL,  KC_UNDS, KC_MINUS, S(KC_SLASH),                      S(KC_BSLASH),  S(KC_5),  S(KC_COMM),  S(KC_DOT),  S(KC_2),  XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       XX,  XX,  XX,  XX,  XX,  XX,                     XX,  XX,  XX,  XX,  XX,  XX,
                       //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
