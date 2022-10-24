@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+// #include "codes.h"
 
 enum layers {
   _DVORAK,
@@ -42,16 +43,20 @@ enum layers {
 #define SHFT_TAB LSFT_T(KC_TAB)
 #define NAV_ESC LT(_NAV, KC_ESC)
 #define XX _______
+#define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
+#define ____DVORAK_R1____  KC_F, KC_G, KC_C, KC_R, KC_L
 
+#define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [_DVORAK] = LAYOUT_5x6(
+  [_DVORAK] = LAYOUT_wrapper(
 
                          // number
                          //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
                          KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                        KC_6,     KC_7,     KC_8,    KC_9,      KC_0,     KC_LBRC,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                         KC_TAB,   KC_QUOT,  KC_COMM,  KC_DOT,   KC_P,     KC_Y,                        KC_F,     KC_G,     KC_C,     KC_R,     KC_L,     KC_RBRC,
+                         //                         KC_TAB,  KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y, KC_F, KC_G, KC_C, KC_R, KC_L,     KC_RBRC,
+                         KC_TAB, ____DVORAK_L1____, ____DVORAK_L1____ , XX,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                          KC_MINS,  HM_A,     HM_O,     HM_E,     HM_U,     KC_I,                        KC_D,     HM_H,     HM_T,     HM_N,     HM_S,     KC_SLASH,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
