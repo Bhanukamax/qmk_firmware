@@ -1,9 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "codes.h"
 
-#define XX _______
 
-#define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_DVORAK] = LAYOUT_wrapper(
@@ -40,32 +38,32 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          /**/                                   NAV_ESC,  CTL_SPC,                 NUM_BSPC,  KC_ENT
                          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
                          ),
-  [_NAV] = LAYOUT_5x6(
+  [_NAV] = LAYOUT_wrapper(
                       // number
                       //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
                       XX,KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,                       KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,  XX,       KC_PGUP,       KC_PGDN,    KC_ENT,  XX,                   KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,     XX,KC_F12,
+                      XX, ____NAV_L1____,                  ____NAV_R1____, KC_F12,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,  KC_LSFT,  LCTL_T(C(KC_S)),  LALT_T(C(KC_D)),  XX,  XX,                   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,    KC_BSPC,  TO(_DVORAK),
+                      XX, ____NAV_L2____,                  ____NAV_R2____,  TO(_DVORAK),
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,  C(KC_Z),  C(KC_X),  C(KC_C),  C(KC_V),  XX,                   XX, KC_RBRC,  KC_RCBR, KC_RPRN, S(KC_DOT), TO(_COLMAK),
+                      XX, ____NAV_L3____,                  ____NAV_R3____, TO(_COLMAK),
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       XX,  XX,  XX,  XX,  XX,  XX,                     XX,  XX,  KC_BSPC,  XX,  XX,  XX,
                       //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
                       /**/                                  XX,      XX,           XX,      KC_BSPC
                       //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
                       ),
-  [_NUM] = LAYOUT_5x6(
+  [_NUM] = LAYOUT_wrapper(
                       // number
                       //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
                       XX,  XX,  XX,  XX,  XX,  XX,                     XX,  XX,  XX,  XX,  XX,  XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                        KC_6,     KC_7,     KC_8,    KC_9,      KC_0,     KC_LBRC,
+                      KC_GRV, ____NUM_L1____,              ____NUM_R1____,   KC_LBRC,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX, SHFT_TAB, LCTL_T(KC_LPRN), LALT_T(KC_LCBR), LGUI_T(KC_LBRC),  KC_SLASH, KC_BSLASH, LGUI_T(KC_RBRC),RALT_T(KC_RCBR),   RCTL_T(KC_RPRN), RSFT_T(KC_GRV),  XX,
+                      XX, ____NUM_L2____,                  ____NUM_R2____,   XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                      XX,KC_PLUS,  KC_EQL,  KC_UNDS, KC_MINUS, S(KC_SLASH),                      S(KC_BSLASH),  S(KC_5),  S(KC_COMM),  S(KC_DOT),  S(KC_2),  XX,
+                      XX, ____NUM_L3____,                  ____NUM_R3____,    XX,
                       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                       XX,  XX,  XX,  XX,  XX,  XX,                     XX,  XX,  XX,  XX,  XX,  XX,
                       //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘

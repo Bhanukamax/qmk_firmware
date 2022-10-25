@@ -40,6 +40,8 @@
 #define SHFT_TAB LSFT_T(KC_TAB)
 #define NAV_ESC LT(_NAV, KC_ESC)
 
+#define XX _______
+
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_R1____  KC_F, KC_G, KC_C, KC_R, KC_L
 
@@ -54,4 +56,31 @@
 #define __DVORAK_MOD_R__ NUM_BSPC, KC_ENT
 
 
+#define ____NAV_L1____ XX, KC_PGUP, KC_PGDN, KC_ENT, XX
+#define ____NAV_R1____ KC_HOME, KC_PGDN, KC_PGUP, KC_END, XX
+
+#define ____NAV_L2____ KC_LSFT, LCTL_T(C(KC_S)), LALT_T(C(KC_D)), XX, XX
+#define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSPC
+
+#define ____NAV_L3____ C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XX
+#define ____NAV_R3____ XX, KC_RBRC, KC_RCBR, KC_RPRN, S(KC_DOT)
+
+#define __NAV_MOD_L__ XX, XX
+#define __NAV_MOD_R__ KC_BSPC, XX
+
+
+#define ____NUM_L1____ KC_1, KC_2, KC_3, KC_4, KC_5
+#define ____NUM_R1____ KC_6, KC_7, KC_8, KC_9, KC_0
+
+#define ____NUM_L2____ SHFT_TAB, LCTL_T(KC_LPRN), LALT_T(KC_LCBR), LGUI_T(KC_LBRC), KC_SLASH
+#define ____NUM_R2____ KC_BSLASH, LGUI_T(KC_RBRC), RALT_T(KC_RCBR), RCTL_T(KC_RPRN), RSFT_T(KC_GRV)
+
+#define ____NUM_L3____ KC_PLUS, KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
+#define ____NUM_R3____ S(KC_BSLASH), S(KC_5), S(KC_COMM), S(KC_DOT), S(KC_2)
+
+#define __NUM_MOD_L__ XX, XX
+#define __NUM_MOD_R__ XX, XX
+
+
 #define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
+#define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
