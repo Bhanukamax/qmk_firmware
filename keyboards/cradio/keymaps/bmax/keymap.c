@@ -29,16 +29,16 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_DVORAK] = LAYOUT_bmax_wrapper(// Dvorak
 
-                     //┌─────────┬─────────┬─────────┬─────────┐                 ┌─────────┬─────────┬─────────┬─────────┐
-                     ____DVORAK_L1____,         ____DVORAK_R1____,
-                     //├─────────┼─────────┼─────────┼────────┤                 ├─────────┼─────────┼─────────┼─────────┤
-                     ____DVORAK_L2____,         ____DVORAK_R2____,
-                     //├─────────┼─────────┼─────────┼────────┤                 ├─────────┼─────────┼─────────┼─────────┤
-                     ____DVORAK_L3____,         ____DVORAK_R3____,
-                     //└─────────┴─────────┴─────┬───┴─────┬───┼─────────┐     ┌─┴───────┬─┼─────────┴─────────┴─────────┘
-                     /**/                      __DVORAK_MOD_L__,       __DVORAK_MOD_R__
-                     //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
-                     ),
+                                  //┌─────────┬─────────┬─────────┬─────────┐                 ┌─────────┬─────────┬─────────┬─────────┐
+                                  ____DVORAK_L1____,         ____DVORAK_R1____,
+                                  //├─────────┼─────────┼─────────┼────────┤                 ├─────────┼─────────┼─────────┼─────────┤
+                                  ____DVORAK_L2____,         ____DVORAK_R2____,
+                                  //├─────────┼─────────┼─────────┼────────┤                 ├─────────┼─────────┼─────────┼─────────┤
+                                  ____DVORAK_L3____,         ____DVORAK_R3____,
+                                  //└─────────┴─────────┴─────┬───┴─────┬───┼─────────┐     ┌─┴───────┬─┼─────────┴─────────┴─────────┘
+                                  /**/                      __DVORAK_MOD_L__,       __DVORAK_MOD_R__
+                                  //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
+                                  ),
 
 	[_GIMP] = LAYOUT( //  colmaksu GIMP
                     KC_LBRC,  KC_RBRC, KC_F, KC_P, KC_O,
@@ -53,31 +53,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                     MO(3), KC_SPACE, MO(2), RCTL(KC_ENT)),
 
-  [_NUM] = LAYOUT(
-                  //┌─────────┬─────────┬─────────┬─────────┐                 ┌─────────┬─────────┬─────────┬─────────┐
-                  KC_1,     KC_2,     KC_3,     KC_4,     KC_5,             KC_6,     KC_7,     KC_8,    KC_9,      KC_0,
-                  //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
-                  SHFT_TAB,  KC_GRV,   AL_MINS, G_LBRC,  KC_SLASH,          KC_BSLASH,  RGUI_T(KC_RBRC),  AL_EQL,   XX,       XX,
-                  //├─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┤
-                 S(KC_COMM),  KC_LPRN,  KC_UNDS, KC_LCBR, S(KC_SLASH),              S(KC_BSLASH),  KC_RCBR,  KC_PLUS,  KC_RPRN,  S(KC_DOT),
-
-                  /**/                        KC_ESC,      _______,       _______,      _______
+  [_NUM] = LAYOUT_bmax_wrapper(
+                  ____NUM_L1____,                  ____NUM_R1____,
+                  ____NUM_L2____,                  ____NUM_R2____,
+                  ____NUM_L3____,                  ____NUM_R3____,
+                  KC_ESC,      _______,       _______,      _______
                   //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
                   ),
-	[_NAV] = LAYOUT( // Nav layer
-
-                   // row 1
-                   LALT(KC_F1), OSM_SHFT_GUI, OSM_SHFT_GUI, OSM_SHFT_GUI, LALT(KC_F12),
-                   KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_DEL,
-
-                   // row 2
-                  KC_LSFT,  _______,  _______,  _______,  KC_DEL,                   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,    KC_BSPC,
-
-                   // row 3
-                   LGUI(KC_Z), LGUI(KC_X), LGUI(KC_C), KC_BSPC, LGUI(KC_B),
-                   KC_BSPC, RCTL(KC_M),  RCTL(KC_QUES),RCTL(KC_SLASH), KC_DEL,
-
-                   // 4
+	[_NAV] = LAYOUT_bmax_wrapper( // Nav layer
+                   ____NAV_L1____,                  ____NAV_R1____,
+                   ____NAV_L2____,                  ____NAV_R2____,
+                   ____NAV_L3____,                  ____NAV_R3____,
                    KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
 	[_FN] = LAYOUT( // Function layer
                   // 1
