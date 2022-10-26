@@ -83,5 +83,13 @@
 #define __NUM_MOD_R__ XX, XX
 
 
+#define ____FN_L1____ KC_F1, KC_F2, KC_F3, KC_F4, KC_F5
+#define ____FN_R1____ KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
+
+#define ____FN_L2____ KC_F1, KC_F2, KC_F3, KC_F4, KC_F5
+#define ____FN_R2____ KC_F6, KC_F7, KC_F8, KC_F11, KC_F12
+
+
+
 #define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
 #define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
