@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //
         ____FN_L2____, ____FN_R2____,
         //
-        ____NAV_L3____, ____NAV_R3____,
+        ____FN_L3____, ____FN_R3____,
         //
         KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN))
 
