@@ -2,7 +2,8 @@
 #define  _DVORAK 0
 #define  _COLMAK 1
 #define  _NAV 2
-#define  _NUM 3
+#define _NUM 3
+#define  _FN 4
 
 
 #define HM_A LSFT_T(KC_A)
