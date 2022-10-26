@@ -67,7 +67,7 @@
 #define ____NAV_R3____ XX, KC_RBRC, KC_RCBR, KC_RPRN, S(KC_DOT)
 
 #define __NAV_MOD_L__ XX, XX
-#define __NAV_MOD_R__ KC_BSPC, XX
+#define __NAV_MOD_R__ KC_BSPC, MO(_FN)
 
 
 #define ____NUM_L1____ KC_1, KC_2, KC_3, KC_4, KC_5
@@ -88,6 +88,10 @@
 
 #define ____FN_L2____ KC_F1, KC_F2, KC_F3, KC_F4, KC_F5
 #define ____FN_R2____ KC_F6, KC_F7, KC_F8, KC_F11, KC_F12
+
+
+#define ____FN_L3____ KC_F1, KC_F2, KC_F3, KC_F4, KC_F5
+#define ____FN_R3____ KC_F6, KC_F7, KC_F8, KC_F11, KC_F12
 
 
 
