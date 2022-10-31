@@ -86,3 +86,4 @@
 
 #define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
 #define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
+#define LAYOUT_planck_grid_wrapper(...) LAYOUT_planck_grid(__VA_ARGS__)
