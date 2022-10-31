@@ -53,9 +53,9 @@
 #define __DVORAK_MOD_R__  NUM_BSPC,   KC_ENT
 
 
-#define ____NAV_L1____ XX,      KC_PGUP,         KC_PGDN,         KC_ENT,  XX
-#define ____NAV_L2____ KC_LSFT, LCTL_T(C(KC_S)), LALT_T(C(KC_D)), XX,      XX
-#define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V), XX
+#define ____NAV_L1____ XX,      KC_PGUP,         KC_PGDN,         KC_DEL,          XX
+#define ____NAV_L2____ KC_LSFT, LCTL_T(C(KC_S)), LALT_T(C(KC_D)), LGUI_T(KC_ENT),  XX
+#define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
 #define __NAV_MOD_L__  XX,      XX
 
 #define ____NAV_R1____ KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XX
@@ -71,7 +71,7 @@
 
 #define ____NUM_R1____ KC_6,         KC_7,            KC_8,            KC_9,            KC_0
 #define ____NUM_R2____ KC_BSLASH,    LGUI_T(KC_RBRC), RALT_T(KC_RCBR), RCTL_T(KC_RPRN), RSFT_T(KC_GRV)
-#define ____NUM_R3____ S(KC_BSLASH), S(KC_5),         S(KC_COMM),      S(KC_DOT),       S(KC_2)
+#define ____NUM_R3____ S(KC_BSLASH), S(KC_5),         S(KC_7),      S(KC_2),       S(KC_DOT)
 #define __NUM_MOD_R__  XX,           XX
 
 
