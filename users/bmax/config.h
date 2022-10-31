@@ -87,3 +87,9 @@
 #define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
 #define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
 #define LAYOUT_planck_grid_wrapper(...) LAYOUT_planck_grid(__VA_ARGS__)
+
+#define TAPPING_TERM 200
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+#define PERMISSIVE_HOLD
