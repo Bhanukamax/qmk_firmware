@@ -1,2 +1,3 @@
 CAPS_WORD_ENABLE = yes
 SRC += scripts.c
+SWAP_HANDS_ENABLE = no
