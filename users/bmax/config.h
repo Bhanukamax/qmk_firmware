@@ -3,7 +3,8 @@
 #define  _COLMAK 1
 #define  _NAV 2
 #define _NUM 3
-#define  _FN 4
+#define _FN 4
+#define  _MUS 5
 
 #define HM_A LSFT_T(KC_A)
 #define HM_O LCTL_T(KC_O)
@@ -50,7 +51,7 @@
 #define ____DVORAK_R1____ KC_F,       KC_G,   KC_C, KC_R, KC_L
 #define ____DVORAK_R2____ KC_D,       HM_H,   HM_T, HM_N, HM_S
 #define ____DVORAK_R3____ KC_B,       KC_M,   KC_W, KC_V, KC_Z
-#define __DVORAK_MOD_R__  NUM_BSPC,   KC_ENT
+#define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 
 
 #define ____NAV_L1____ XX,      KC_PGUP,         KC_PGDN,         KC_DEL,          XX
@@ -73,6 +74,18 @@
 #define ____NUM_R2____ KC_BSLASH,    LGUI_T(KC_RBRC), RALT_T(KC_RCBR), RCTL_T(KC_RPRN), RSFT_T(KC_GRV)
 #define ____NUM_R3____ S(KC_BSLASH), S(KC_5),         S(KC_7),      S(KC_2),       S(KC_DOT)
 #define __NUM_MOD_R__  XX,           XX
+
+
+
+#define ____MUS_L1____ XX, XX, XX, XX, XX
+#define ____MUS_L2____ XX, XX, XX, XX, XX
+#define ____MUS_L3____ XX, KC_ACL2, KC_ACL1, KC_ACL0, XX
+#define __MUS_MOD_L__ XX, XX
+
+#define ____MUS_R1____ XX, KC_WH_U, KC_MS_U, KC_WH_D, XX
+#define ____MUS_R2____ XX, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1
+#define ____MUS_R3____ XX, XX, XX, XX, KC_BTN2
+#define __MUS_MOD_R__ XX, XX
 
 
 
