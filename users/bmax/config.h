@@ -54,13 +54,13 @@
 
 
 #define ____NAV_L1____ XX,      KC_PGUP,         KC_PGDN,         KC_DEL,          XX
-#define ____NAV_L2____ KC_LSFT, LCTL_T(C(KC_S)), LALT_T(C(KC_D)), LGUI_T(KC_ENT),  XX
+#define ____NAV_L2____ KC_LSFT, LCTL_T(C(KC_S)), LALT_T(C(KC_D)), LGUI_T(KC_ENT),  S(KC_6)
 #define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
 #define __NAV_MOD_L__  XX,      XX
 
 #define ____NAV_R1____ KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XX
 #define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_BSPC
-#define ____NAV_R3____ XX,      KC_RBRC, KC_RCBR, KC_RPRN, S(KC_DOT)
+#define ____NAV_R3____ S(KC_6),      KC_RBRC, KC_RCBR, KC_RPRN, S(KC_DOT)
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
 
 
@@ -75,12 +75,14 @@
 #define __NUM_MOD_R__  XX,           XX
 
 
+
+
 #define ____FN_L1____ KC_F1,  KC_F2, KC_F3, KC_F4,  KC_F5
 #define ____FN_L2____ KC_F11, KC_F2, KC_F3, KC_F4, KC_F5
 #define ____FN_L3____ KC_F1,  KC_F2, KC_F3, KC_F4, KC_F5
 
 #define ____FN_R1____ KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
-#define ____FN_R2____ KC_F11, KC_F7, KC_F8, KC_F11, KC_F12
+#define ____FN_R2____ KC_F11, KC_MEDIA_PLAY_PAUSE, KC_F8, KC_F11, KC_F12
 #define ____FN_R3____ KC_F6,  KC_F7, KC_F8, KC_F11, KC_F12
 
 
