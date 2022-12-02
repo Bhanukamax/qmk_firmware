@@ -4,7 +4,8 @@
 #define  _NAV 2
 #define _NUM 3
 #define _FN 4
-#define  _MUS 5
+#define _MUS 5
+#define _GAME 6
 
 #define HM_A LSFT_T(KC_A)
 #define HM_O LCTL_T(KC_O)
@@ -42,6 +43,7 @@
 #define NAV_ESC LT(_NAV, KC_ESC)
 
 #define XX _______
+#define BASE TO(_DVORAK)
 
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_L2____ HM_A,    HM_O,    HM_E,   HM_U, KC_I
@@ -87,8 +89,15 @@
 #define ____MUS_R3____ XX, XX, XX, XX, KC_BTN2
 #define __MUS_MOD_R__ XX, XX
 
+#define ____GAME_L1____ KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R
+#define ____GAME_L2____ KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F
+#define ____GAME_L3____ KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V
+#define __GAME_MOD_L__ XX, KC_SPC
 
-
+#define ____GAME_R1____ XX, XX, XX, XX, BASE
+#define ____GAME_R2____ XX, XX, XX, XX, XX
+#define ____GAME_R3____ XX, XX, XX, XX, XX
+#define __GAME_MOD_R__ XX, XX
 
 #define ____FN_L1____ KC_F1,  KC_F2, KC_F3, KC_F4,  KC_F5
 #define ____FN_L2____ KC_F11, KC_F2, KC_F3, KC_F4, KC_F5
@@ -96,7 +105,7 @@
 
 #define ____FN_R1____ KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
 #define ____FN_R2____ KC_F11, KC_MEDIA_PLAY_PAUSE, KC_F8, KC_F11, KC_F12
-#define ____FN_R3____ KC_F6,  KC_F7, KC_F8, KC_F11, KC_F12
+#define ____FN_R3____ KC_F6,  TO(_GAME), KC_F8, KC_F11, KC_F12
 
 
 #define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
