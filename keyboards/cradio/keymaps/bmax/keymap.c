@@ -53,6 +53,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ____FN_L3____, ____FN_R3____,
         //
         KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
+    [_GAME] = LAYOUT_bmax_wrapper( // Nav layer
+        ____GAME_L1____, ____GAME_R1____,
+        //
+        ____GAME_L2____, ____GAME_R2____,
+        //
+        ____GAME_L3____, ____GAME_R3____,
+        //
+        /**/ __GAME_MOD_L__, __GAME_MOD_R__
+                                   ),
    [_MUS] = LAYOUT_bmax_wrapper( // Nav layer
         ____MUS_L1____, ____MUS_R1____,
         //
