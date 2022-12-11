@@ -17,7 +17,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return false;        // Return false to ignore further processing of key
     }
     break;
-  case LCTL_T(KC_LPRN):
+  case RCTL_T(KC_LPRN):
     if (record->tap.count && record->event.pressed) {
       tap_code16(KC_LPRN); // Send KC_GT on tap
       return false;        // Return false to ignore further processing of key
@@ -44,7 +44,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     break;
     //    RCTL_T(KC_LBRC), RALT_T(KC_RBRC),
-  case RCTL_T(KC_LBRC):
+  case RGUI_T(KC_LBRC):
     if (record->tap.count && record->event.pressed) {
       tap_code16(KC_LBRC); // Send KC_GT on tap
       return false;        // Return false to ignore further processing of key
