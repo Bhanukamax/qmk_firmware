@@ -67,7 +67,7 @@
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
 
 #define ____NUM_L1____ KC_1,     KC_2,            KC_3,            KC_4,            KC_5
-#define ____NUM_L2____ SHFT_TAB, LCTL_T(KC_GRV), LALT_T(KC_RCBR), LGUI_T(KC_LCBR), KC_SLASH
+#define ____NUM_L2____ SHFT_TAB, LCTL_T(KC_GRV), LALT_T(KC_LCBR), LGUI_T(KC_RCBR), KC_SLASH
 #define ____NUM_L3____ KC_PLUS,  KC_EQL,          KC_UNDS,         KC_MINUS,        S(KC_SLASH)
 #define __NUM_MOD_L__  XX,       XX
 
