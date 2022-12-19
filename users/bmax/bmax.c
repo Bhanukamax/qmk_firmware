@@ -58,9 +58,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     break;
 
     // LALT_T(KC_RCBR), LGUI_T(KC_LCBR),
-  case LALT_T(KC_LCBR):
+  case LALT_T(S(KC_GRV)):
     if (record->tap.count && record->event.pressed) {
-      tap_code16(KC_LCBR); // Send KC_GT on tap
+      tap_code16(S(KC_GRV)); // Send KC_GT on tap
       return false;        // Return false to ignore further processing of key
     }
     break;
