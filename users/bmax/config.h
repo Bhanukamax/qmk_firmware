@@ -72,8 +72,8 @@
 #define __NUM_MOD_L__  XX,       XX
 
 #define ____NUM_R1____ KC_6,         KC_7,            KC_8,            KC_9,            KC_0
-#define ____NUM_R2____ KC_BSLASH,    RGUI_T(KC_LBRC), RALT_T(KC_RBRC), RCTL_T(KC_LPRN), RSFT_T(KC_RPRN)
-#define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),      S(KC_RBRC),      S(KC_COMM),      S(KC_DOT)
+#define ____NUM_R2____ KC_BSLASH,    RGUI_T(KC_LBRC), RALT_T(KC_RBRC), RCTL_T(S(KC_LBRC)), RSFT_T(S(KC_RBRC))
+#define ____NUM_R3____ S(KC_BSLASH), KC_LPRN,         S(KC_RPRN),      S(KC_COMM),      S(KC_DOT)
 #define __NUM_MOD_R__  XX,           XX
 
 
