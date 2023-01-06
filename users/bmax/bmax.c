@@ -1,10 +1,26 @@
 #include QMK_KEYBOARD_H
 #include "bmax.h"
 
+#define ONE RCTL_T(S(KC_LBRC))
+#define ONE_KEY S(KC_LBRC)
+#define TWO RSFT_T(S(KC_RBRC))
+#define TWO_KEY S(KC_RBRC)
 
-__attribute__ ((weak))
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+__attribute__((weak)) bool process_record_user(uint16_t keycode,
+                                               keyrecord_t* record) {
   switch (keycode) {
+  case ONE:
+    if (record->tap.count && record->event.pressed) {
+      tap_code16(ONE_KEY); // Send KC_GT on tap
+      return false;        // Return false to ignore further processing of key
+    }
+    break;
+  case TWO:
+    if (record->tap.count && record->event.pressed) {
+      tap_code16(TWO_KEY); // Send KC_GT on tap
+      return false;        // Return false to ignore further processing of key
+    }
+    break;
   case LALT_T(C(KC_D)):
     if (record->tap.count && record->event.pressed) {
       tap_code16(C(KC_D)); // Send KC_GT on tap
@@ -61,7 +77,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   case LALT_T(S(KC_GRV)):
     if (record->tap.count && record->event.pressed) {
       tap_code16(S(KC_GRV)); // Send KC_GT on tap
-      return false;        // Return false to ignore further processing of key
+      return false;          // Return false to ignore further processing of key
     }
     break;
   case LGUI_T(S(KC_2)):
@@ -70,7 +86,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return false;        // Return false to ignore further processing of key
     }
     break;
-
   }
   return true;
 }
