@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_MUS] = LAYOUT_planck_grid_wrapper( // Mouse layer
                                        ____MUS_L1____, __, ____MUS_R1____,
                                        ____MUS_L2____, __, ____MUS_R2____,
-                                       ____MUS_L3____, __, ____NAV_R3____,
+                                       ____MUS_L3____, __, ____MUS_R3____,
                                        ___, XX, XX, __, XX, XX, ___),
 
   [_FN] = LAYOUT_planck_grid_wrapper( // Nav layer
