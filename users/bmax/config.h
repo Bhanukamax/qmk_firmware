@@ -113,7 +113,7 @@
 
 #define ____FN_R1____ KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
 #define ____FN_R2____ KC_F11, KC_MEDIA_PLAY_PAUSE, KC_F8, KC_F11, KC_F12
-#define ____FN_R3____ KC_F6,  TO(_GAME), KC_F8, KC_F11, KC_F12
+#define ____FN_R3____ KC_F6,  TO(_GAME), RGB_TOG, KC_F11, KC_F12
 
 
 #define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
