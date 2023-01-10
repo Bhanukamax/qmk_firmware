@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                       ____NUM_L1____, XX, XX, ____NUM_R1____,
                                       ____NUM_L2____, XX, XX, ____NUM_R2____,
                                       ____NUM_L3____, XX, XX, ____NUM_R3____,
-                                      ___, KC_ESC, _______,__,  _______, _______, ___
+                                      ___, KC_ESC, _______,__,  _______, _______, XX, RGB_VAI, RGB_VAD
                                       ),
 
   [_NAV] = LAYOUT_planck_grid_wrapper( // Nav layer
