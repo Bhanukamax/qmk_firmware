@@ -18,10 +18,9 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
     CASE_MOD_TAP(LCTL_T, C(KC_S))
     CASE_MOD_TAP(RCTL_T, KC_LPRN)
     CASE_MOD_TAP(RCTL_T, KC_RPRN)
-    CASE_MOD_TAP(RGUI_T, KC_LPRN)
     CASE_MOD_TAP(RSFT_T, KC_RPRN)
-    CASE_MOD_TAP(RGUI_T, S(KC_LBRC))
-    CASE_MOD_TAP(RALT_T, S(KC_RBRC))
+    CASE_MOD_TAP(RGUI_T, KC_LPRN)
+    CASE_MOD_TAP(RALT_T, KC_RPRN)
     CASE_MOD_TAP(LALT_T, S(KC_GRV))
     CASE_MOD_TAP(LGUI_T, S(KC_2))
   }
