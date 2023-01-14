@@ -28,16 +28,17 @@
 #define MOUSEKEY_DELAY 0
 // Time between cursor movements in milliseconds
 #undef MOUSEKEY_INTERVAL
-#define MOUSEKEY_INTERVAL 2
+#define MOUSEKEY_INTERVAL 1
 // Step size for acceleration
 
 #undef MOUSEKEY_MOVE_DELTA
 #undef MOUSEKEY_MAX_SPEED
 #undef MOUSEKEY_TIME_TO_MAX
 
-#define MOUSEKEY_MOVE_DELTA 0
-#define MOUSEKEY_MAX_SPEED 15
-#define MOUSEKEY_TIME_TO_MAX 0
+#define MOUSEKEY_MOVE_DELTA 2
+#define MOUSEKEY_MAX_SPEED 20
+#define MOUSEKEY_TIME_TO_MAX 100
+
 
 //#define MOUSEKEY_TIME_TO_MAX 200
 #define MOUSEKEY_DECELERATED_SPEED 12
