@@ -53,5 +53,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                       ____FN_L1____, __, ____FN_R1____,
                                       ____FN_L2____, __, ____FN_R2____,
                                       ____FN_L3____, __, ____FN_R3____,
-                                      ___,   KC_TRNS, KC_TRNS, __, KC_BSPC, MO(_FN), ___)
+                                      QK_BOOT, QK_RBT, QK_MAKE, KC_TRNS, KC_TRNS, __, KC_BSPC, MO(_FN), ___)
 };
