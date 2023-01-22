@@ -73,7 +73,7 @@
 
 #define ____NUM_R1____ KC_6,         KC_7,               KC_8,                KC_9,               KC_0
 #define ____NUM_R2____ KC_BSLASH,    RGUI_T(KC_LPRN), RALT_T(KC_RPRN),  RCTL_T(KC_LBRC),    RSFT_T(KC_RBRC)
-#define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),            S(KC_RBRC),          S(KC_COMM),        KC_BSPC
+#define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),            S(KC_RBRC),          S(KC_5),        KC_BSPC
 #define __NUM_MOD_R__  XX,           XX
 
 
