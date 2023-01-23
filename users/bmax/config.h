@@ -88,12 +88,12 @@
 #define __NUM_OLD_MOD_R__  XX,           XX
 
 #define ____MUS_L1____ S(KC_1),     S(KC_2),            S(KC_3),            S(KC_4),            S(KC_5)
-#define ____MUS_L2____ XX, XX, XX, XX, XX
+#define ____MUS_L2____ XX, XX, XX, C(KC_U), XX
 #define ____MUS_L3____ XX, KC_ACL2, KC_ACL1, KC_ACL0, XX
 #define __MUS_MOD_L__ XX, XX
 
 #define ____MUS_R1____ S(KC_6), KC_WH_U, KC_MS_U, KC_WH_D, XX
-#define ____MUS_R2____ XX, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1
+#define ____MUS_R2____ C(KC_D), KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1
 #define ____MUS_R3____ XX, XX, XX, XX, KC_BTN2
 #define __MUS_MOD_R__ XX, XX
 
