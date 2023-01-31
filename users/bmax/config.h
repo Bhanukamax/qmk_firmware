@@ -46,7 +46,7 @@
 #define BASE TO(_DVORAK)
 
 #define lhmr(one, two, three, four, five) LSFT_T(one), LCTL_T(two), LALT_T(three), LGUI_T(four), five
-#define rhmr(one, two, three, four, five) one, LGUI_T(two), LALT_T(three), LCTL_T(four), LSFT_T(five)
+#define rhmr(one, two, three, four, five) one, RGUI_T(two), RALT_T(three), RCTL_T(four), RSFT_T(five)
 
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, KC_I)
@@ -60,7 +60,7 @@
 
 
 #define ____NAV_L1____ XX,      KC_PGUP,         KC_PGDN,         KC_DEL,          XX
-#define ____NAV_L2____ KC_LSFT, LCTL_T(C(KC_S)), LALT_T(C(KC_D)), LGUI_T(KC_ENT),  S(KC_6)
+#define ____NAV_L2____ lhmr(KC_LSFT, C(KC_S), C(KC_D), KC_ENT,  S(KC_6))
 #define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
 #define __NAV_MOD_L__  XX,      XX
 
@@ -70,12 +70,12 @@
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
 
 #define ____NUM_L1____ KC_1,     KC_2,            KC_3,            KC_4,            KC_5
-#define ____NUM_L2____ SHFT_TAB, LCTL_T(KC_GRV), LALT_T(S(KC_GRV)), LGUI_T(S(KC_2)), KC_SLASH
+#define ____NUM_L2____ lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), S(KC_2), KC_SLASH)
 #define ____NUM_L3____ KC_PLUS,  KC_EQL,          KC_UNDS,         KC_MINUS,        S(KC_SLASH)
 #define __NUM_MOD_L__  XX,       XX
 
 #define ____NUM_R1____ KC_6,         KC_7,               KC_8,                KC_9,               KC_0
-#define ____NUM_R2____ KC_BSLASH,    RGUI_T(KC_LPRN), RALT_T(KC_RPRN),  RCTL_T(KC_LBRC),    RSFT_T(KC_RBRC)
+#define ____NUM_R2____ rhmr(KC_BSLASH, KC_LPRN, KC_RPRN,  KC_LBRC,    KC_RBRC)
 #define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),            S(KC_RBRC),          S(KC_5),        KC_BSPC
 #define __NUM_MOD_R__  XX,           XX
 
