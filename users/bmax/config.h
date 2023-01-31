@@ -63,7 +63,7 @@
 
 
 #define ____NAV_L1____ KC_1,     KC_2,            KC_3,            KC_4,            KC_5
-#define ____NAV_L2____ lhmr(KC_LSFT, C(KC_S), C(KC_D), KC_ENT,  S(KC_6))
+#define ____NAV_L2____ lhmr(KC_TAB, C(KC_S), C(KC_D), KC_ENT,  S(KC_6))
 #define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
 #define __NAV_MOD_L__  XX,      XX
 
