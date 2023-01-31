@@ -45,13 +45,16 @@
 #define XX _______
 #define BASE TO(_DVORAK)
 
+#define lhmr(one, two, three, four, five) LSFT_T(one), LCTL_T(two), LALT_T(three), LGUI_T(four), five
+#define rhmr(one, two, three, four, five) one, LGUI_T(two), LALT_T(three), LCTL_T(four), LSFT_T(five)
+
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
-#define ____DVORAK_L2____ HM_A,    HM_O,    HM_E,   HM_U, KC_I
+#define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, KC_I)
 #define ____DVORAK_L3____ KC_SCLN, KC_Q,    KC_J,   KC_K, KC_X
 #define __DVORAK_MOD_L__  NAV_ESC, KC_SPC
 
 #define ____DVORAK_R1____ KC_F,       KC_G,   KC_C, KC_R, KC_L
-#define ____DVORAK_R2____ KC_D,       HM_H,   HM_T, HM_N, HM_S
+#define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
 #define ____DVORAK_R3____ KC_B,       KC_M,   KC_W, KC_V, KC_Z
 #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 
