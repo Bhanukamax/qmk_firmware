@@ -48,6 +48,9 @@
 #define lhmr(one, two, three, four, five) LSFT_T(one), LCTL_T(two), LALT_T(three), LGUI_T(four), five
 #define rhmr(one, two, three, four, five) one, RGUI_T(two), RALT_T(three), RCTL_T(four), RSFT_T(five)
 
+// Shifted row
+#define SROW(one, two, three, four, five) S(one), S(two), S(three), S(four), S(five)
+
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, KC_I)
 #define ____DVORAK_L3____ KC_SCLN, KC_Q,    KC_J,   KC_K, KC_X
@@ -59,22 +62,22 @@
 #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 
 
-#define ____NAV_L1____ XX,      KC_PGUP,         KC_PGDN,         KC_DEL,          XX
+#define ____NAV_L1____ KC_1,     KC_2,            KC_3,            KC_4,            KC_5
 #define ____NAV_L2____ lhmr(KC_LSFT, C(KC_S), C(KC_D), KC_ENT,  S(KC_6))
 #define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
 #define __NAV_MOD_L__  XX,      XX
 
-#define ____NAV_R1____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  XX
+#define ____NAV_R1____ KC_6,         KC_7,               KC_8,                KC_9,               KC_0
 #define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_BSPC
-#define ____NAV_R3____ S(KC_6),      KC_RBRC, KC_RCBR, KC_RPRN, S(KC_DOT)
+#define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_DEL
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
 
-#define ____NUM_L1____ KC_1,     KC_2,            KC_3,            KC_4,            KC_5
+#define ____NUM_L1____ SROW(KC_1,     KC_2,            KC_3,            KC_4,            KC_5)
 #define ____NUM_L2____ lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), S(KC_2), KC_SLASH)
 #define ____NUM_L3____ KC_PLUS,  KC_EQL,          KC_UNDS,         KC_MINUS,        S(KC_SLASH)
 #define __NUM_MOD_L__  XX,       XX
 
-#define ____NUM_R1____ KC_6,         KC_7,               KC_8,                KC_9,               KC_0
+#define ____NUM_R1____ SROW(KC_6,         KC_7,               KC_8,                KC_9,               KC_0)
 #define ____NUM_R2____ rhmr(KC_BSLASH, KC_LPRN, KC_RPRN,  KC_LBRC,    KC_RBRC)
 #define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),            S(KC_RBRC),          S(KC_5),        KC_BSPC
 #define __NUM_MOD_R__  XX,           XX
