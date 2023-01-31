@@ -17,9 +17,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
                          KC_EQL,  ____DVORAK_L3____, ____DVORAK_R3____,     KC_BSLASH,
                          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-                         KC_LEFT,  KC_RIGHT, __DVORAK_MOD_L__,    KC_DEL,     KC_SPC,                     KC_UNDS,  KC_BSPC, __DVORAK_MOD_R__,   KC_DOWN,  KC_UP,
+                         KC_LEFT,  KC_RIGHT, __DVORAK_MOD_L__,    KC_LSFT,     KC_SPC,                     KC_UNDS,  KC_DEL, __DVORAK_MOD_R__,   KC_DOWN,  KC_UP,
                          //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
-                         /**/                                  KC_LSFT,   KC_LSFT,                 KC_RCTL,  KC_RSFT
+                         /**/                                  KC_LSFT,   KC_DEL,                 KC_RCTL,  KC_RSFT
                          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
                          ),
     [_COLMAK] = LAYOUT_5x6(
