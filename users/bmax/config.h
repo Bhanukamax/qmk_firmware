@@ -59,7 +59,8 @@
 #define ____DVORAK_R1____ KC_F,       KC_G,   KC_C, KC_R, KC_L
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
 #define ____DVORAK_R3____ KC_B,       KC_M,   KC_W, KC_V, KC_Z
-#define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
+// #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
+#define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
 
 
 #define ____NAV_L1____ KC_1,     KC_2,            KC_3,            KC_4,            KC_5
