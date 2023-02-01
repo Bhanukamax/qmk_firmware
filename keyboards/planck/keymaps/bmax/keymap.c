@@ -28,6 +28,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                           ____DVORAK_L1____,__,____DVORAK_R1____,
                                           ____DVORAK_L2____,__, ____DVORAK_R2____,
                                           ____DVORAK_L3____, __, ____DVORAK_R3____,
+                                          RGB_TOG,RGB_MOD, MO(_MUS), __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, MO(7), RGB_SAI, RGB_SAD
+                                          // RGB_TOG,RGB_MOD, RGB_HUI, __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, RGB_HUD, RGB_SAI, RGB_SAD
+                                          ),
+
+  [7] = LAYOUT_planck_grid_wrapper( // Dvorak
+____PLANCK_GROW_L___, __,
+____PLANCK_GROW_R___,
+                                          ____DVORAK_L2____,__, ____DVORAK_R2____,
+                                          ____DVORAK_L3____, __, ____DVORAK_R3____,
                                           RGB_TOG,RGB_MOD, MO(_MUS), __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, RGB_HUD, RGB_SAI, RGB_SAD
                                           // RGB_TOG,RGB_MOD, RGB_HUI, __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, RGB_HUD, RGB_SAI, RGB_SAD
                                           ),
@@ -55,4 +64,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                       ____FN_L2____, __, ____FN_R2____,
                                       ____FN_L3____, __, ____FN_R3____,
                                       QK_BOOT, QK_RBT, QK_MAKE, KC_TRNS, KC_TRNS, __, KC_BSPC, MO(_FN), ___)
+  // [_PLANCK_NAV] = LAYOUT_planck_grid_wrapper( // Dvorak
+  //                                         ___DVORAK_L1____,__,____DVORAK_R1____,
+  //                                         ____DVORAK_L2____,__, ____DVORAK_R2____,
+  //                                         ____DVORAK_L3____, __, ____DVORAK_R3____,
+  //                                         RGB_TOG,RGB_MOD, MO(_MUS), __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, RGB_HUD, RGB_SAI, RGB_SAD
+  //                                         // RGB_TOG,RGB_MOD, RGB_HUI, __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, RGB_HUD, RGB_SAI, RGB_SAD
+  //                                         )
 };
