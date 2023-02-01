@@ -6,6 +6,7 @@
 #define _FN 4
 #define _MUS 5
 #define _GAME 6
+#define _PLANCK_NAV 7
 
 #define HM_A LSFT_T(KC_A)
 #define HM_O LCTL_T(KC_O)
@@ -50,6 +51,10 @@
 
 // Shifted row
 #define SROW(one, two, three, four, five) S(one), S(two), S(three), S(four), S(five)
+#define GROW(one, two, three, four, five) G(one), G(two), G(three), G(four), G(five)
+
+#define ____PLANCK_GROW_L___ GROW(KC_1, KC_2,KC_3,KC_4, KC_5)
+#define ____PLANCK_GROW_R___ GROW(KC_6, KC_7,KC_8,KC_9, KC_0)
 
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, KC_I)
