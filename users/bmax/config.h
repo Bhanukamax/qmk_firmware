@@ -58,6 +58,8 @@
 
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, KC_I)
+#define __DVORAK_L2_SWEEP lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
+// #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
 #define ____DVORAK_L3____ KC_SCLN, KC_Q,    KC_J,   KC_K, KC_X
 #define __DVORAK_MOD_L__  NAV_ESC, KC_SPC
 
