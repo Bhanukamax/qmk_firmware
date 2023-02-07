@@ -68,7 +68,7 @@
 #define ____DVORAK_R3____ KC_B,       KC_M,   KC_W, KC_V, KC_Z
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
-#define __DVORAK_MOD_R__  NUM_BSPC,   KC_RSFT
+#define __DVORAK_MOD_R__  MO(_NUM),   RSFT_T(KC_BSPC)
 
 
 #define ____NAV_L1____ SROW(KC_1,     KC_2,            KC_3,            KC_4,            KC_5)
@@ -88,19 +88,9 @@
 
 #define ____NUM_R1____ KC_6,         KC_7,               KC_8,                KC_9,               KC_0
 #define ____NUM_R2____ rhmr(KC_BSLASH,   KC_LBRC, KC_RBRC, KC_LPRN, KC_ENT)
-#define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),            S(KC_RBRC),          S(KC_5),        KC_ENT
+#define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),            S(KC_RBRC),          S(KC_5),        KC_BSPC
 #define __NUM_MOD_R__  XX,           XX
 
-
-#define ____NUM_OLD_L1____ KC_1,     KC_2,            KC_3,            KC_4,            KC_5
-#define ____NUM_OLD_L2____ SHFT_TAB, LCTL_T(KC_LPRN), LALT_T(KC_LCBR), LGUI_T(KC_LBRC), KC_SLASH
-#define ____NUM_OLD_L3____ KC_PLUS,  KC_EQL,          KC_UNDS,         KC_MINUS,        S(KC_SLASH)
-#define __NUM_OLD_MOD_L__  XX,       XX
-
-#define ____NUM_OLD_R1____ KC_6,         KC_7,            KC_8,            KC_9,            KC_0
-#define ____NUM_OLD_R2____ KC_BSLASH,    LGUI_T(KC_RBRC), RALT_T(KC_RCBR), RCTL_T(KC_RPRN), RSFT_T(KC_GRV)
-#define ____NUM_OLD_R3____ S(KC_BSLASH), S(KC_5),         S(KC_7),      S(KC_2),       S(KC_DOT)
-#define __NUM_OLD_MOD_R__  XX,           XX
 
 #define ____MUS_L1____ S(KC_1),     S(KC_2),            S(KC_3),            S(KC_4),            S(KC_5)
 #define ____MUS_L2____ XX, XX, XX, C(KC_U), XX
