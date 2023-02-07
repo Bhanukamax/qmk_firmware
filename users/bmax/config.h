@@ -68,7 +68,7 @@
 #define ____DVORAK_R3____ KC_B,       KC_M,   KC_W, KC_V, KC_Z
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
-#define __DVORAK_MOD_R__  MO(_NUM),   RSFT_T(KC_BSPC)
+#define __DVORAK_MOD_R__  MO(_NUM),   KC_BSPC
 
 
 #define ____NAV_L1____ SROW(KC_1,     KC_2,            KC_3,            KC_4,            KC_5)
