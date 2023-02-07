@@ -32,3 +32,13 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
   }
   return true;
 }
+
+
+const uint16_t PROGMEM comb_fd[] = {KC_F, KC_D, COMBO_END};
+const uint16_t PROGMEM comb_gh[] = {KC_G, RGUI_T(KC_H), COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+    COMBO(comb_fd, KC_BSPC),
+    COMBO(comb_gh, KC_ENT)
+};
+
