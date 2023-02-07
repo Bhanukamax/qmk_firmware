@@ -26,9 +26,9 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
   switch (keycode) {
         handle_lhmr(KC_A, KC_O, KC_E, KC_U, KC_I);
         handle_rhmr(KC_D, KC_H, KC_T, KC_N, KC_S);
-        handle_lhmr(KC_LSFT, C(KC_S), C(KC_D), KC_ENT,  S(KC_6));
-        handle_lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), S(KC_2), KC_SLASH);
-        handle_rhmr(KC_BSLASH,   KC_LBRC, KC_RBRC, KC_LPRN, KC_ENT);
+        handle_lhmr(KC_LSFT, KC_ENT, C(KC_S), C(KC_D), S(KC_6));
+        handle_lhmr(SHFT_TAB, KC_GRV, S(KC_GRV),KC_UNDS, KC_SLASH);
+        handle_rhmr(KC_BSLASH,   KC_LBRC, KC_RBRC, KC_EQL, KC_ENT);
   }
   return true;
 }
