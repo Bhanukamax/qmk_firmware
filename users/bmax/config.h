@@ -87,7 +87,7 @@
 #define __NUM_MOD_L__  XX,       XX
 
 #define ____NUM_R1____ KC_6,         KC_7,               KC_8,                KC_9,               KC_0
-#define ____NUM_R2____ rhmr(KC_BSLASH, KC_LPRN, KC_RPRN,  KC_LBRC,    KC_RBRC)
+#define ____NUM_R2____ rhmr(KC_BSLASH,   KC_LBRC, KC_RBRC, KC_LPRN, KC_ENT)
 #define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),            S(KC_RBRC),          S(KC_5),        KC_ENT
 #define __NUM_MOD_R__  XX,           XX
 
