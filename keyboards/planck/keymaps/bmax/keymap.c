@@ -45,14 +45,15 @@ ____PLANCK_GROW_R___,
                                       ____NUM_L1____, XX, XX, ____NUM_R1____,
                                       ____NUM_L2____, XX, XX, ____NUM_R2____,
                                       ____NUM_L3____, XX, XX, ____NUM_R3____,
-                                      ___, KC_ESC, _______,__,  _______, _______, XX, RGB_VAI, RGB_VAD
+                                      ___, __NUM_MOD_L__ ,__,  __NUM_MOD_R__, XX, RGB_VAI, RGB_VAD
                                       ),
 
   [_NAV] = LAYOUT_planck_grid_wrapper( // Nav layer
                                        ____NAV_L1____, __, ____NAV_R1____,
                                        ____NAV_L2____, __, ____NAV_R2____,
                                        ____NAV_L3____, __, ____NAV_R3____,
-                                       ___, KC_TRNS, KC_TRNS, __, KC_BSPC, MO(_FN), ___),
+                                      ___, __NAV_MOD_L__ ,__,  __NAV_MOD_R__, XX, RGB_VAI, RGB_VAD
+                                      ),
   [_MUS] = LAYOUT_planck_grid_wrapper( // Mouse layer
                                        ____MUS_L1____, __, ____MUS_R1____,
                                        ____MUS_L2____, __, ____MUS_R2____,
