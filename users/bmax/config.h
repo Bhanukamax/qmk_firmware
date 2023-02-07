@@ -60,21 +60,23 @@
 #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
 #define __DVORAK_L2_SWEEP lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
 // #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
-#define ____DVORAK_L3____ KC_SCLN, KC_Q,    KC_J,   KC_K, KC_X
-#define __DVORAK_MOD_L__  NAV_ESC, KC_SPC
+#define ____DVORAK_L3____ KC_SCLN, KC_Q, KC_J, KC_K, KC_X
+// #define __DVORAK_MOD_L__  LT(_NAV, KC_ESC), KC_SPC
+#define __DVORAK_MOD_L__  LT(_NUM, KC_ESC), KC_SPC
 
-#define ____DVORAK_R1____ KC_F,       KC_G,   KC_C, KC_R, KC_L
+#define ____DVORAK_R1____ KC_F, KC_G, KC_C, KC_R, KC_L
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
-#define ____DVORAK_R3____ KC_B,       KC_M,   KC_W, KC_V, KC_Z
+#define ____DVORAK_R3____ KC_B, KC_M, KC_W, KC_V, KC_Z
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
-#define __DVORAK_MOD_R__  MO(_NUM),   KC_BSPC
+#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), LSFT_T(KC_ENT)
+// #define __DVORAK_MOD_R__  MO(_NUM),   KC_BSPC
 
 
-#define NUM_ROW_L KC_1,     KC_2,            KC_3,            KC_4,            KC_5
-#define NUM_ROW_R KC_6,         KC_7,               KC_8,                KC_9,               KC_0
+#define NUM_ROW_L KC_1, KC_2, KC_3, KC_4, KC_5
+#define NUM_ROW_R KC_6, KC_7, KC_8, KC_9, KC_0
 
-// #define NUM_ROW_IN_NAV_LAYER
+#define NUM_ROW_IN_NAV_LAYER
 #ifdef NUM_ROW_IN_NAV_LAYER
 
 #define ____NAV_L1____ KC_1, KC_2,  KC_3, KC_4, KC_5
@@ -98,16 +100,17 @@
 #define __NAV_MOD_L__  XX,      XX
 
 #define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_BSPC
-#define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_DEL
+#define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_ENT
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
 
-#define ____NUM_L2____ lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), S(KC_2), KC_SLASH)
-#define ____NUM_L3____ KC_PLUS,  KC_EQL,          KC_UNDS,         KC_MINUS,        S(KC_SLASH)
-#define __NUM_MOD_L__  XX,       XX
+#define ____NUM_L2____ lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), KC_UNDS, KC_SLASH)
+#define ____NUM_L3____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
+#define __NUM_MOD_L__  XX,  XX
 
-#define ____NUM_R2____ rhmr(KC_BSLASH,   KC_LBRC, KC_RBRC, KC_LPRN, KC_ENT)
-#define ____NUM_R3____ S(KC_BSLASH), S(KC_LBRC),            S(KC_RBRC),          S(KC_5),        KC_BSPC
-#define __NUM_MOD_R__  XX,           XX
+
+#define ____NUM_R2____ rhmr(KC_BSLASH, KC_EQL,  KC_LBRC, KC_RBRC,  KC_BSPC)
+#define ____NUM_R3____ S(KC_BSLASH), KC_PLUS, S(KC_LBRC),  S(KC_RBRC),  KC_ENT
+#define __NUM_MOD_R__  XX,  XX
 
 
 #define ____MUS_L1____ S(KC_1),     S(KC_2),            S(KC_3),            S(KC_4),            S(KC_5)
