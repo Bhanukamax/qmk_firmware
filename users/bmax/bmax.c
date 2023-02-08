@@ -28,7 +28,7 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
         handle_rhmr(KC_D, KC_H, KC_T, KC_N, KC_S);
         handle_lhmr(KC_LSFT, KC_ENT, C(KC_S), C(KC_D), S(KC_6));
         handle_lhmr(SHFT_TAB, KC_GRV, S(KC_GRV),KC_UNDS, KC_SLASH);
-        handle_rhmr(KC_BSLASH,   KC_LBRC, KC_RBRC, KC_EQL, KC_ENT);
+        handle_rhmr(KC_BSLASH,   KC_PLUS, S(KC_LBRC), S(KC_RBRC),  KC_ENT);
   }
   return true;
 }
