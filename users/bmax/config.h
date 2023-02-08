@@ -99,8 +99,8 @@
 #define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
 #define __NAV_MOD_L__  XX,      XX
 
-#define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_BSPC
-#define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_ENT
+#define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_ENT
+#define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_BSPC
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
 
 #define ____NUM_L2____ lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), KC_UNDS, KC_SLASH)
@@ -108,8 +108,8 @@
 #define __NUM_MOD_L__  XX,  XX
 
 
-#define ____NUM_R2____ rhmr(KC_BSLASH, KC_EQL,  KC_LBRC, KC_RBRC,  KC_BSPC)
-#define ____NUM_R3____ S(KC_BSLASH), KC_PLUS, S(KC_LBRC),  S(KC_RBRC),  KC_ENT
+#define ____NUM_R2____ rhmr(KC_BSLASH, KC_EQL,  KC_LBRC, KC_RBRC,  KC_ENT)
+#define ____NUM_R3____ S(KC_BSLASH), KC_PLUS, S(KC_LBRC),  S(KC_RBRC),  KC_BSPC
 #define __NUM_MOD_R__  XX,  XX
 
 
