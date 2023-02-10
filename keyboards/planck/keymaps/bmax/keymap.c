@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_DVORAK] = LAYOUT_planck_grid_wrapper( // Dvorak
                                           ____DVORAK_L1____, XX, ____DVORAK_R1____, KC_BSPC,
                                           ____DVORAK_L2____, XX, ____DVORAK_R2____, KC_ENT,
-                                          ____DVORAK_L3____, XX, ____DVORAK_R3____, KC_RSFT,
+                                          ____DVORAK_L3____, XX, ____DVORAK_R3____, KC_SLASH,
                                           RGB_TOG,RGB_MOD, MO(_MUS), __DVORAK_MOD_L__, __DVORAK_MOD_R__p, MO(7), RGB_SAI, RGB_SAD, XX
                                           // RGB_TOG,RGB_MOD, RGB_HUI, __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, RGB_HUD, RGB_SAI, RGB_SAD
                                           ),
