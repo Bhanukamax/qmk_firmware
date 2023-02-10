@@ -113,8 +113,8 @@
 #define __NUM_MOD_L__  XX,  XX
 
 
-#define ____NUM_R2____ rhmr(KC_BSLASH, KC_PLUS,  S(KC_LBRC), S(KC_RBRC),  KC_BSPC)
-#define ____NUM_R3____ S(KC_BSLASH), KC_EQL, KC_LBRC,  KC_RBRC,  KC_BSPC
+#define ____NUM_R2____ rhmr(KC_BSLASH, KC_PLUS, KC_RALT,  S(KC_LBRC), S(KC_RBRC))
+#define ____NUM_R3____ S(KC_BSLASH), KC_EQL, XX, KC_LBRC,  KC_RBRC
 #define __NUM_MOD_R__  XX,  XX
 #define __NUM_MOD_R__p XX,  XX,  XX
 
