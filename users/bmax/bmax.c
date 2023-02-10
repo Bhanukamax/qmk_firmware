@@ -33,24 +33,16 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
   return true;
 }
 
-
-
-// mocro to define combos
-// eg combo:  const uint16_t PROGMEM comb_yi[] = {KC_Y, LT(_MUS, KC_I), COMBO_END};
 #define bake_duel_combo(cname, key1, key2) \
   const uint16_t PROGMEM cname[] = {key1, key2, COMBO_END}
-/*
-const uint16_t PROGMEM comb_quota[] = {LT(_NAV, KC_QUOT),LSFT_T(KC_A), COMBO_END};
-const uint16_t PROGMEM comb_ls[] = {KC_L, RSFT_T(KC_S), COMBO_END};
-const uint16_t PROGMEM comb_yi[] = {KC_Y, LT(_MUS, KC_I), COMBO_END};
-*/
+
 bake_duel_combo(comb_quota, LT(_NAV, KC_QUOT),  LSFT_T(KC_A));
 bake_duel_combo(comb_ls,    KC_L,                RSFT_T(KC_S));
 bake_duel_combo(comb_yi,    KC_Y,               LT(_MUS, KC_I));
 
 combo_t key_combos[COMBO_COUNT] = {
-    COMBO(comb_quota, KC_TAB),
-    COMBO(comb_yi, KC_TAB),
-    COMBO(comb_ls, KC_ENT)
+    COMBO(comb_quota,   KC_TAB),
+    COMBO(comb_yi,      KC_TAB),
+    COMBO(comb_ls,      KC_ENT)
 };
 
