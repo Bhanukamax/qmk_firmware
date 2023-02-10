@@ -56,7 +56,7 @@
 #define ____PLANCK_GROW_L___ GROW(KC_1, KC_2,KC_3,KC_4, KC_5)
 #define ____PLANCK_GROW_R___ GROW(KC_6, KC_7,KC_8,KC_9, KC_0)
 
-#define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
+#define ____DVORAK_L1____ LT(_NAV, KC_QUOT), KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
 #define __DVORAK_L2_SWEEP lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
 // #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
@@ -95,11 +95,12 @@
 
 #endif
 
-#define ____NAV_L2____ KC_TAB, KC_BSPC, KC_DEL, KC_ENT,  S(KC_6)
-#define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
+#define ____NAV_L2____ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,  KC_SLASH
+#define ____NAV_L3____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, XX
+// #define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
 #define __NAV_MOD_L__  XX,      XX
 
-#define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_ENT
+#define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_BSPC
 #define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_BSPC
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
 
@@ -108,7 +109,7 @@
 #define __NUM_MOD_L__  XX,  XX
 
 
-#define ____NUM_R2____ rhmr(KC_BSLASH, KC_PLUS,  S(KC_LBRC), S(KC_RBRC),  KC_ENT)
+#define ____NUM_R2____ rhmr(KC_BSLASH, KC_PLUS,  S(KC_LBRC), S(KC_RBRC),  KC_BSPC)
 #define ____NUM_R3____ S(KC_BSLASH), KC_EQL, KC_LBRC,  KC_RBRC,  KC_BSPC
 #define __NUM_MOD_R__  XX,  XX
 
