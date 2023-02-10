@@ -72,6 +72,7 @@
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
 #define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), LSFT_T(KC_ENT)
+#define __DVORAK_MOD_R__p  LT(_NAV, KC_BSPC),LT(_NAV, KC_BSPC), LSFT_T(KC_ENT)
 // #define __DVORAK_MOD_R__  MO(_NUM),   KC_BSPC
 
 
@@ -105,6 +106,7 @@
 #define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_BSPC
 #define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_BSPC
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
+#define __NAV_MOD_R__p KC_BSPC, KC_BSPC, MO(_FN)
 
 #define ____NUM_L2____ lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), KC_UNDS, KC_SLASH)
 #define ____NUM_L3____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
@@ -114,6 +116,7 @@
 #define ____NUM_R2____ rhmr(KC_BSLASH, KC_PLUS,  S(KC_LBRC), S(KC_RBRC),  KC_BSPC)
 #define ____NUM_R3____ S(KC_BSLASH), KC_EQL, KC_LBRC,  KC_RBRC,  KC_BSPC
 #define __NUM_MOD_R__  XX,  XX
+#define __NUM_MOD_R__p XX,  XX,  XX
 
 
 #define ____MUS_L1____ S(KC_1),     S(KC_2),            S(KC_3),            S(KC_4),            S(KC_5)
@@ -125,6 +128,7 @@
 #define ____MUS_R2____ C(KC_D), KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1
 #define ____MUS_R3____ XX, XX, XX, XX, KC_BTN2
 #define __MUS_MOD_R__ XX, XX
+#define __MUS_MOD_R__p XX, XX, XX
 
 #define ____GAME_L1____ KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R
 #define ____GAME_L2____ KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F
