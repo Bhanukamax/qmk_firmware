@@ -62,7 +62,9 @@
 // #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
 #define ____DVORAK_L3____ KC_SCLN, KC_Q, KC_J, KC_K, KC_X
 // #define __DVORAK_MOD_L__  LT(_NAV, KC_ESC), KC_SPC
-#define __DVORAK_MOD_L__  LT(_NUM, KC_ESC), KC_SPC
+
+// NOTE: KC_SPC  IT'S BAT TO ADD MOD-TAP ETC TO SPACE KEY BECAUSE YOU NEED TO TAP AND HOLD IT IN GRAPHICS PROGRAMS
+#define __DVORAK_MOD_L__  LT(_NUM, KC_ESC), KC_SPC /* <- DO NOT CHANGE KC_SPC */
 
 #define ____DVORAK_R1____ KC_F, KC_G, KC_C, KC_R, KC_L
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
