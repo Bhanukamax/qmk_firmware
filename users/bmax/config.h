@@ -64,7 +64,8 @@
 // #define __DVORAK_MOD_L__  LT(_NAV, KC_ESC), KC_SPC
 
 // NOTE: KC_SPC  IT'S BAT TO ADD MOD-TAP ETC TO SPACE KEY BECAUSE YOU NEED TO TAP AND HOLD IT IN GRAPHICS PROGRAMS
-#define __DVORAK_MOD_L__  LT(_NUM, KC_ESC), KC_SPC /* <- DO NOT CHANGE KC_SPC */
+// #define __DVORAK_MOD_L__  LT(_NUM, KC_ESC), KC_SPC /* <- DO NOT CHANGE KC_SPC */
+#define __DVORAK_MOD_L__  LT(_NUM, KC_SPC), LT(_NUM, KC_SPC)
 
 #define ____DVORAK_R1____ KC_F, KC_G, KC_C, KC_R, KC_L
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
@@ -113,8 +114,8 @@
 #define __NUM_MOD_L__  XX,  XX
 
 
-#define ____NUM_R2____ rhmr(KC_BSLASH, KC_PLUS, KC_RALT,  S(KC_LBRC), S(KC_RBRC))
-#define ____NUM_R3____ S(KC_BSLASH), KC_EQL, XX, KC_LBRC,  KC_RBRC
+#define ____NUM_R2____ rhmr(KC_BSLASH, KC_UNDS, KC_EQL, KC_LBRC, KC_RBRC)
+#define ____NUM_R3____ S(KC_BSLASH), KC_MINUS, KC_PLUS, S(KC_LBRC), S(KC_RBRC)
 #define __NUM_MOD_R__  XX,  XX
 #define __NUM_MOD_R__p XX,  XX,  XX
 

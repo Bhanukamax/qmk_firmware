@@ -28,7 +28,7 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
         handle_rhmr(KC_D, KC_H, KC_T, KC_N, KC_S);
         handle_lhmr(KC_LSFT, KC_ENT, C(KC_S), C(KC_D), S(KC_6));
         handle_lhmr(SHFT_TAB, KC_GRV, S(KC_GRV),KC_UNDS, KC_SLASH);
-        handle_rhmr(KC_BSLASH,   KC_PLUS, KC_RALT, S(KC_LBRC), S(KC_RBRC));
+        handle_rhmr(KC_BSLASH,   KC_UNDS, KC_EQL, KC_LBRC, KC_RBRC);
   }
   return true;
 }
@@ -39,10 +39,12 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
 bake_duel_combo(comb_quota, LT(_NAV, KC_QUOT),  LSFT_T(KC_A));
 bake_duel_combo(comb_ls,    KC_L,                RSFT_T(KC_S));
 bake_duel_combo(comb_yi,    KC_Y,               LT(_MUS, KC_I));
+bake_duel_combo(comb_pu,    KC_P,               LGUI_T(KC_U));
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(comb_quota,   KC_TAB),
     COMBO(comb_yi,      KC_TAB),
-    COMBO(comb_ls,      KC_ENT)
+    COMBO(comb_ls,      KC_ENT),
+    COMBO(comb_pu,      KC_ESC)
 };
 
