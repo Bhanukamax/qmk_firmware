@@ -81,40 +81,24 @@
 #define NUM_ROW_L KC_1, KC_2, KC_3, KC_4, KC_5
 #define NUM_ROW_R KC_6, KC_7, KC_8, KC_9, KC_0
 
-#define NUM_ROW_IN_NAV_LAYER
-#ifdef NUM_ROW_IN_NAV_LAYER
-
 #define ____NAV_L1____ KC_1, KC_2,  KC_3, KC_4, KC_5
-#define ____NAV_R1____ KC_6, KC_7, KC_8, KC_9, KC_0
-
-#define ____NUM_L1____ SROW(KC_1, KC_2,  KC_3, KC_4, KC_5)
-#define ____NUM_R1____ SROW(KC_6, KC_7, KC_8, KC_9, KC_0)
-
-#else
-
-#define ____NAV_L1____ SROW(KC_1, KC_2,  KC_3, KC_4, KC_5)
-#define ____NAV_R1____ SROW(KC_6, KC_7, KC_8, KC_9, KC_0)
-
-#define ____NUM_L1____ KC_1, KC_2,  KC_3, KC_4, KC_5
-#define ____NUM_R1____ KC_6, KC_7, KC_8, KC_9, KC_0
-
-#endif
-
 #define ____NAV_L2____ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,  KC_SLASH
 #define ____NAV_L3____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, XX
 // #define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
-#define __NAV_MOD_L__  XX,      XX
+#define __NAV_MOD_L__  LT(_FN, KC_SPC), LT(_FN, KC_SPC)
 
+#define ____NAV_R1____ KC_6, KC_7, KC_8, KC_9, KC_0
 #define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_BSPC
 #define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_BSPC
 #define __NAV_MOD_R__  KC_BSPC, MO(_FN)
 #define __NAV_MOD_R__p KC_BSPC, KC_BSPC, MO(_FN)
 
+#define ____NUM_L1____ SROW(KC_1, KC_2,  KC_3, KC_4, KC_5)
 #define ____NUM_L2____ lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), KC_UNDS, KC_SLASH)
 #define ____NUM_L3____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
 #define __NUM_MOD_L__  XX,  XX
 
-
+#define ____NUM_R1____ SROW(KC_6, KC_7, KC_8, KC_9, KC_0)
 #define ____NUM_R2____ rhmr(KC_BSLASH, KC_UNDS, KC_EQL, KC_LBRC, KC_RBRC)
 #define ____NUM_R3____ S(KC_BSLASH), KC_MINUS, KC_PLUS, S(KC_LBRC), S(KC_RBRC)
 #define __NUM_MOD_R__  XX,  XX
@@ -143,7 +127,7 @@
 #define __GAME_MOD_R__ XX, XX
 
 #define ____FN_L1____ KC_F1,  KC_F2, KC_F3, KC_F4,  KC_F5
-#define ____FN_L2____ KC_F11, KC_F2, KC_MPRV, KC_F4, KC_F5
+#define ____FN_L2____ KC_F11, KC_PRINT_SCREEN, KC_MPRV, KC_F4, KC_F5
 #define ____FN_L3____ KC_VOLD,  KC_VOLU, KC_F3, KC_F4, KC_F5
 
 #define ____FN_R1____ KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
