@@ -7,6 +7,7 @@
 #define _MUS 5
 #define _GAME 6
 #define _PLANCK_NAV 7
+#define _CTRL 8
 
 #define HM_A LSFT_T(KC_A)
 #define HM_O LCTL_T(KC_O)
@@ -94,8 +95,8 @@
 #define __NAV_MOD_R__p KC_BSPC, KC_BSPC, MO(_FN)
 
 #define ____NUM_L1____ SROW(KC_1, KC_2,  KC_3, KC_4, KC_5)
-#define ____NUM_L2____ lhmr(SHFT_TAB, KC_GRV, S(KC_GRV), KC_UNDS, KC_SLASH)
-#define ____NUM_L3____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
+#define ____NUM_L2____ C(KC_A), LCTL_T(KC_GRV), LALT_T(S(KC_GRV)), C(KC_U), KC_SLASH
+#define ____NUM_L3____ C(KC_Z), C(KC_X), C(KC_C), C(KC_V), S(KC_SLASH)
 #define __NUM_MOD_L__  XX,  XX
 
 #define ____NUM_R1____ SROW(KC_6, KC_7, KC_8, KC_9, KC_0)
