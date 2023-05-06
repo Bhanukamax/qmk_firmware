@@ -132,7 +132,7 @@
 #define ____FN_L3____ KC_VOLD,  KC_VOLU, KC_F3, KC_F4, KC_F5
 
 #define ____FN_R1____ KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
-#define ____FN_R2____ KC_F11, KC_MEDIA_PLAY_PAUSE, KC_MNXT, KC_F11, KC_F12
+#define ____FN_R2____ KC_DEL, KC_MEDIA_PLAY_PAUSE, KC_MNXT, KC_F11, KC_F12
 #define ____FN_R3____ KC_F6,  TO(_GAME), RGB_TOG, KC_BRID, KC_BRIU
 
 
