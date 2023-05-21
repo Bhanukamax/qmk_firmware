@@ -47,8 +47,8 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(comb_yi,      KC_TAB),
     COMBO(comb_pu,      KC_ESC),
 
-    COMBO(comb_quot_a,   KC_SCLN),
-    COMBO(comb_ls,      KC_Z),
+    COMBO(comb_quot_a,   KC_TAB),
+    COMBO(comb_ls,      KC_ENT),
 
     COMBO(comb_comm_o,      KC_TAB),
     COMBO(comb_rn,      KC_ENT)
