@@ -105,7 +105,6 @@
 #define __NUM_MOD_R__  XX,  XX
 #define __NUM_MOD_R__p XX,  XX,  XX
 
-
 #define ____MUS_L1____ S(KC_1),     S(KC_2),            S(KC_3),            S(KC_4),            S(KC_5)
 #define ____MUS_L2____ XX, XX, XX, C(KC_U), XX
 #define ____MUS_L3____ XX, KC_ACL2, KC_ACL1, KC_ACL0, XX
@@ -129,7 +128,7 @@
 
 #define ____FN_L1____ KC_F1,  KC_F2, KC_F3, KC_F4,  KC_F5
 #define ____FN_L2____ KC_F11, KC_PRINT_SCREEN, KC_MPRV, KC_F4, KC_F5
-#define ____FN_L3____ KC_VOLD,  KC_VOLU, KC_F3, KC_F4, KC_F5
+#define ____FN_L3____ KC_VOLD,  KC_VOLU, KC_F3, KC_BRID, KC_BRIU
 
 #define ____FN_R1____ KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
 #define ____FN_R2____ KC_DEL, KC_MEDIA_PLAY_PAUSE, KC_MNXT, KC_F11, KC_F12
