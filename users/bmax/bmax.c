@@ -36,15 +36,21 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
 #define bake_duel_combo(cname, key1, key2) \
   const uint16_t PROGMEM cname[] = {key1, key2, COMBO_END}
 
-bake_duel_combo(comb_quota, LT(_NAV, KC_QUOT),  LSFT_T(KC_A));
+bake_duel_combo(comb_quot_a, LT(_NAV, KC_QUOT),  LSFT_T(KC_A));
 bake_duel_combo(comb_ls,    KC_L,                RSFT_T(KC_S));
 bake_duel_combo(comb_yi,    KC_Y,               LT(_MUS, KC_I));
 bake_duel_combo(comb_pu,    KC_P,               LGUI_T(KC_U));
+bake_duel_combo(comb_comm_o,    KC_COMM,               LCTL_T(KC_O));
+bake_duel_combo(comb_rn,    KC_R,               RCTL_T(KC_N));
 
 combo_t key_combos[COMBO_COUNT] = {
-    COMBO(comb_quota,   KC_TAB),
     COMBO(comb_yi,      KC_TAB),
-    COMBO(comb_ls,      KC_ENT),
-    COMBO(comb_pu,      KC_ESC)
+    COMBO(comb_pu,      KC_ESC),
+
+    COMBO(comb_quot_a,   KC_SCLN),
+    COMBO(comb_ls,      KC_Z),
+
+    COMBO(comb_comm_o,      KC_TAB),
+    COMBO(comb_rn,      KC_ENT)
 };
 
