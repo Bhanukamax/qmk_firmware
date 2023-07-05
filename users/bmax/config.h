@@ -73,7 +73,8 @@
 #define ____DVORAK_R3____ KC_B, KC_M, KC_W, KC_V, KC_Z
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
-#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), LSFT_T(KC_ENT)
+// #define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), LSFT_T(KC_ENT)
+#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), KC_LSFT
 #define __DVORAK_MOD_R__p  LT(_NAV, KC_BSPC),LT(_NAV, KC_BSPC), LT(_NAV, KC_BSPC)
 
 // #define __DVORAK_MOD_R__  MO(_NUM),   KC_BSPC
