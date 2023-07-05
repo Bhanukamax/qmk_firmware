@@ -38,6 +38,8 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
 
 bake_duel_combo(comb_quot_a, LT(_NAV, KC_QUOT),  LSFT_T(KC_A));
 bake_duel_combo(comb_ls,    KC_L,                RSFT_T(KC_S));
+bake_duel_combo(comb_gh,    KC_G,                RGUI_T(KC_H));
+bake_duel_combo(comb_fd,    KC_F,                KC_D);
 bake_duel_combo(comb_yi,    KC_Y,               LT(_MUS, KC_I));
 bake_duel_combo(comb_pu,    KC_P,               LGUI_T(KC_U));
 bake_duel_combo(comb_comm_o,    KC_COMM,               LCTL_T(KC_O));
@@ -48,7 +50,9 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(comb_pu,      KC_ESC),
 
     COMBO(comb_quot_a,   KC_TAB),
-    COMBO(comb_ls,      KC_ENT),
+    // COMBO(comb_ls,      KC_ENT),
+    COMBO(comb_gh,      KC_ENT),
+    COMBO(comb_fd,      KC_ENT),
 
     COMBO(comb_comm_o,      KC_TAB),
     COMBO(comb_rn,      KC_ENT)
