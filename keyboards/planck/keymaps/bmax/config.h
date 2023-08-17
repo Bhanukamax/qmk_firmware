@@ -23,6 +23,9 @@
 #define IGNORE_MOD_TAP_INTERRUPT
 #define TAPPING_FORCE_HOLD
 
+// #define QUICK_TAP_TERM 200
+// #undef TAPPING_TOGGLE
+// #define TAPPING_TOGGLE 1
 // Improved mouse key defaults
 // Delay between pressing a key and cursor movement
 #undef MOUSEKEY_DELAY

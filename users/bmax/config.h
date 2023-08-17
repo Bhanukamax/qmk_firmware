@@ -74,7 +74,7 @@
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
 // #define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), LSFT_T(KC_ENT)
-#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), KC_LSFT
+#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), LSFT_T(KC_DEL)
 #define __DVORAK_MOD_R__p  LT(_NAV, KC_BSPC),LT(_NAV, KC_BSPC), LT(_NAV, KC_BSPC)
 
 // #define __DVORAK_MOD_R__  MO(_NUM),   KC_BSPC
@@ -96,7 +96,7 @@
 #define __NAV_MOD_R__p KC_BSPC, KC_BSPC, MO(_FN)
 
 #define ____NUM_L1____ SROW(KC_1, KC_2,  KC_3, KC_4, KC_5)
-#define ____NUM_L2____ C(KC_A), LCTL_T(KC_GRV), LALT_T(S(KC_GRV)), C(KC_U), KC_SLASH
+#define ____NUM_L2____ C(KC_A), LCTL_T(KC_GRV), LALT_T(S(KC_GRV)), LT(_MUS, C(KC_U)), KC_SLASH
 #define ____NUM_L3____ C(KC_Z), C(KC_X), C(KC_C), C(KC_V), S(KC_SLASH)
 #define __NUM_MOD_L__  XX,  XX
 
