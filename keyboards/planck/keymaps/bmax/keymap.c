@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       ____DVORAK_L1____, XX,KC_PRINT_SCREEN , ____DVORAK_R1____, // KC_BSPC,
       ____DVORAK_L2____, XX,XX , ____DVORAK_R2____, // KC_ENT,
       ____DVORAK_L3____, XX,XX , ____DVORAK_R3____, // KC_SLASH,
-      RGB_TOG,KC_DOWN, KC_UP, __DVORAK_MOD_L__, KC_SPC, KC_SPC,  __DVORAK_MOD_R__, KC_LEFT, KC_RIGHT, TT(_MUS) //, XX
+      RGB_TOG,KC_DOWN, KC_UP, __DVORAK_MOD_L__, KC_SPC, KC_SPC,  __DVORAK_MOD_R__, KC_LEFT, KC_RIGHT, MO(_MUS) //, XX
       // RGB_TOG,RGB_MOD, MO(_MUS), __DVORAK_MOD_L__, KC_LSFT, KC_LSFT,  __DVORAK_MOD_R__, MO(7), RGB_SAI, RGB_SAD //, XX
       // RGB_TOG,RGB_MOD, KC_LGUI, __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, KC_LALT, RGB_SAI, RGB_SAD
                                           ),
