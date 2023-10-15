@@ -37,7 +37,6 @@
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 95
 
 
-
 #define  _DVORAK 0
 #define  _COLMAK 1
 #define  _NAV 2
@@ -184,4 +183,5 @@
 #define TAPPING_FORCE_HOLD
 #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 #define PERMISSIVE_HOLD
-#define QUICK_TAP_TERM 0
+#define QUICK_TAP_TERM 200
+#define QUICK_TAP_TERM_PER_KEY

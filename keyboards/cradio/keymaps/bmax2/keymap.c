@@ -23,18 +23,6 @@
  * https://precondition.github.io/home-row-mods
  */
 
-
-
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case LT(_NUM, KC_SPC):
-            return 1;
-        default:
-            return TAPPING_TERM;
-    }
-}
-
-
 #define CASE_MOD_TAP(foo, bar)                                                 \
   case foo(bar):                                                               \
     if (record->tap.count && record->event.pressed) {                          \
@@ -55,13 +43,25 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     CASE_MOD_TAP(RALT_T, three); \
     CASE_MOD_TAP(RGUI_T, two)
 
+bool lctl_o_held = false;
 __attribute__((weak)) bool process_record_user(uint16_t keycode,
                                                keyrecord_t* record) {
-  switch (keycode) {
+    switch (keycode) {
         handle_lhmr(SHFT_TAB, KC_GRV, S(KC_GRV),KC_UNDS, KC_SLASH);
         handle_rhmr(KC_BSLASH,   KC_UNDS, KC_EQL, KC_LBRC, KC_RBRC);
+      return false; // Skip all further processing of this key
   }
   return true;
+}
+
+uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(_NUM, KC_SPC):
+        case LT(_NAV, KC_BSPC):
+            return 0;
+        default:
+            return QUICK_TAP_TERM;
+    }
 }
 
 #define bake_duel_combo(cname, key1, key2) \
