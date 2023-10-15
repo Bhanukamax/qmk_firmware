@@ -22,6 +22,19 @@
 /* Base layer 0 layout uses home row mods. See the following guide for details:
  * https://precondition.github.io/home-row-mods
  */
+
+
+
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(_NUM, KC_SPC):
+            return 1;
+        default:
+            return TAPPING_TERM;
+    }
+}
+
+
 #define CASE_MOD_TAP(foo, bar)                                                 \
   case foo(bar):                                                               \
     if (record->tap.count && record->event.pressed) {                          \
