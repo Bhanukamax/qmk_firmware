@@ -79,60 +79,36 @@ combo_t key_combos[] = {
 };
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT_bmax_wrapper( // Dvorak
-
-        //┌─────────┬─────────┬─────────┬─────────┐                 ┌─────────┬─────────┬─────────┬─────────┐
         ____DVORAK_L1____, ____DVORAK_R1____,
-        //├─────────┼─────────┼─────────┼────────┤                 ├─────────┼─────────┼─────────┼─────────┤
         __DVORAK_L2_SWEEP, ____DVORAK_R2____,
-        //├─────────┼─────────┼─────────┼────────┤                 ├─────────┼─────────┼─────────┼─────────┤
         ____DVORAK_L3____, ____DVORAK_R3____,
-        //└─────────┴─────────┴─────┬───┴─────┬───┼─────────┐     ┌─┴───────┬─┼─────────┴─────────┴─────────┘
-        /**/ __DVORAK_MOD_L__, __DVORAK_MOD_R__
-        //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
+        __DVORAK_MOD_L__, __DVORAK_MOD_R__
         ),
     [_NUM] = LAYOUT_bmax_wrapper(
-        // test
-        ____NUM_L1____, ____NUM_R1____,
-        //
-        ____NUM_L2____, ____NUM_R2____,
-        //
-        ____NUM_L3____, ____NUM_R3____,
-        //
-        KC_ESC, _______, _______, _______
-        //                          └─────────┘   └─────────┘     └─────────┘ └─────────┘
-        ),
+          ____NUM_L1____, ____NUM_R1____,
+          ____NUM_L2____, ____NUM_R2____,
+          ____NUM_L3____, ____NUM_R3____,
+          KC_ESC, _______, _______, _______
+          ),
     [_NAV] = LAYOUT_bmax_wrapper( // Nav layer
         ____NAV_L1____, ____NAV_R1____,
-        //
         ____NAV_L2____, ____NAV_R2____,
-        //
         ____NAV_L3____, ____NAV_R3____,
-        //
         KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
     [_FN] = LAYOUT_bmax_wrapper( // Nav layer
         ____FN_L1____, ____FN_R1____,
-        //
         ____FN_L2____, ____FN_R2____,
-        //
         ____FN_L3____, ____FN_R3____,
-        //
         KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
     [_GAME] = LAYOUT_bmax_wrapper( // Nav layer
-                                  //
         ____GAME_L1____, ____GAME_R1____,
-        //
         ____GAME_L2____, ____GAME_R2____,
-        //
         ____GAME_L3____, ____GAME_R3____,
-        //
-        /**/ __GAME_MOD_L__, __GAME_MOD_R__
+        __GAME_MOD_L__, __GAME_MOD_R__
                                    ),
    [_MUS] = LAYOUT_bmax_wrapper( // Nav layer
         ____MUS_L1____, ____MUS_R1____,
-        //
         ____MUS_L2____, ____MUS_R2____,
-        //
         ____MUS_L3____, ____MUS_R3____,
-        //
         KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN))
 };
