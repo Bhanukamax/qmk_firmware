@@ -126,18 +126,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //                                ),
 
   [7] = LAYOUT_planck_grid_wrapper( // Dvorak
-____PLANCK_GROW_L___, __,
+____PLANCK_GROW_L___, RGB_VAI, RGB_VAD,
 ____PLANCK_GROW_R___,
-                                          ____DVORAK_L2____,__, ____DVORAK_R2____,
-                                          ____DVORAK_L3____, __, ____DVORAK_R3____,
+                                          ____DVORAK_L2____, RGB_HUI, RGB_HUD, ____DVORAK_R2____,
+                                          ____DVORAK_L3____, RGB_SAI, RGB_SAD, ____DVORAK_R3____,
                                           RGB_TOG,RGB_MOD, MO(_MUS), __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, RGB_HUD, RGB_SAI, RGB_SAD
                                           // RGB_TOG,RGB_MOD, RGB_HUI, __DVORAK_MOD_L__, __, __DVORAK_MOD_R__, RGB_HUD, RGB_SAI, RGB_SAD
                                           ),
 
   [_NUM] = LAYOUT_planck_grid_wrapper(
-                                      ____NUM_L1____, XX, XX,  ____NUM_R1____, // XX,
-                                      ____NUM_L2____, XX, XX,  ____NUM_R2____, // XX,
-                                      ____NUM_L3____, XX, XX,  ____NUM_R3____, // XX,
+                                      ____NUM_L1____, RGB_MOD, RGB_RMOD,  ____NUM_R1____, // XX,
+                                      ____NUM_L2____, RGB_MODE_PLAIN, RGB_TOG,  ____NUM_R2____, // XX,
+                                      ____NUM_L3____, XX, AU_OFF,  ____NUM_R3____, // XX,
                                       ___, __NUM_MOD_L__ , XX, XX,  __NUM_MOD_R__, XX, RGB_VAI, RGB_VAD// , XX
                                       ),
 
@@ -153,7 +153,7 @@ ____PLANCK_GROW_R___,
                                        ____MUS_L3____, XX,XX, ____MUS_R3____, //  XX,
                                        ___, XX, XX, __, XX, XX, ___),
 
-  [_FN] = LAYOUT_planck_grid_wrapper( // Nav layer
+  [_FN] = LAYOUT_planck_grid_wrapper( // Nav layernnn
                                       ____FN_L1____, XX, XX, ____FN_R1____, // XX,
                                       ____FN_L2____, XX, XX, ____FN_R2____, // XX,
                                       ____FN_L3____, XX, XX, ____FN_R3____, // XX,
