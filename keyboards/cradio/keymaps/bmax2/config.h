@@ -115,8 +115,9 @@
 
 #define ____NUM1_L2_____ lhmr(S(KC_GRV), KC_1, KC_2, KC_3, XX)
 #define ____NUM1_L3_____ S(KC_GRV), KC_COMM, KC_4, KC_5, KC_GRV
-#define ____NUM1_R2_____ rhmr(XX, KC_6, KC_7, KC_8, KC_GRV)
-#define ____NUM1_R3_____ S(KC_GRV), KC_9, KC_0, KC_DOT, KC_GRV
+#define ____NUM1_R1_____ rhmr(KC_COMM, KC_4, KC_5, KC_6, KC_GRV)
+#define ____NUM1_R2_____ rhmr(KC_DOT, KC_1, KC_2, KC_3, KC_GRV)
+#define ____NUM1_R3_____ S(KC_GRV), KC_7, KC_8, KC_9, KC_0
 
 
 #define ___SNUM1_L2_____ S(KC_GRV), S(KC_1), S(KC_2), S(KC_3), XX

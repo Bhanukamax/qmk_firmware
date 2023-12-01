@@ -64,6 +64,10 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
 
 
 bake_three_combo(comb_mwv, LT(_SYS, KC_M),  LT(_SYM1, KC_W), LT(_NUM1, KC_V));
+bake_three_combo(comb_mcommdot_ENT, LT(_SYS, KC_M),  LT(_SYM1, KC_COMM), LT(_NUM1, KC_DOT));
+
+bake_duel_combo(comb_ht_BSPC, RGUI_T(KC_H), RALT_T(KC_T));
+bake_duel_combo(comb_na_BSPC, RGUI_T(KC_N), RALT_T(KC_A));
 bake_duel_combo(comb_pu,    KC_P,               LGUI_T(KC_U));
 bake_duel_combo(comb_gh,    KC_G,                RGUI_T(KC_H));
 bake_duel_combo(comb_nl,    KC_L,                RGUI_T(KC_N));
@@ -79,6 +83,7 @@ bake_duel_combo(atp_comb_pf,    KC_P,        KC_F);
 combo_t key_combos[] = {
     COMBO(comb_gh,      KC_ENT),
     COMBO(comb_mwv,     KC_ENT),
+    COMBO(comb_mcommdot_ENT,     KC_ENT),
     COMBO(comb_nl,      KC_ENT),
     COMBO(comb_pu,      KC_ESC),
     COMBO(comb_quot_a,   KC_TAB),
@@ -90,7 +95,8 @@ combo_t key_combos[] = {
     COMBO(atp_comb_lu,   KC_Z),
     COMBO(atp_comb_pf,   KC_Q),
 
-
+    COMBO(comb_ht_BSPC, KC_BSPC),
+    COMBO(comb_na_BSPC, KC_BSPC),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -117,7 +123,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	____SYM1_L3_____, ____SYM1_R3_____,
 	KC_ESC, _______, _______, _______),
     [_NUM1] = LAYOUT_bmax_wrapper(
-	____EMPTY______, ____EMPTY______,
+	____EMPTY______, ____NUM1_R1_____,
 	____NUM1_L2_____, ____NUM1_R2_____,
 	____NUM1_L3_____, ____NUM1_R3_____,
 	KC_ESC, _______, _______, _______),
