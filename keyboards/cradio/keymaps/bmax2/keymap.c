@@ -65,6 +65,7 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
 
 bake_three_combo(comb_mwv, LT(_SYS, KC_M),  LT(_SYM1, KC_W), LT(_NUM1, KC_V));
 bake_three_combo(comb_mcommdot_ENT, LT(_SYS, KC_M),  LT(_SYM1, KC_COMM), LT(_NUM1, KC_DOT));
+bake_three_combo(comb_htn_ENT, RGUI_T(KC_H), RALT_T(KC_T), RCTL_T(KC_N));
 
 bake_duel_combo(comb_ht_BSPC, RGUI_T(KC_H), RALT_T(KC_T));
 bake_duel_combo(comb_na_BSPC, RGUI_T(KC_N), RALT_T(KC_A));
@@ -84,6 +85,7 @@ combo_t key_combos[] = {
     COMBO(comb_gh,      KC_ENT),
     COMBO(comb_mwv,     KC_ENT),
     COMBO(comb_mcommdot_ENT,     KC_ENT),
+    COMBO(comb_htn_ENT,     KC_ENT),
     COMBO(comb_nl,      KC_ENT),
     COMBO(comb_pu,      KC_ESC),
     COMBO(comb_quot_a,   KC_TAB),
