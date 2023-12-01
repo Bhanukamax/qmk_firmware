@@ -123,7 +123,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	____SYM1_L3_____, ____SYM1_R3_____,
 	KC_ESC, _______, _______, _______),
     [_NUM1] = LAYOUT_bmax_wrapper(
-	____EMPTY______, ____NUM1_R1_____,
+	____NUM1_L1_____, ____NUM1_R1_____,
 	____NUM1_L2_____, ____NUM1_R2_____,
 	____NUM1_L3_____, ____NUM1_R3_____,
 	KC_ESC, _______, _______, _______),
