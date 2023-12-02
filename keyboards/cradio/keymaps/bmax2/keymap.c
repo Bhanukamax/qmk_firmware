@@ -49,6 +49,7 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LT(_NUM, KC_SPC):
         case LT(_NAV, KC_BSPC):
+        case LT(_NUM1, KC_BSPC):
         case LCTL_T(KC_O):
             return 0;
         default:
@@ -124,33 +125,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	____SYM1_L2_____, ____SYM1_R2_____,
 	____SYM1_L3_____, ____SYM1_R3_____,
 	KC_ESC, _______, _______, _______),
-    [_NUM1] = LAYOUT_bmax_wrapper(
-	____NUM1_L1_____, ____NUM1_R1_____,
-	____NUM1_L2_____, ____NUM1_R2_____,
-	____NUM1_L3_____, ____NUM1_R3_____,
-	KC_ESC, _______, _______, _______),
+
     [_SNUM1] = LAYOUT_bmax_wrapper(
 	____EMPTY______, ____EMPTY______,
 	___SNUM1_L2_____, ___SNUM1_R2_____,
 	___SNUM1_L3_____, ___SNUM1_R3_____,
 	KC_ESC, _______, _______, _______),
-
     [_NUM] = LAYOUT_bmax_wrapper(
           ____NUM_L1____, ____NUM_R1____,
           ____NUM_L2____, ____NUM_R2____,
           ____NUM_L3____, ____NUM_R3____,
           KC_ESC, _______, _______, _______
           ),
-    [_NAV] = LAYOUT_bmax_wrapper( // Nav layer
+    [_NUM1] = LAYOUT_bmax_wrapper( // Nav layer
         ____NAV_L1____, ____NAV_R1____,
         ____NAV_L2____, ____NAV_R2____,
         ____NAV_L3____, ____NAV_R3____,
+        KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
+    [_NAV] = LAYOUT_bmax_wrapper(
+	____NUM1_L1_____, ____NUM1_R1_____,
+	____NUM1_L2_____, ____NUM1_R2_____,
+	____NUM1_L3_____, ____NUM1_R3_____,
         KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
     [_FN] = LAYOUT_bmax_wrapper( // Nav layer
         ____FN_L1____, ____FN_R1____,
         ____FN_L2____, ____FN_R2____,
         ____FN_L3____, ____FN_R3____,
-        KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
+        KC_TRNS, KC_TRNS, KC_BSPC, KC_TRNS),
     [_GAME] = LAYOUT_bmax_wrapper( // Nav layer
         ____GAME_L1____, ____GAME_R1____,
         ____GAME_L2____, ____GAME_R2____,

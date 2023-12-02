@@ -115,11 +115,11 @@
 
 //#define ____NUM1_L2_____ lhmr(S(KC_GRV), KC_1, KC_2, KC_3, XX)
 //#define ____NUM1_L3_____ S(KC_GRV), KC_COMM, KC_4, KC_5, KC_GRV
-#define ____NUM1_L1_____ KC_LSFT, KC_COMM, KC_DOT, KC_LGUI,  KC_SLASH
+#define ____NUM1_L1_____ KC_1, KC_2, KC_3, KC_4,  KC_5
 #define ____NUM1_L2_____ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,  KC_SLASH
 #define ____NUM1_L3_____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
 
-#define ____NUM1_R1_____ rhmr(KC_COMM, KC_7, KC_8, KC_9, KC_MINUS)
+#define ____NUM1_R1_____ rhmr(KC_6, KC_7, KC_8, KC_9, KC_0)
 #define ____NUM1_R2_____ rhmr(KC_DOT, KC_4, KC_5, KC_6, KC_0)
 #define ____NUM1_R3_____ S(KC_GRV), KC_1, KC_2, KC_3, KC_0
 
@@ -150,7 +150,7 @@
 // #define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
 // #define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), LSFT_T(KC_ENT)
 //#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), OSM(MOD_RSFT)
-#define __DVORAK_MOD_R__  LT(_NUM1, KC_BSPC), OSM(MOD_RSFT)
+#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), OSM(MOD_RSFT)
 
 // #define __DVORAK_MOD_R__  MO(_NUM),   KC_BSPC
 
