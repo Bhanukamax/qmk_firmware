@@ -104,9 +104,9 @@ combo_t key_combos[] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT_bmax_wrapper( // Dvorak
-        ____DVORAK_L1____, ____DVORAK_R1____,
+        ____DVORAK_L1_MOD, ____DVORAK_R1_MOD,
         __DVORAK_L2_SWEEP, ____DVORAK_R2____,
-        ____DVORAK_L3____, ____DVORAK_R3____,
+        ____DVORAK_L3_MOD, ____DVORAK_R3_MOD,
         __DVORAK_MOD_L__, __DVORAK_MOD_R__
         ),
      [_APTMAK] = LAYOUT_bmax_wrapper( // Dvorak

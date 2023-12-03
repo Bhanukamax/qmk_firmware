@@ -135,9 +135,7 @@
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_L, KC_P, KC_Y
 #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
 #define __DVORAK_L2_SWEEP lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
-// #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
 #define ____DVORAK_L3____ KC_SCLN, BRLL(KC_Q, KC_J, KC_K), KC_X
-// #define __DVORAK_MOD_L__  LT(_NAV, KC_ESC), KC_SPC
 
 // NOTE: KC_SPC  IT'S BAT TO ADD MOD-TAP ETC TO SPACE KEY BECAUSE YOU NEED TO TAP AND HOLD IT IN GRAPHICS PROGRAMS
 // #define __DVORAK_MOD_L__  LT(_NUM, KC_ESC), KC_SPC /* <- DO NOT CHANGE KC_SPC */
@@ -146,14 +144,12 @@
 #define ____DVORAK_R1____ KC_F, KC_G, KC_C, KC_R, KC_DOT
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
 #define ____DVORAK_R3____ KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
-// #define __DVORAK_MOD_R__  NUM_BSPC,   LT(_MUS, KC_ENT)
-// #define __DVORAK_MOD_R__  NUM_BSPC,   LSFT_T(KC_ENT)
-// #define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), LSFT_T(KC_ENT)
-//#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), OSM(MOD_RSFT)
 #define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), OSM(MOD_RSFT)
 
-// #define __DVORAK_MOD_R__  MO(_NUM),   KC_BSPC
-
+#define ____DVORAK_L1_MOD KC_V, KC_W, KC_L, KC_P, KC_Y
+#define ____DVORAK_L3_MOD KC_SCLN, BRLL(KC_Q, KC_J, KC_K), KC_X
+#define ____DVORAK_R1_MOD KC_F, KC_G, KC_C, KC_R, KC_QUOT
+#define ____DVORAK_R3_MOD KC_B, BRLR(KC_M, KC_COMM, KC_DOT), KC_Z
 
 #define ____APTMAK_L1____ KC_V, KC_W, KC_F, KC_P, KC_B
 #define ____APTMAK_L2____ lhmr(KC_R, KC_S, KC_T, KC_H, LT(_MUS, KC_K))
