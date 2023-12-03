@@ -144,12 +144,12 @@
 #define ____DVORAK_R1____ KC_F, KC_G, KC_C, KC_R, KC_DOT
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
 #define ____DVORAK_R3____ KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
-#define __DVORAK_MOD_R__  LT(_NAV, KC_BSPC), OSM(MOD_RSFT)
+#define __DVORAK_MOD_R__  LT(_NAV, KC_E), OSM(MOD_RSFT)
 
-#define ____DVORAK_L1_MOD KC_V, KC_W, KC_L, KC_P, KC_Y
+#define ____DVORAK_L1_MOD KC_COMM, KC_DOT, KC_L, KC_P, KC_Y
 #define ____DVORAK_L3_MOD KC_SCLN, BRLL(KC_Q, KC_J, KC_K), KC_X
 #define ____DVORAK_R1_MOD KC_F, KC_G, KC_C, KC_R, KC_QUOT
-#define ____DVORAK_R3_MOD KC_B, BRLR(KC_M, KC_COMM, KC_DOT), KC_Z
+#define ____DVORAK_R3_MOD KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
 
 #define ____APTMAK_L1____ KC_V, KC_W, KC_F, KC_P, KC_B
 #define ____APTMAK_L2____ lhmr(KC_R, KC_S, KC_T, KC_H, LT(_MUS, KC_K))
